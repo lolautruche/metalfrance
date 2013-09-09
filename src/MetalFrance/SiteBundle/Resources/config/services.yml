@@ -14,4 +14,4 @@ parameters:
 services:
     metalfrance.analytics:
         class: %metalfrance.analytics.class%
-        arguments: [%metalfrance.analytics.category_by_contenttype%]
+        arguments: [%metalfrance.analytics.category_by_contenttype%, @ezpublish.api.service.location, @ezpublish.api.service.content_type]
