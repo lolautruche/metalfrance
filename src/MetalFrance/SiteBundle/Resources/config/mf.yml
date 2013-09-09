@@ -1,69 +1,7 @@
-ezpublish:
-    siteaccess:
-        # Available siteaccesses
-        list:
-            - mf_public
-            - mf_gestion
-        # Siteaccess groups. Use them to group common settings.
-        groups:
-            metalfrance: [mf_public, mf_gestion]
-        default_siteaccess: mf_public
-        match:
-            Map\Host:
-                www.metalfrance.dev: mf_public
-                www.metalfrance.net: mf_public
-                admin.metalfrance.dev: mf_gestion
-                admin.metalfrance.net: mf_gestion
-
-    # System settings, grouped by siteaccess and/or siteaccess group
-    system:
-        metalfrance:
-            database:
-                type: %database.type%
-                user: %database.user%
-                password: %database.password%
-                server: %database.server%
-                database_name: %database.name%
-            languages: [fre-FR]
-            var_dir: var/metalfrance
-        mf_public:
-            content:
-                view_cache: true
-                ttl_cache: true
-                default_ttl: 3600
-            location_view:
-                full:
-                    smallFolder:
-                        template: eZDemoBundle:full:small_folder.html.twig
-                        match:
-                            Identifier\ContentType: small_folder
-                            Identifier\ParentContentType: [landing_page, frontpage]
-            # Define here your image variations (formerly known as "image aliases")
-            image_variations:
-                my_image_variation:
-                    reference: ~
-                    filters:
-                        - {name: geometry/scaledownonly, params: [400, 350]}
-                my_cropped_variation:
-                    reference: my_mage_variation
-                    filters:
-                        - {name: geometry/scalewidthdownonly, params: [300]}
-                        - {name: geometry/crop, params: [200, 200, 0, 0]}
-        mf_gestion:
-            # Use legacy mode to use the admin interface since everything needs to run via the legacy kernel
-            legacy_mode: true
-
-twig:
-    globals:
-        main_site_title: "METAL FRANCE, webzine musique métal"
-        meta_tags:
-            keywords: "musique, rock, metal, gothique, thrash, punk, tatoo, tatouage, Slipknot, Chimaira, Slayer, Metallica"
-            description: "Actus Métal, gothique, Black Metal, Death Metal. Chroniques d'album, live reports, interviews, photos"
-            copyright: "Metal France"
-            author: "Metal France"
-            "og:image": "/extension/metalfrance/design/mf/images/image-listing_50x50.png"
-        dfp_pub_id: %metalfrance.ad.dfp_pub_id%
-
 parameters:
     # Advertisement
     metalfrance.ad.dfp_pub_id: "ca-pub-6334451484838012"
+
+    # Analytics
+    metalfrance.analytics.google_account: "UA-5064419-1"
+    metalfrance.analytics.domain: ".metalfrance.net"
