@@ -1,0 +1,150 @@
+ezpublish:
+
+    imagemagick:
+        filters:
+            geometry/scale: '-geometry {1}x{2}'
+            geometry/scalewidth: '-geometry {1}'
+            geometry/scaleheight: '-geometry x{1}'
+            geometry/scaledownonly: '-geometry {1}x{2}>'
+            geometry/scalewidthdownonly: '-geometry {1}>'
+            geometry/scaleheightdownonly: '-geometry x{1}>'
+            geometry/scaleexact: '-geometry {1}x{2}!'
+            geometry/scalepercent: '-geometry {1}x{2}%'
+            geometry/crop: '-crop {1}x{2}+{3}+{4}'
+            filter/noise: '-noise {1}'
+            filter/swirl: '-swirl {1}'
+            colorspace/gray: '-colorspace GRAY'
+            colorspace/transparent: '-colorspace Transparent'
+            colorspace: '-colorspace {1}'
+            border: '-border {1}x{2}'
+            border/color: '-bordercolor rgb({1},{2},{3})'
+            border/width: '-borderwidth {1}'
+            flatten: '-flatten'
+            resize: '-resize {1}'
+
+    system:
+        metalfrance:
+            image_variations:
+                small:
+                    reference: original
+                    filters:
+                        - { name: geometry/scaledownonly, params: [60, 60] }
+                medium:
+                    reference: null
+                    filters:
+                        - { name: geometry/scaledownonly, params: [200, 290] }
+                listitem:
+                    reference: null
+                    filters:
+                        - { name: geometry/scaledownonly, params: [130, 190] }
+                articleimage:
+                    reference: null
+                    filters:
+                        - { name: geometry/scaledownonly, params: [170, 350] }
+                articlethumbnail:
+                    reference: null
+                    filters:
+                        - { name: geometry/scaledownonly, params: [70, 150] }
+                gallerythumbnail:
+                    reference: null
+                    filters:
+                        - { name: geometry/scaledownonly, params: [105, 100] }
+                galleryline:
+                    reference: null
+                    filters:
+                        - { name: geometry/scaledownonly, params: [70, 150] }
+                imagelarge:
+                    reference: null
+                    filters:
+                        - { name: geometry/scaledownonly, params: [448, 622] }
+                large:
+                    reference: null
+                    filters:
+                        - { name: geometry/scaledownonly, params: [360, 440] }
+                rss:
+                    reference: null
+                    filters:
+                        - { name: geometry/scale, params: [88, 31] }
+                logo:
+                    reference: null
+                    filters:
+                        - { name: geometry/scaleheight, params: [36] }
+                infoboximage:
+                    reference: null
+                    filters:
+                        - { name: geometry/scalewidth, params: [75] }
+                billboard:
+                    reference: null
+                    filters:
+                        - { name: geometry/scalewidth, params: [764] }
+                coverflow:
+                    reference: null
+                    filters:
+                        - { name: geometry/scaleexact, params: [140, 140] }
+                carrousel:
+                    reference: null
+                    filters:
+                        - { name: geometry/scalewidthdownonly, params: [350] }
+                polaroid:
+                    reference: null
+                    filters:
+                        - { name: geometry/scalewidthdownonly, params: [160] }
+                review:
+                    reference: null
+                    filters:
+                        - { name: geometry/scalewidthdownonly, params: [128] }
+                review_list:
+                    reference: null
+                    filters:
+                        - { name: geometry/scalewidth, params: [143] }
+                mainstory1:
+                    reference: null
+                    filters:
+                        - { name: geometry/scalewidth, params: [468] }
+                        - { name: geometry/crop, params: [468, 396, 0, 0] }
+                mainstory2:
+                    reference: null
+                    filters:
+                        - { name: geometry/scalewidth, params: [439] }
+                        - { name: geometry/crop, params: [439, 233, 0, 0] }
+                mainstory3:
+                    reference: null
+                    filters:
+                        - { name: geometry/scalewidth, params: [201] }
+                        - { name: geometry/crop, params: [201, 239, 0, 0] }
+                block2items1:
+                    reference: null
+                    filters:
+                        - { name: geometry/scalewidth, params: [195] }
+                        - { name: geometry/crop, params: [195, 98, 0, 0] }
+                block2items2:
+                    reference: null
+                    filters:
+                        - { name: geometry/scalewidth, params: [195] }
+                        - { name: geometry/crop, params: [195, 98, 0, 0] }
+                block3items3:
+                    reference: null
+                    filters:
+                        - { name: geometry/scalewidth, params: [195] }
+                        - { name: geometry/crop, params: [195, 98, 0, 0] }
+                blockgallery1:
+                    reference: null
+                    filters:
+                        - { name: geometry/scalewidth, params: [126] }
+                        - { name: geometry/crop, params: [126, 84, 0, 0] }
+                multiuploadthumbnail:
+                    reference: null
+                    filters:
+                        - { name: geometry/scaledownonly, params: [100, 80] }
+                thumbnail:
+                    reference: original
+                    filters:
+                        - { name: geometry/scaledownonly, params: [120, ''] }
+                tiny:
+                    reference: original
+                    filters:
+                        - { name: geometry/scaledownonly, params: [30, ''] }
+                userthumbnail:
+                    reference: original
+                    filters:
+                        - { name: geometry/scaledownonly, params: [75, 150] }

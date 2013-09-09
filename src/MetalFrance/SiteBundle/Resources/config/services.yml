@@ -1,0 +1,7 @@
+parameters:
+#    metal_france_site.example.class: MetalFrance\SiteBundle\Example
+
+services:
+#    metal_france_site.example:
+#        class: %metal_france_site.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
