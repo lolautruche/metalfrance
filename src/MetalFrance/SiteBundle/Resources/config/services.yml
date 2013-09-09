@@ -1,7 +1,17 @@
 parameters:
-#    metal_france_site.example.class: MetalFrance\SiteBundle\Example
+    metalfrance.analytics.category_by_contenttype:
+        mf_chronique_cd: "Chroniques"
+        mf_gallerie: "Photos"
+        mf_interview: "Interviews"
+        mf_livereport: "LiveReports"
+        mf_page_livereport: "LiveReports"
+        mf_blog: "News"
+        mf_blog_post: "News"
+        mf_concert_francebillet: "Concerts"
+        frontpage: "Home"
+    metalfrance.analytics.class: MetalFrance\SiteBundle\Utils\AnalyticsService
 
 services:
-#    metal_france_site.example:
-#        class: %metal_france_site.example.class%
-#        arguments: [@service_id, "plain_value", %parameter%]
+    metalfrance.analytics:
+        class: %metalfrance.analytics.class%
+        arguments: [%metalfrance.analytics.category_by_contenttype%]
