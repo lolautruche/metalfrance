@@ -1,0 +1,6 @@
+fieldset,
+.mf-page a,
+#searchtext,
+.mf-section, .mf-commentaires ul li {
+	behavior: url(/extension/metalfrance/design/mf/stylesheets/ie-css3.htc);
+}
