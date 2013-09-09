@@ -52,3 +52,18 @@ ezpublish:
         mf_gestion:
             # Use legacy mode to use the admin interface since everything needs to run via the legacy kernel
             legacy_mode: true
+
+twig:
+    globals:
+        main_site_title: "METAL FRANCE, webzine musique métal"
+        meta_tags:
+            keywords: "musique, rock, metal, gothique, thrash, punk, tatoo, tatouage, Slipknot, Chimaira, Slayer, Metallica"
+            description: "Actus Métal, gothique, Black Metal, Death Metal. Chroniques d'album, live reports, interviews, photos"
+            copyright: "Metal France"
+            author: "Metal France"
+            "og:image": "/extension/metalfrance/design/mf/images/image-listing_50x50.png"
+        dfp_pub_id: %metalfrance.ad.dfp_pub_id%
+
+parameters:
+    # Advertisement
+    metalfrance.ad.dfp_pub_id: "ca-pub-6334451484838012"
