@@ -1,6 +1,5 @@
 imports:
-    - {resource: @MetalFranceSiteBundle/Resources/config/mf.yml}
-    - {resource: @MetalFranceSiteBundle/Resources/config/image.yml}
+    - {resource: @MetalFranceSiteBundle/Resources/config/ezpublish.yml}
 
 ezpublish:
     http_cache:
