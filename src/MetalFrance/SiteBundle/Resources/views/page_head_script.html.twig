@@ -15,4 +15,7 @@
 
     {# TODO: Add analytics and advertisement scripts #}
     {% include "@MetalFranceSite/parts/advertisement.html.twig" %}
+
+    {% set category = category|default( null ) %}
+    {{ render( controller( 'MetalFranceSiteBundle:Layout:analytics', {'category': category} ) ) }}
 {% endblock %}
