@@ -1,0 +1,30 @@
+{% block header %}
+<header id="mf-header" role="banner">
+    {# Ads #}
+    <div class="mf-pub-728x90" id="mf-pub-leaderboard">
+        <script type='text/javascript'>GA_googleFillSlotWithSize("{{ dfp_pub_id }}", "Leaderboard_728x90", 728, 90);</script>
+    </div>
+    <div class="mf-clear">
+        <div class="mf-col-first">
+            <a href="{{ path( 'ez_urlalias', {'locationId': 2} ) }}"><img src="{{ asset( 'bundles/metalfrancesite/images/img_logo_580x150.png' ) }}" width="580" height="150" alt="Metal France - LE METAL A L’ESPRIT LARGE" /></a>
+        </div>
+        <div class="mf-col-last">
+            {# TODO: Do a sub-request using Hinclude #}
+            {% if app.security.token.authenticated %}
+            <section id="mf-profil">
+                <a href="{{ path( 'ez_legacy', {'module_uri': '/user/edit'} ) }}">Mon profil ({{ app.user.APIUser.contentInfo.name }})</a>
+                <a href="{{ path( 'ez_legacy', {'module_uri': '/user/logout'} ) }}">Déconnexion</a>
+            </section>
+            {% else %}
+            <section id="mf-connexion">
+                <a href="{{ path( 'ez_legacy', {'module_uri': '/user/login'} ) }}"><span>///</span> Connexion <span>\\\</span></a>
+                <a href="{{ janrain_signin_url() }}" class="rpxnow"><img src="{{ asset( 'bundles/metalfrancesite/images/bg_login.png' ) }}" alt="Connexion via un service externe" /></a>
+            </section>
+            {% endif %}
+
+            {{ render_hinclude( controller( 'MetalFranceSiteBundle:Layout:newsHeader' ) ) }}
+
+        </div>
+    </div>
+</header>
+{% endblock %}

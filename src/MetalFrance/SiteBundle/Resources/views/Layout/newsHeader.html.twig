@@ -1,0 +1,21 @@
+<section id="mf-actu" class="mf-section mf-clear">
+    <h3 class="mf-title mf-noicon">/// Actualités</h3>
+
+    <div id="actu-carousel" class="jcarousel-container">
+        <div class="jcarousel-clip">
+            <ul class="jcarousel-list">
+                {% for i, searchHit in news %}
+                <li class="jcarousel-item-{{ i + 1 }}">
+                    {{ render_esi( controller( 'ez_content:viewLocation', {'locationId': searchHit.contentInfo.mainLocationId, 'viewType': 'carrousel'} ) ) }}
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+
+    <ul class="mf-page mf-clear">
+        {% for i, searchHit in news %}
+        <li><a href="#{{ i + 1 }}" title="Actus - Page {{ i + 1 }}">{{ i + 1 }}</a></li>
+        {% endfor %}
+    </ul>
+</section>

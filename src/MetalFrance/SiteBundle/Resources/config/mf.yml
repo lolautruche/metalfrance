@@ -5,3 +5,13 @@ parameters:
     # Analytics
     metalfrance.analytics.google_account: "UA-5064419-1"
     metalfrance.analytics.domain: ".metalfrance.net"
+
+    # Location settings
+    # Override those in config_<env>.yml if dev diverges from prod.
+    metalfrance.location_settings:
+        reviews: 91
+        agenda: 12701
+        news: 1158
+        liveReports: 1011
+        interviews: 12435
+        photos: 8854

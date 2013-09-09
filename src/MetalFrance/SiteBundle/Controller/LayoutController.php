@@ -3,6 +3,8 @@
 namespace MetalFrance\SiteBundle\Controller;
 
 use eZ\Bundle\EzPublishCoreBundle\Controller;
+use eZ\Publish\API\Repository\Values\Content\Query;
+use eZ\Publish\API\Repository\Values\Content\Query\Criterion;
 use Symfony\Component\HttpFoundation\Response;
 
 /**
@@ -36,5 +38,33 @@ class LayoutController extends Controller
                 'domain' => $this->container->getParameter( 'metalfrance.analytics.domain' ),
             ]
         );
+    }
+
+    /**
+     * Renders the news header.
+     *
+     * @return Response
+     */
+    public function newsHeaderAction()
+    {
+        $newsLocationId = $this->container->getParameter( 'metalfrance.location_settings' )['news'];
+        $response = new Response();
+        $response->setSharedMaxAge( 86400 );
+        $response->headers->set( 'X-Location-Id', $newsLocationId );
+
+        // Fetching blog posts
+        // TODO: Refactor in a service
+        $query = new Query();
+        $query->criterion = new Criterion\LogicalAnd(
+            [
+                new Criterion\ParentLocationId( $newsLocationId ),
+                new Criterion\ContentTypeIdentifier( 'blog_post' )
+            ]
+        );
+        $query->sortClauses = [new Query\SortClause\DatePublished( Query::SORT_DESC )];
+        $query->limit = 7;
+        $res = $this->getRepository()->getSearchService()->findContent( $query );
+
+        return $this->render( '@MetalFranceSite/Layout/newsHeader.html.twig', ['news' => $res->searchHits], $response );
     }
 }
