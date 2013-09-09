@@ -1,0 +1,102 @@
+{
+    "name": "ezsystems/ezpublish-community",
+    "description": "eZ Publish 5 community distribution",
+    "homepage": "http://share.ez.no",
+    "license": "GPL-2.0",
+    "authors": [
+        {
+            "name": "eZ Publish dev-team & eZ Community",
+            "homepage": "https://github.com/ezsystems/ezpublish-community/contributors"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/lolautruche/Archive.git"
+        }
+    ],
+    "autoload": {
+        "psr-0": { "": "src/" }
+    },
+    "require": {
+        "php": ">=5.3.3",
+        "symfony/symfony": "2.3.*",
+        "twig/extensions": "1.0.*",
+        "symfony/assetic-bundle": "2.3.*",
+        "symfony/swiftmailer-bundle": "2.3.*",
+        "symfony/monolog-bundle": "2.3.*",
+        "sensio/distribution-bundle": "2.3.*",
+        "sensio/generator-bundle": "2.3.*",
+        "incenteev/composer-parameter-handler": "~2.0",
+        "symfony-cmf/routing": "1.1.*@beta",
+        "tedivm/stash-bundle": "0.2.*",
+        "ezsystems/ezpublish-kernel": "2013.07.*",
+        "ezsystems/demobundle": "@dev",
+        "egulias/listeners-debug-command-bundle": "1.4.*",
+        "zetacomponents/archive": "dev-fixUnpackPHP55",
+        "zetacomponents/authentication": "@dev",
+        "zetacomponents/authentication-database-tiein": "@dev",
+        "zetacomponents/cache": "@dev",
+        "zetacomponents/configuration": "@dev",
+        "zetacomponents/console-tools": "@dev",
+        "zetacomponents/database": "@dev",
+        "zetacomponents/debug": "@dev",
+        "zetacomponents/feed": "@dev",
+        "zetacomponents/image-conversion": "@dev",
+        "zetacomponents/mail": "@dev",
+        "zetacomponents/mvc-tools": "@dev",
+        "zetacomponents/mvc-authentication-tiein": "@dev",
+        "zetacomponents/persistent-object": "@dev",
+        "zetacomponents/php-generator": "@dev",
+        "zetacomponents/signal-slot": "@dev",
+        "zetacomponents/system-information": "@dev"
+    },
+    "require-dev": {
+        "behat/behat": "2.4.*",
+        "behat/symfony2-extension": "*",
+        "behat/sahi-client": "dev-master as 1.1.1",
+        "behat/mink-extension": "*",
+        "behat/mink-goutte-driver": "*",
+        "behat/mink-selenium-driver": "*",
+        "behat/mink-sahi-driver": "*",
+        "symfony/icu": "~1.0",
+        "phpunit/phpunit": "3.7.*"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
+            "eZ\\Bundle\\EzPublishLegacyBundle\\Composer\\ScriptHandler::installAssets",
+            "eZ\\Bundle\\EzPublishCoreBundle\\Composer\\ScriptHandler::dumpAssets",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile"
+        ],
+        "post-update-cmd": [
+            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
+            "eZ\\Bundle\\EzPublishLegacyBundle\\Composer\\ScriptHandler::installAssets",
+            "eZ\\Bundle\\EzPublishCoreBundle\\Composer\\ScriptHandler::dumpAssets",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile"
+        ]
+    },
+    "config": {
+        "process-timeout": 3000,
+        "bin-dir": "bin"
+    },
+    "extra": {
+        "symfony-app-dir": "ezpublish",
+        "symfony-web-dir": "web",
+        "ezpublish-legacy-dir": "ezpublish_legacy",
+        "_symfony-assets-install_comment_": "One of 'symlink', 'relative' (symlinks) or 'hard'",
+        "symfony-assets-install": "relative",
+        "incenteev-parameters": {
+            "file": "ezpublish/config/parameters.yml"
+        },
+        "branch-alias": {
+            "dev-master": "5.2.x-dev"
+        }
+    }
+}
