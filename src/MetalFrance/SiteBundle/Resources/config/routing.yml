@@ -1,3 +1,0 @@
-metal_france_site_homepage:
-    pattern:  /hello/{name}
-    defaults: { _controller: MetalFranceSiteBundle:Default:index }
