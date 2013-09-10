@@ -26,6 +26,7 @@ parameters:
         interviews: 12435
         photos: 8854
         contact: 13056
+        footer: 15986
 
     metalfrance.links:
         forum: "http://forum.metalfrance.net"

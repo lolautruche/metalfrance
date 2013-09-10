@@ -85,7 +85,27 @@ class LayoutController extends Controller
             [
                 'menuLocations' => $this->get( 'metalfrance.repository.layout' )->getMenu(),
                 'linkSettings' => $this->container->getParameter( 'metalfrance.links' )
-            ]
+            ],
+            $response
+        );
+    }
+
+    /**
+     * Renders the footer
+     *
+     * @return Response
+     */
+    public function footerAction()
+    {
+        $response = new Response();
+        $response->setExpires( new DateTime( 'next year' ) );
+
+        return $this->render(
+            '@MetalFranceSite/Layout/footer.html.twig',
+            [
+                'footer_content' => $this->get( 'metalfrance.repository.layout' )->getFooter()
+            ],
+            $response
         );
     }
 }
