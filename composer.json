@@ -1,12 +1,12 @@
 {
-    "name": "ezsystems/ezpublish-community",
-    "description": "eZ Publish 5 community distribution",
-    "homepage": "http://share.ez.no",
+    "name": "lolautruche/metalfrance",
+    "description": "Metal France website, powered by eZ Publish 5",
+    "homepage": "http://www.metalfrance.net",
     "license": "GPL-2.0",
     "authors": [
         {
-            "name": "eZ Publish dev-team & eZ Community",
-            "homepage": "https://github.com/ezsystems/ezpublish-community/contributors"
+            "name": "Jérôme Vieilledent",
+            "homepage": "http://www.lolart.net"
         }
     ],
     "repositories": [
