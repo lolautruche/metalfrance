@@ -31,7 +31,7 @@ class LayoutController extends Controller
         $userType = $this->get( 'security.context' )->getToken()->isAuthenticated() ? 'ezpublish' : 'Anonymous';
 
         return $this->render(
-            '@MetalFranceSite/Layout/analytics.html.twig',
+            'MetalFranceSiteBundle:Layout:analytics.html.twig',
             [
                 'category' => $category,
                 'userType' => $userType,
@@ -66,7 +66,7 @@ class LayoutController extends Controller
         $query->limit = 7;
         $res = $this->getRepository()->getSearchService()->findContent( $query );
 
-        return $this->render( '@MetalFranceSite/Layout/newsHeader.html.twig', ['news' => $res->searchHits], $response );
+        return $this->render( 'MetalFranceSiteBundle:Layout:newsHeader.html.twig', ['news' => $res->searchHits], $response );
     }
 
     /**
@@ -81,7 +81,7 @@ class LayoutController extends Controller
         $response->setExpires( new DateTime( 'first day of next month' ) );
 
         return $this->render(
-            '@MetalFranceSite/Layout/topMenu.html.twig',
+            'MetalFranceSiteBundle:Layout:topMenu.html.twig',
             [
                 'menuLocations' => $this->get( 'metalfrance.repository.layout' )->getMenu(),
                 'linkSettings' => $this->container->getParameter( 'metalfrance.links' )
@@ -101,7 +101,7 @@ class LayoutController extends Controller
         $response->setExpires( new DateTime( 'next year' ) );
 
         return $this->render(
-            '@MetalFranceSite/Layout/footer.html.twig',
+            'MetalFranceSiteBundle:Layout:footer.html.twig',
             [
                 'footer_content' => $this->get( 'metalfrance.repository.layout' )->getFooter()
             ],
