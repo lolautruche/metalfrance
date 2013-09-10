@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+
+    {% include "@MetalFranceSite/page_head.html.twig" %}
+
+    {% include "@MetalFranceSite/page_head_style.html.twig" %}
+
+    {% include "@MetalFranceSite/page_head_script.html.twig" %}
+
+</head>
+<body>
+    <script type="text/javascript">document.body.className = 'mf-js';</script>
+
+    <!-- Header area: START -->
+    {% include "@MetalFranceSite/page_header.html.twig" %}
+    <!-- Header area: END -->
+
+    <!-- NAV -->
+    {{ render_esi( controller( 'MetalFranceSiteBundle:Layout:topMenu' ) ) }}
+    <!-- /NAV -->
+
+    <!-- CONTENT -->
+    {% block main_area %}
+        {% set mainSectionCssClasses = mainSectionCssClasses|default( [] ) %}
+    <div id="mf-content" class="mf-clear">
+        <div class="mf-col-first">
+        {#
+            Most pages need a <section class="mf-section"> surrounding tag
+            Homepage is an exception.
+        #}
+        {% set isHome = app.request.attributes.get( 'locationId' ) == 2 %}
+        {% if not isHome %}<section class="mf-section {% for cssClass in mainSectionCssClasses %}{{ cssClass }} {% endfor %}">{% endif %}
+            {% block content %}{% endblock %}
+        {% if not isHome %}</section>{% endif %}
+        </div>
+
+        {% include "@MetalFranceSite/sidebar.html.twig" %}
+    </div>
+    {% endblock %}
+    <!-- /CONTENT -->
+
+    <!-- Columns area: END -->
+
+    <!-- FOOTER -->
+    {{ render_esi( controller( 'MetalFranceSiteBundle:Layout:footer' ) ) }}
+    <!-- /FOOTER -->
+
+    <!-- Complete page area: END -->
+
+    <!-- Footer script area: START -->
+    {% include "@MetalFranceSite/page_footer_script.html.twig" %}
+    <!-- Footer script area: END -->
+
+</body>
+</html>
