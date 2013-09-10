@@ -1,14 +1,4 @@
 parameters:
-    metalfrance.analytics.category_by_contenttype:
-        mf_chronique_cd: "Chroniques"
-        mf_gallerie: "Photos"
-        mf_interview: "Interviews"
-        mf_livereport: "LiveReports"
-        mf_page_livereport: "LiveReports"
-        mf_blog: "News"
-        mf_blog_post: "News"
-        mf_concert_francebillet: "Concerts"
-        frontpage: "Home"
     metalfrance.analytics.class: MetalFrance\SiteBundle\Utils\AnalyticsService
     metalfrance.twig.legacy_extension.class: MetalFrance\SiteBundle\Twig\MetalFranceLegacyExtension
 

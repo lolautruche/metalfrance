@@ -5,6 +5,16 @@ parameters:
     # Analytics
     metalfrance.analytics.google_account: "UA-5064419-1"
     metalfrance.analytics.domain: ".metalfrance.net"
+    metalfrance.analytics.category_by_contenttype:
+        mf_chronique_cd: "Chroniques"
+        mf_gallerie: "Photos"
+        mf_interview: "Interviews"
+        mf_livereport: "LiveReports"
+        mf_page_livereport: "LiveReports"
+        mf_blog: "News"
+        mf_blog_post: "News"
+        mf_concert_francebillet: "Concerts"
+        frontpage: "Home"
 
     # Location settings
     # Override those in config_<env>.yml if dev diverges from prod.
