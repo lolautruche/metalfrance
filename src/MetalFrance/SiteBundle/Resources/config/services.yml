@@ -10,8 +10,15 @@ parameters:
         mf_concert_francebillet: "Concerts"
         frontpage: "Home"
     metalfrance.analytics.class: MetalFrance\SiteBundle\Utils\AnalyticsService
+    metalfrance.twig.legacy_extension.class: MetalFrance\SiteBundle\Twig\MetalFranceLegacyExtension
 
 services:
     metalfrance.analytics:
         class: %metalfrance.analytics.class%
         arguments: [%metalfrance.analytics.category_by_contenttype%, @ezpublish.api.service.location, @ezpublish.api.service.content_type]
+
+    metalfrance.twig.legacy_extension:
+        class: %metalfrance.twig.legacy_extension.class%
+        arguments: [@ezpublish_legacy.kernel]
+        tags:
+            - {name: twig.extension}
