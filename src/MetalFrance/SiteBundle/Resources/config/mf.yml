@@ -25,3 +25,9 @@ parameters:
         liveReports: 1011
         interviews: 12435
         photos: 8854
+        contact: 13056
+
+    metalfrance.links:
+        forum: "http://forum.metalfrance.net"
+        twitter: "http://twitter.com/metalfrance"
+        facebook: "http://on.fb.me/hi4LDa"

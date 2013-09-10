@@ -1,6 +1,7 @@
 parameters:
     metalfrance.analytics.class: MetalFrance\SiteBundle\Utils\AnalyticsService
     metalfrance.twig.legacy_extension.class: MetalFrance\SiteBundle\Twig\MetalFranceLegacyExtension
+    metalfrance.repository.layout.class: MetalFrance\SiteBundle\Repository\LayoutRepository
 
 services:
     metalfrance.analytics:
@@ -12,3 +13,7 @@ services:
         arguments: [@ezpublish_legacy.kernel]
         tags:
             - {name: twig.extension}
+
+    metalfrance.repository.layout:
+        class: %metalfrance.repository.layout.class%
+        arguments: [@ezpublish.api.repository, %metalfrance.location_settings%]

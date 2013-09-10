@@ -6,6 +6,7 @@ use eZ\Bundle\EzPublishCoreBundle\Controller;
 use eZ\Publish\API\Repository\Values\Content\Query;
 use eZ\Publish\API\Repository\Values\Content\Query\Criterion;
 use Symfony\Component\HttpFoundation\Response;
+use DateTime;
 
 /**
  * Controller for pagelayout actions
@@ -66,5 +67,25 @@ class LayoutController extends Controller
         $res = $this->getRepository()->getSearchService()->findContent( $query );
 
         return $this->render( '@MetalFranceSite/Layout/newsHeader.html.twig', ['news' => $res->searchHits], $response );
+    }
+
+    /**
+     * Renders the top menu
+     *
+     * @return Response
+     */
+    public function topMenuAction()
+    {
+        $response = new Response();
+        // Menu should be kept long in cache as it won't change that much
+        $response->setExpires( new DateTime( 'first day of next month' ) );
+
+        return $this->render(
+            '@MetalFranceSite/Layout/topMenu.html.twig',
+            [
+                'menuLocations' => $this->get( 'metalfrance.repository.layout' )->getMenu(),
+                'linkSettings' => $this->container->getParameter( 'metalfrance.links' )
+            ]
+        );
     }
 }
