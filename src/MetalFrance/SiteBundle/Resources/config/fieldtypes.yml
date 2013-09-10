@@ -10,3 +10,27 @@ services:
         class: %ezpublish.fieldType.eznull.converter.class%
         tags:
             - {name: ezpublish.storageEngine.legacy.converter, alias: xrowmetadata, lazy: true, callback: '::create'}
+
+    metalfrance.fieldType.objectrelationbrowse:
+        class: %ezpublish.fieldType.eznull.class%
+        parent: ezpublish.fieldType
+        arguments: [ "ezobjectrelationbrowse" ]
+        tags:
+            - {name: ezpublish.fieldType, alias: ezobjectrelationbrowse}
+
+    metalfrance.fieldType.objectrelationbrowse.converter:
+        class: %ezpublish.fieldType.eznull.converter.class%
+        tags:
+            - {name: ezpublish.storageEngine.legacy.converter, alias: ezobjectrelationbrowse, lazy: true, callback: '::create'}
+
+    metalfrance.fieldType.jvamazonid:
+        class: %ezpublish.fieldType.eznull.class%
+        parent: ezpublish.fieldType
+        arguments: [ "jvamazonid" ]
+        tags:
+            - {name: ezpublish.fieldType, alias: jvamazonid}
+
+    metalfrance.fieldType.jvamazonid.converter:
+        class: %ezpublish.fieldType.eznull.converter.class%
+        tags:
+            - {name: ezpublish.storageEngine.legacy.converter, alias: jvamazonid, lazy: true, callback: '::create'}
