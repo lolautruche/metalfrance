@@ -11,7 +11,6 @@ use Egulias\ListenersDebugCommandBundle\EguliasListenersDebugCommandBundle;
 use eZ\Bundle\EzPublishCoreBundle\EzPublishCoreBundle;
 use eZ\Bundle\EzPublishLegacyBundle\EzPublishLegacyBundle;
 use eZ\Bundle\EzPublishRestBundle\EzPublishRestBundle;
-use EzSystems\DemoBundle\EzSystemsDemoBundle;
 use EzSystems\BehatBundle\EzSystemsEzPublishBehatBundle;
 use eZ\Bundle\EzPublishCoreBundle\Kernel;
 use Symfony\Component\Config\Loader\LoaderInterface;
@@ -47,7 +46,6 @@ class EzPublishKernel extends Kernel
             new TedivmStashBundle(),
             new EzPublishCoreBundle(),
             new EzPublishLegacyBundle(),
-            new EzSystemsDemoBundle(),
             new EzPublishRestBundle(),
             new MetalFrance\SiteBundle\MetalFranceSiteBundle(),
         );
