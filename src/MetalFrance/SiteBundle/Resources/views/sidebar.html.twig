@@ -1,0 +1,15 @@
+{#
+    Blocks for sidebar can be customized from content templates by overriding the "sidebar" twig block,
+    setting the sidebar_blocks variable.
+    sidebar_blocks is an array templates to include, e.g. "@MetalFranceSite/parts/sidebar/my_block.html.twig".
+#}
+{% block sidebar %}
+    {% set sidebar_blocks = sidebar_blocks|default( ["agenda", "rss", "facebook"] ) %}
+    <div class="mf-col-last">
+        {% include "@MetalFranceSite/parts/sidebar/advertisement.html.twig" %}
+
+        {#{% for block_template in sidebar_blocks %}#}
+            {#{% include block_template %}#}
+        {#{% endfor %}#}
+    </div>
+{% endblock %}
