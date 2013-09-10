@@ -66,3 +66,6 @@ twig:
             author: "Metal France"
             "og:image": "/extension/metalfrance/design/mf/images/image-listing_50x50.png"
         dfp_pub_id: %metalfrance.ad.dfp_pub_id%
+
+assetic:
+    bundles: [MetalFranceSiteBundle]
