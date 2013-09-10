@@ -1,0 +1,14 @@
+{% set feedUrl = url( 'ez_legacy', {'module_uri': '/layout/set/rss/content/view/full/2'} ) %}
+<section id="mf-rss" class="mf-section">
+    <h4 class="mf-title">/// Flux RSS<span class="mf-sprite-header mf-sprite-rss"></span></h4>
+    <ul class="mf-list mf-clear">
+        <li><a href="http://fusion.google.com/add?feedurl={{ feedUrl|url_encode( true ) }}" target="_blank"><img src="http://buttons.googlesyndication.com/fusion/add.gif" width="104" height="17" style="border:0" alt="Ajouter à Google Reader ou iGoogle"/></a></li>
+        <li><a href="http://add.my.yahoo.com/rss?url={{ feedUrl|url_encode( true ) }}" title="METAL FRANCE, webzine musique métal" target="_blank"><img src="http://us.i1.yimg.com/us.yimg.com/i/us/my/addtomyyahoo4.gif" alt="" style="border:0"/></a></li>
+        <li><a href="http://www.netvibes.com/subscribe.php?url={{ feedUrl|url_encode( true ) }}" target="_blank"><img src="http://www.netvibes.com/img/add2netvibes.gif" width="91" height="17" alt="Ajouter à Netvibes" style="border:0" /></a></li>
+        <li><a href="http://cloud.feedly.com/#subscription%2Ffeed%2F{{ feedUrl|url_encode( true ) }}" target="blank"><img id="feedlyFollow" src="http://s3.feedly.com/img/follows/feedly-follow-rectangle-flat-small_2x.png" alt="Ajouter à Feedly" width='66' height='20'></a></li>
+    </ul>
+    <p>
+        <img src="http://www.feedburner.com/fb/images/pub/feed-icon16x16.png" alt="" style="vertical-align:middle;border:0"/>&nbsp;
+        <a href="{{ feedUrl|url_encode( true ) }}" rel="alternate" type="application/rss+xml">Ajoutez METAL FRANCE à vos flux RSS</a>
+    </p>
+</section>

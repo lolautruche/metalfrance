@@ -8,8 +8,9 @@
     <div class="mf-col-last">
         {% include "@MetalFranceSite/parts/sidebar/advertisement.html.twig" %}
 
-        {#{% for block_template in sidebar_blocks %}#}
-            {#{% include block_template %}#}
-        {#{% endfor %}#}
+        {% for block_label in sidebar_blocks %}
+            {% set block_template = "@MetalFranceSite/parts/sidebar/" ~ block_label ~ ".html.twig" %}
+            {% include block_template %}
+        {% endfor %}
     </div>
 {% endblock %}
