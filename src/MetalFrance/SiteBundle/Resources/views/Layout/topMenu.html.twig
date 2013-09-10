@@ -20,7 +20,7 @@
             <li><a href="{{ path( menuLocations.photos ) }}" title="Venez découvrir les photos de concerts de métal">Photos</a></li>
             <li><a href="{{ path( menuLocations.interviews ) }}" title="Les dernières interviews de groupes"">Interviews</a></li>
             <li>
-                <a href={ezini( 'LinkSettings', 'Forum', 'metalfrance.ini' )|ezurl}>{'Communauté'|i18n( 'extension/metalfrance' )}</a>
+                <a href={{ linkSettings.forum }}>Communauté</a>
                 <ul>
                     <li><a href="{{ linkSettings.forum }}">Forum</a></li>
                     <li><a href="{{ linkSettings.twitter }}" target="_blank">Twitter</a></li>
@@ -32,7 +32,7 @@
                 <div id="header-search">
                     <div id="searchbox">
                         <form action="{{ path( 'ez_legacy', {'module_uri': '/content/search'} ) }}" method="get">
-                        <label for="searchtext" class="hide">Rechercher:</label>
+                        <label for="searchtext" class="hide mf-hidden">Rechercher:</label>
                         <div id="ezautocomplete" class="yui-ac">
                             <input id="searchtext" class="yui-ac-input" name="SearchText" type="text" value="" />
                             <input id="searchbutton" class="button mf-hidden" type="submit" value="Chercher" />
