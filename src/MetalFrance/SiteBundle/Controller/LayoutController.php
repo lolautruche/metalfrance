@@ -97,13 +97,16 @@ class LayoutController extends Controller
      */
     public function footerAction()
     {
+        $footerContent = $this->get( 'metalfrance.repository.layout' )->getFooter();
         $response = new Response();
         $response->setExpires( new DateTime( 'next year' ) );
+        $response->headers->set( 'X-Location-Id', $footerContent->contentInfo->mainLocationId );
+
 
         return $this->render(
             'MetalFranceSiteBundle:Layout:footer.html.twig',
             [
-                'footer_content' => $this->get( 'metalfrance.repository.layout' )->getFooter()
+                'footer_content' => $footerContent
             ],
             $response
         );
