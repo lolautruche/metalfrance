@@ -31,7 +31,7 @@ parameters:
     metalfrance.links:
         forum: "http://forum.metalfrance.net"
         twitter: "http://twitter.com/metalfrance"
-        facebook: "http://on.fb.me/hi4LDa"
+        facebook: "https://www.facebook.com/MetalFrance"
 
     # Sidebar
     metalfrance.sidebar.default_blocks: [agenda, rss, facebook]
