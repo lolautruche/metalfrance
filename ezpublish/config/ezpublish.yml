@@ -1,4 +1,5 @@
 imports:
+    - {resource: @MetalFranceSiteBundle/Resources/config/mf.yml}
     - {resource: @MetalFranceSiteBundle/Resources/config/ezpublish.yml}
 
 ezpublish:
