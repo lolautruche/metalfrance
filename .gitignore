@@ -4,6 +4,8 @@
 /.idea/
 /bin/behat
 /bin/phpunit
+/bin/doctrine*
+/ezpublish/sessions/
 /ezpublish/cache/
 /ezpublish/logs/
 /ezpublish_legacy

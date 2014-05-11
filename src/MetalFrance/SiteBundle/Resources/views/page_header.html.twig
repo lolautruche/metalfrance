@@ -10,7 +10,7 @@
         </div>
         <div class="mf-col-last">
             {# TODO: Do a sub-request using Hinclude #}
-            {% if app.security.token.authenticated %}
+            {% if is_granted( 'IS_AUTHENTICATED_REMEMBERED' ) %}
             <section id="mf-profil">
                 <a href="{{ path( 'ez_legacy', {'module_uri': '/user/edit'} ) }}">Mon profil ({{ app.user.APIUser.contentInfo.name }})</a>
                 <a href="{{ path( 'ez_legacy', {'module_uri': '/user/logout'} ) }}">Déconnexion</a>

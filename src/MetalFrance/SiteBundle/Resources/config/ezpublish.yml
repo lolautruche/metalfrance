@@ -18,17 +18,18 @@ ezpublish:
                 admin.metalfrance.dev: mf_gestion
                 admin.metalfrance.net: mf_gestion
 
+    repositories:
+        mf_site: { engine: legacy, connection: default }
+
     # System settings, grouped by siteaccess and/or siteaccess group
     system:
         metalfrance:
-            database:
-                type: %database.type%
-                user: %database.user%
-                password: %database.password%
-                server: %database.server%
-                database_name: %database.name%
+            repository: mf_site
             languages: [fre-FR]
             var_dir: var/metalfrance
+            http_cache:
+                purge_servers: %http_cache.purge_servers%
+
         mf_public:
             content:
                 view_cache: true
@@ -52,6 +53,7 @@ ezpublish:
                     filters:
                         - {name: geometry/scalewidthdownonly, params: [300]}
                         - {name: geometry/crop, params: [200, 200, 0, 0]}
+
         mf_gestion:
             # Use legacy mode to use the admin interface since everything needs to run via the legacy kernel
             legacy_mode: true
@@ -64,7 +66,7 @@ twig:
             description: "Actus Métal, gothique, Black Metal, Death Metal. Chroniques d'album, live reports, interviews, photos"
             copyright: "Metal France"
             author: "Metal France"
-            "og:image": "/extension/metalfrance/design/mf/images/image-listing_50x50.png"
+            "og:image": "extension/metalfrance/design/mf/images/image-listing_50x50.png"
         dfp_pub_id: %metalfrance.ad.dfp_pub_id%
 
 assetic:

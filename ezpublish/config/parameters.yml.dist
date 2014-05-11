@@ -1,12 +1,22 @@
 parameters:
     secret: ThisTokenIsNotSoSecretChangeIt
-    locale_fallback: fr
+    locale: fr_FR
+
     ezpublish_legacy.default.view_default_layout: MetalFranceSiteBundle::pagelayout.html.twig
     imagemagick_path: /opt/local/bin/convert
 
     # Database
-    database.type: mysql
-    database.server: localhost
-    database.name: metalfrance_450
-    database.user: root
-    database.password: root
+    database_driver: pdo_mysql
+    database_host: localhost
+    database_port: ~
+    database_name: metalfrance_450
+    database_user: root
+    database_password: root
+
+    mailer_transport:  smtp
+    mailer_host:       127.0.0.1
+    mailer_user:       ~
+    mailer_password:   ~
+
+    http_cache.purge_type: local
+    http_cache.purge_servers: ["http://metalfrance.dev"]

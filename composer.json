@@ -9,30 +9,27 @@
             "homepage": "http://www.lolart.net"
         }
     ],
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/lolautruche/Archive.git"
-        }
-    ],
     "autoload": {
         "psr-0": { "": "src/" }
     },
     "require": {
         "php": ">=5.3.3",
-        "symfony/symfony": "2.3.*",
-        "twig/extensions": "1.0.*",
-        "symfony/assetic-bundle": "2.3.*",
-        "symfony/swiftmailer-bundle": "2.3.*",
-        "symfony/monolog-bundle": "2.3.*",
-        "sensio/distribution-bundle": "2.3.*",
-        "sensio/generator-bundle": "2.3.*",
+        "symfony/symfony": "2.4.*",
+        "twig/extensions": "~1.0",
+        "symfony/assetic-bundle": "~2.3",
+        "symfony/swiftmailer-bundle": "~2.3",
+        "symfony/monolog-bundle": "~2.4",
+        "sensio/distribution-bundle": "~2.3",
+        "sensio/generator-bundle": "~2.3",
         "incenteev/composer-parameter-handler": "~2.0",
-        "symfony-cmf/routing": "1.1.*@beta",
-        "tedivm/stash-bundle": "0.2.*",
-        "ezsystems/ezpublish-kernel": "2013.07.*",
-        "egulias/listeners-debug-command-bundle": "1.4.*",
-        "zetacomponents/archive": "dev-fixUnpackPHP55",
+        "ezsystems/ezpublish-kernel": "dev-master",
+        "ezsystems/ezpublish-legacy": "dev-master",
+        "ezsystems/demobundle": "@dev",
+        "ezsystems/comments-bundle": "@dev",
+        "egulias/listeners-debug-command-bundle": "~1.9",
+        "white-october/pagerfanta-bundle": "1.0.*",
+        "nelmio/cors-bundle": "~1.3",
+        "zetacomponents/archive": "@dev",
         "zetacomponents/authentication": "@dev",
         "zetacomponents/authentication-database-tiein": "@dev",
         "zetacomponents/cache": "@dev",
@@ -40,6 +37,7 @@
         "zetacomponents/console-tools": "@dev",
         "zetacomponents/database": "@dev",
         "zetacomponents/debug": "@dev",
+        "zetacomponents/event-log": "@dev",
         "zetacomponents/feed": "@dev",
         "zetacomponents/image-conversion": "@dev",
         "zetacomponents/mail": "@dev",
@@ -48,10 +46,13 @@
         "zetacomponents/persistent-object": "@dev",
         "zetacomponents/php-generator": "@dev",
         "zetacomponents/signal-slot": "@dev",
-        "zetacomponents/system-information": "@dev"
+        "zetacomponents/system-information": "@dev",
+        "hautelook/templated-uri-bundle": "~1.0",
+        "doctrine/doctrine-bundle": "1.2.*",
+        "doctrine/orm": "~2.2,>=2.2.3"
     },
     "require-dev": {
-        "behat/behat": "2.4.*",
+        "behat/behat": "2.5.*",
         "behat/symfony2-extension": "*",
         "behat/sahi-client": "dev-master as 1.1.1",
         "behat/mink-extension": "*",
@@ -60,6 +61,9 @@
         "behat/mink-sahi-driver": "*",
         "symfony/icu": "~1.0",
         "phpunit/phpunit": "3.7.*"
+    },
+    "conflict": {
+        "symfony/symfony": "2.3.9"
     },
     "scripts": {
         "post-install-cmd": [

@@ -2,17 +2,21 @@
 /**
  * File containing the EzPublishKernel class.
  *
- * @copyright Copyright (C) 1999-2013 eZ Systems AS. All rights reserved.
- * @license http://www.gnu.org/licenses/gpl-2.0.txt GNU General Public License v2
+ * @copyright Copyright (C) eZ Systems AS. All rights reserved.
+ * @license For full copyright and license information view LICENSE file distributed with this source code.
  * @version //autogentag//
  */
 
 use Egulias\ListenersDebugCommandBundle\EguliasListenersDebugCommandBundle;
 use eZ\Bundle\EzPublishCoreBundle\EzPublishCoreBundle;
+use eZ\Bundle\EzPublishDebugBundle\EzPublishDebugBundle;
 use eZ\Bundle\EzPublishLegacyBundle\EzPublishLegacyBundle;
 use eZ\Bundle\EzPublishRestBundle\EzPublishRestBundle;
-use EzSystems\BehatBundle\EzSystemsEzPublishBehatBundle;
+use EzSystems\CommentsBundle\EzSystemsCommentsBundle;
+use EzSystems\DemoBundle\EzSystemsDemoBundle;
+use EzSystems\BehatBundle\EzSystemsBehatBundle;
 use eZ\Bundle\EzPublishCoreBundle\Kernel;
+use EzSystems\NgsymfonytoolsBundle\EzSystemsNgsymfonytoolsBundle;
 use Symfony\Component\Config\Loader\LoaderInterface;
 use Symfony\Bundle\FrameworkBundle\FrameworkBundle;
 use Symfony\Bundle\SecurityBundle\SecurityBundle;
@@ -24,6 +28,10 @@ use Symfony\Bundle\SwiftmailerBundle\SwiftmailerBundle;
 use Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle;
 use Sensio\Bundle\DistributionBundle\SensioDistributionBundle;
 use Tedivm\StashBundle\TedivmStashBundle;
+use WhiteOctober\PagerfantaBundle\WhiteOctoberPagerfantaBundle;
+use Nelmio\CorsBundle\NelmioCorsBundle;
+use Hautelook\TemplatedUriBundle\HautelookTemplatedUriBundle;
+use Doctrine\Bundle\DoctrineBundle\DoctrineBundle;
 
 class EzPublishKernel extends Kernel
 {
@@ -43,19 +51,28 @@ class EzPublishKernel extends Kernel
             new MonologBundle(),
             new SwiftmailerBundle(),
             new AsseticBundle(),
+            new DoctrineBundle(),
             new TedivmStashBundle(),
+            new HautelookTemplatedUriBundle(),
             new EzPublishCoreBundle(),
-            new EzPublishLegacyBundle(),
+            new EzPublishLegacyBundle( $this ),
+            new EzSystemsDemoBundle(),
             new EzPublishRestBundle(),
-            new MetalFrance\SiteBundle\MetalFranceSiteBundle(),
+            new EzSystemsCommentsBundle(),
+            new EzSystemsNgsymfonytoolsBundle(),
+            new WhiteOctoberPagerfantaBundle(),
+            new NelmioCorsBundle(),
+            new \MetalFrance\SiteBundle\MetalFranceSiteBundle()
         );
 
         switch ( $this->getEnvironment() )
         {
             case "test":
-                $bundles[] = new EzSystemsEzPublishBehatBundle();
-                // No break, test also needs dev bundles
+            case "behat":
+                $bundles[] = new EzSystemsBehatBundle();
+            // No break, test also needs dev bundles
             case "dev":
+                $bundles[] = new EzPublishDebugBundle();
                 $bundles[] = new WebProfilerBundle();
                 $bundles[] = new SensioDistributionBundle();
                 $bundles[] = new SensioGeneratorBundle();

@@ -4,7 +4,7 @@ imports:
 
 ezpublish:
     http_cache:
-        purge_type: local
+        purge_type: %http_cache.purge_type%
 
     imagemagick:
         enabled: true
@@ -17,3 +17,7 @@ stash:
                 - FileSystem
             inMemory: true
             registerDoctrineAdapter: false
+
+ez_publish_legacy:
+    enabled: true
+    root_dir: %kernel.root_dir%/../ezpublish_legacy
