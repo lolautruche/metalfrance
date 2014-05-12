@@ -32,7 +32,7 @@ ezpublish:
                 purge_servers: %http_cache.purge_servers%
 
             field_templates:
-                - {template: "MetalFranceSiteBundle:fields:content_fields.html.twig", priority: 10}
+                - { template: "MetalFranceSiteBundle:fields:content_fields.html.twig", priority: 10 }
 
         mf_public:
             content:

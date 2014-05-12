@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "5b6e1ca8494617f8c29070eed286e816",
+    "hash": "f01edfb5f9dc388d642d1526866bed2e",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -45,7 +45,8 @@
                 {
                     "name": "Jonathan Wage",
                     "email": "jonwage@gmail.com",
-                    "homepage": "http://www.jwage.com/"
+                    "homepage": "http://www.jwage.com/",
+                    "role": "Creator"
                 },
                 {
                     "name": "Guilherme Blanco",
@@ -117,7 +118,7 @@
             ],
             "authors": [
                 {
-                    "name": "Jonathan Wage",
+                    "name": "Jonathan H. Wage",
                     "email": "jonwage@gmail.com",
                     "homepage": "http://www.jwage.com/",
                     "role": "Creator"
@@ -259,7 +260,8 @@
                 {
                     "name": "Jonathan Wage",
                     "email": "jonwage@gmail.com",
-                    "homepage": "http://www.jwage.com/"
+                    "homepage": "http://www.jwage.com/",
+                    "role": "Creator"
                 },
                 {
                     "name": "Guilherme Blanco",
@@ -461,7 +463,8 @@
                 {
                     "name": "Jonathan Wage",
                     "email": "jonwage@gmail.com",
-                    "homepage": "http://www.jwage.com/"
+                    "homepage": "http://www.jwage.com/",
+                    "role": "Creator"
                 },
                 {
                     "name": "Guilherme Blanco",
@@ -477,7 +480,7 @@
                     "email": "kontakt@beberlei.de"
                 },
                 {
-                    "name": "Johannes M. Schmitt",
+                    "name": "Johannes Schmitt",
                     "email": "schmittjoh@gmail.com",
                     "homepage": "http://jmsyst.com",
                     "role": "Developer of wrapped JMSSerializerBundle"
@@ -712,12 +715,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ezsystems/DemoBundle.git",
-                "reference": "ec0496c8be04b97811285ed111f9cde6f2994251"
+                "reference": "e1bab6b56f5630b5f341a6df5b0e08ae837c193a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ezsystems/DemoBundle/zipball/ec0496c8be04b97811285ed111f9cde6f2994251",
-                "reference": "ec0496c8be04b97811285ed111f9cde6f2994251",
+                "url": "https://api.github.com/repos/ezsystems/DemoBundle/zipball/e1bab6b56f5630b5f341a6df5b0e08ae837c193a",
+                "reference": "e1bab6b56f5630b5f341a6df5b0e08ae837c193a",
                 "shasum": ""
             },
             "require": {
@@ -742,7 +745,7 @@
                 }
             ],
             "description": "Demo bundle for eZ Publish Platform",
-            "time": "2014-05-07 16:30:37"
+            "time": "2014-05-12 08:40:55"
         },
         {
             "name": "ezsystems/ezpublish-kernel",
@@ -750,12 +753,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ezsystems/ezpublish-kernel.git",
-                "reference": "e1eb2c4563a392b4b814cc7d87b24fe27f8e844b"
+                "reference": "6e42ce0bbdd922c7d741795b1ed9f10d7505382a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ezsystems/ezpublish-kernel/zipball/e1eb2c4563a392b4b814cc7d87b24fe27f8e844b",
-                "reference": "e1eb2c4563a392b4b814cc7d87b24fe27f8e844b",
+                "url": "https://api.github.com/repos/ezsystems/ezpublish-kernel/zipball/6e42ce0bbdd922c7d741795b1ed9f10d7505382a",
+                "reference": "6e42ce0bbdd922c7d741795b1ed9f10d7505382a",
                 "shasum": ""
             },
             "require": {
@@ -836,7 +839,7 @@
             ],
             "description": "eZ Publish API and kernel. This is the heart of eZ Publish 5.",
             "homepage": "http://share.ez.no",
-            "time": "2014-05-09 16:44:08"
+            "time": "2014-05-12 15:06:03"
         },
         {
             "name": "ezsystems/ezpublish-legacy",
@@ -844,12 +847,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ezsystems/ezpublish-legacy.git",
-                "reference": "91cd090038baa497edb514068fa51a9005940876"
+                "reference": "7b15917dc90c10abb2bd78f5f59b8ee8e1579044"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ezsystems/ezpublish-legacy/zipball/91cd090038baa497edb514068fa51a9005940876",
-                "reference": "91cd090038baa497edb514068fa51a9005940876",
+                "url": "https://api.github.com/repos/ezsystems/ezpublish-legacy/zipball/7b15917dc90c10abb2bd78f5f59b8ee8e1579044",
+                "reference": "7b15917dc90c10abb2bd78f5f59b8ee8e1579044",
                 "shasum": ""
             },
             "require": {
@@ -906,7 +909,7 @@
             ],
             "description": "eZ Publish LegacyStack (4.x)",
             "homepage": "http://share.ez.no",
-            "time": "2014-05-09 20:56:08"
+            "time": "2014-05-12 14:27:11"
         },
         {
             "name": "ezsystems/ezpublish-legacy-installer",
@@ -950,6 +953,40 @@
             ],
             "description": "Installer for eZ Publish legacy extensions and legacy kernel itself.",
             "time": "2013-12-02 14:48:52"
+        },
+        {
+            "name": "ezsystems/eztags-ls",
+            "version": "1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ezsystems/eztags.git",
+                "reference": "20284c2ec5383c4fc2dc95c0dce4d40926d078e4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ezsystems/eztags/zipball/20284c2ec5383c4fc2dc95c0dce4d40926d078e4",
+                "reference": "20284c2ec5383c4fc2dc95c0dce4d40926d078e4",
+                "shasum": ""
+            },
+            "require": {
+                "ezsystems/ezpublish-legacy-installer": "*"
+            },
+            "type": "ezpublish-legacy-extension",
+            "extra": {
+                "ezpublish-legacy-extension-name": "eztags"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "eZ Publish dev-team & eZ Community",
+                    "homepage": "https://github.com/ezsystems/eztags/contributors"
+                }
+            ],
+            "description": "eZ Tags is an extension for eZ Publish, providing more functionality for tagging content objects than ezkeyword datatype included in eZ Publish kernel.",
+            "time": "2014-05-12 14:23:46"
         },
         {
             "name": "ezsystems/ngsymfonytools-bundle",
@@ -1446,6 +1483,46 @@
             "time": "2014-02-05 23:25:21"
         },
         {
+            "name": "netgen/tagsbundle",
+            "version": "dev-master",
+            "target-dir": "Netgen/TagsBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/netgen/TagsBundle.git",
+                "reference": "168ceb36d818d9aba50113a42ac7d8a66dbfc99d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/netgen/TagsBundle/zipball/168ceb36d818d9aba50113a42ac7d8a66dbfc99d",
+                "reference": "168ceb36d818d9aba50113a42ac7d8a66dbfc99d",
+                "shasum": ""
+            },
+            "require": {
+                "ezsystems/ezpublish-kernel": "*"
+            },
+            "suggest": {
+                "ezsystems/eztags-ls": "Legacy extension, to activate tags management in admin interface."
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Netgen\\TagsBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Netgen",
+                    "homepage": "http://www.netgenlabs.com"
+                }
+            ],
+            "description": "Netgen Tags Bundle is an eZ Publish 5 bundle for taxonomy management and easier classification of content, providing more functionality for tagging content than ezkeyword field type included in eZ Publish kernel.",
+            "time": "2014-05-12 16:06:43"
+        },
+        {
             "name": "ocramius/proxy-manager",
             "version": "0.5.1",
             "source": {
@@ -1669,7 +1746,9 @@
             "authors": [
                 {
                     "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
                 }
             ],
             "description": "The base bundle for the Symfony Distributions",
@@ -1721,7 +1800,9 @@
             "authors": [
                 {
                     "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
                 }
             ],
             "description": "This bundle generates code for you",
@@ -2321,7 +2402,9 @@
             "authors": [
                 {
                     "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
                 }
             ],
             "description": "Common additional features for Twig that do not directly belong in core",
@@ -5178,6 +5261,7 @@
         "zetacomponents/php-generator": 20,
         "zetacomponents/signal-slot": 20,
         "zetacomponents/system-information": 20,
+        "netgen/tagsbundle": 20,
         "behat/sahi-client": 20
     },
     "platform": {

@@ -49,7 +49,9 @@
         "zetacomponents/system-information": "@dev",
         "hautelook/templated-uri-bundle": "~1.0",
         "doctrine/doctrine-bundle": "1.2.*",
-        "doctrine/orm": "~2.2,>=2.2.3"
+        "doctrine/orm": "~2.2,>=2.2.3",
+        "netgen/tagsbundle": "dev-master",
+        "ezsystems/eztags-ls": "~1.3"
     },
     "require-dev": {
         "behat/behat": "2.5.*",

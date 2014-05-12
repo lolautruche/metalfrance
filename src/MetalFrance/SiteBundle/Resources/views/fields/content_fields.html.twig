@@ -1,1 +1,8 @@
-{% block eztags_field %}{% endblock %}
+{% block eztags_field %}
+    <p>
+    {% for tag in field.value.tags %}
+        <img class="transparent-png-icon" src="{{ asset( "bundles/metalfrancesite/images/tag_icons/" ~ parameters.icon|default( "small/blue-tag.png" ) ) }}" />
+        <a href="{{ path( 'ez_legacy', { 'module_uri': '/tags/view/' ~ eztags_tag_url( tag ) } ) }}">{{ tag.keyword }}</a>{% if not loop.last %}, {% endif %}
+    {% endfor %}
+    </p>
+{% endblock %}

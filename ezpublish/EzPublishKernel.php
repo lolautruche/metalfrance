@@ -62,6 +62,7 @@ class EzPublishKernel extends Kernel
             new EzSystemsNgsymfonytoolsBundle(),
             new WhiteOctoberPagerfantaBundle(),
             new NelmioCorsBundle(),
+            new \Netgen\TagsBundle\NetgenTagsBundle(),
             new \MetalFrance\SiteBundle\MetalFranceSiteBundle()
         );
 
