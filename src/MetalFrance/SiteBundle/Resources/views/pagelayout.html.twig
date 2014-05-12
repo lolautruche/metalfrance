@@ -2,7 +2,7 @@
 <html lang="fr-FR">
 <head>
 
-    {% include "@MetalFranceSite/page_head.html.twig" %}
+    {% block meta %}{% include "@MetalFranceSite/page_head.html.twig" %}{% endblock %}
 
     {% include "@MetalFranceSite/page_head_style.html.twig" %}
 
@@ -29,13 +29,13 @@
             Most pages need a <section class="mf-section"> surrounding tag
             Homepage is an exception.
         #}
-        {% set isHome = app.request.attributes.get( 'locationId' ) == 2 %}
+        {% set isHome = app.request.attributes.get( 'locationId' ) == ezpublish.rootLocation.id %}
         {% if not isHome %}<section class="mf-section {% for cssClass in mainSectionCssClasses %}{{ cssClass }} {% endfor %}">{% endif %}
             {% block content %}{% endblock %}
         {% if not isHome %}</section>{% endif %}
         </div>
 
-        {% include "@MetalFranceSite/sidebar.html.twig" %}
+        {% block sidebar %}{% include "@MetalFranceSite/sidebar.html.twig" %}{% endblock %}
     </div>
     {% endblock %}
     <!-- /CONTENT -->

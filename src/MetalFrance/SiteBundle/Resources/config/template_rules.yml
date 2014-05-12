@@ -1,0 +1,16 @@
+ezpublish:
+    system:
+        metalfrance:
+            location_view:
+                full:
+                    blog:
+                        controller: "MetalFranceSiteBundle:Blog:listBlogPosts"
+                        template: "MetalFranceSiteBundle:full:blog.html.twig"
+                        match:
+                            Identifier\ContentType: blog
+
+                    blog_post:
+                        controller: "MetalFranceSiteBundle:Blog:showBlogPost"
+                        template: "MetalFranceSiteBundle:full:blog_post.html.twig"
+                        match:
+                            Identifier\ContentType: blog_post

@@ -2,6 +2,7 @@ parameters:
     metalfrance.analytics.class: MetalFrance\SiteBundle\Utils\AnalyticsService
     metalfrance.twig.legacy_extension.class: MetalFrance\SiteBundle\Twig\MetalFranceLegacyExtension
     metalfrance.repository.layout.class: MetalFrance\SiteBundle\Repository\LayoutRepository
+    metalfrance.pagerfanta.view.class: MetalFrance\SiteBundle\Pagerfanta\View\MetalFranceView
 
 services:
     metalfrance.analytics:
@@ -17,3 +18,14 @@ services:
     metalfrance.repository.layout:
         class: %metalfrance.repository.layout.class%
         arguments: [@ezpublish.api.repository, %metalfrance.location_settings%]
+
+    metalfrance.pagerfanta.view:
+        class: %metalfrance.pagerfanta.view.class%
+        tags:
+            - { name: pagerfanta.view, alias: metalfrance }
+
+    metalfrance.pagerfanta.translated_view:
+        class: WhiteOctober\PagerfantaBundle\View\TwitterBootstrapTranslatedView
+        arguments: [@metalfrance.pagerfanta.view, @translator]
+        tags:
+            - { name: pagerfanta.view, alias: metalfrance_translated }

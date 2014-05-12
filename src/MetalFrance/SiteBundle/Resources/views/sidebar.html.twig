@@ -3,14 +3,12 @@
     setting the sidebar_blocks variable.
     sidebar_blocks is an array templates to include, e.g. "@MetalFranceSite/parts/sidebar/my_block.html.twig".
 #}
-{% block sidebar %}
-    {% set sidebar_blocks = sidebar_blocks|default( ["agenda", "rss", "facebook"] ) %}
-    <div class="mf-col-last">
-        {% include "@MetalFranceSite/parts/sidebar/advertisement.html.twig" %}
+{% set sidebar_blocks = sidebar_blocks|default( ["agenda", "rss", "facebook"] ) %}
+<div class="mf-col-last">
+    {% include "@MetalFranceSite/parts/sidebar/advertisement.html.twig" %}
 
-        {% for block_label in sidebar_blocks %}
-            {% set block_template = "@MetalFranceSite/parts/sidebar/" ~ block_label ~ ".html.twig" %}
-            {% include block_template %}
-        {% endfor %}
-    </div>
-{% endblock %}
+    {% for block_label in sidebar_blocks %}
+        {% set block_template = "@MetalFranceSite/parts/sidebar/" ~ block_label ~ ".html.twig" %}
+        {% include block_template %}
+    {% endfor %}
+</div>

@@ -365,8 +365,7 @@ h3.mf-recherche-nb-resultats {
 }
 
 .mf-page li,
-.mf-photos li,
-.mf-pager li {
+.mf-photos li {
   float:left;
 }
 
@@ -597,36 +596,42 @@ h2.mf-noicon {
 	margin-top: 10px;
 }
 
-.mf-pager li a, .mf-pager li span {
+.mf-pager {
+    width: 430px;
+    text-align: center;
+    margin: auto;
+}
+
+.mf-pager ul {
+    display: inline-block;
+}
+
+.mf-pager li {
+    display: inline;
+}
+
+.mf-pager li a {
 	font-size: 10pt;
 	color: black;
+    float: left;
+    line-height: 34px;
+    padding: 0 5px;
+}
+
+.mf-pager li a:hover {
+    text-decoration: underline;
 }
 
 .mf-pager li.next {
-	float: right;
 	margin-right: 10px;
 }
 
 .mf-pager li.previous {
-	float: left;
 	margin-left: 10px;
 }
 
-.mf-pager li span.current {
+.mf-pager li.active {
 	font-weight: bold;
-}
-
-.mf-pager li.pages {
-	width: 430px;
-	text-align: center;
-}
-
-.mf-pager li.pages ul li span {
-	padding: 0px 3px 0px 3px;
-}
-
-.mf-pager li.pages ul {
-	display: inline-block;
 }
 
 /*******************************************************************************

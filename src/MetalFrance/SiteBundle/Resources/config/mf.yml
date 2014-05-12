@@ -35,3 +35,6 @@ parameters:
 
     # Sidebar
     metalfrance.sidebar.default_blocks: [agenda, rss, facebook]
+
+    # Lists settings
+    metalfrance.default.news.list_limit: 15

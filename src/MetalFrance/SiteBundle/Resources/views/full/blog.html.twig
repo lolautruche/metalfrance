@@ -1,0 +1,22 @@
+{% extends "@MetalFranceSite/pagelayout.html.twig" %}
+
+{% block meta %}
+    {% set title = "News"|trans( domain="metalfrance" ) %}
+    {{ parent() }}
+{% endblock %}
+
+{% block content %}
+    <h1 class="mf-title">/// {{ "Actualités Métal"|trans( domain="metalfrance" ) }}<span class="mf-sprite-header mf-sprite-news"></span></h1>
+
+    <ul class="mf-list mf-news">
+    {% for post in blog_posts %}
+        {# Displaying blog_post elements calling the view line #}
+        {{ render_esi( controller( "ez_content:viewLocation", {"locationId": post.contentInfo.mainLocationId, "viewType": "line"} ) ) }}
+    {% endfor %}
+    </ul>
+
+    {# Pagination is displayed only if needed (number of posts > limit) #}
+    {% if blog_posts.haveToPaginate() %}
+        {{ pagerfanta( blog_posts, "metalfrance_translated", {"routeName": location} ) }}
+    {% endif %}
+{% endblock %}

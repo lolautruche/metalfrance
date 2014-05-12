@@ -1,5 +1,6 @@
 imports:
-    - {resource: @MetalFranceSiteBundle/Resources/config/image.yml}
+    - { resource: @MetalFranceSiteBundle/Resources/config/image.yml }
+    - { resource: @MetalFranceSiteBundle/Resources/config/template_rules.yml }
 
 ezpublish:
     siteaccess:
@@ -30,18 +31,14 @@ ezpublish:
             http_cache:
                 purge_servers: %http_cache.purge_servers%
 
+            field_templates:
+                - {template: "MetalFranceSiteBundle:fields:content_fields.html.twig", priority: 10}
+
         mf_public:
             content:
                 view_cache: true
                 ttl_cache: true
                 default_ttl: 3600
-            location_view:
-                full:
-                    smallFolder:
-                        template: eZDemoBundle:full:small_folder.html.twig
-                        match:
-                            Identifier\ContentType: small_folder
-                            Identifier\ParentContentType: [landing_page, frontpage]
             # Define here your image variations (formerly known as "image aliases")
             image_variations:
                 my_image_variation:
@@ -71,3 +68,10 @@ twig:
 
 assetic:
     bundles: [MetalFranceSiteBundle]
+
+ez_comments:
+    system:
+        metalfrance:
+            default_provider: disqus
+            disqus:
+                shortname: metalfrance

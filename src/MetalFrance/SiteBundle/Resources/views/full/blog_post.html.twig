@@ -1,0 +1,62 @@
+{% extends noLayout ? viewbaseLayout : "@MetalFranceSite/pagelayout.html.twig" %}
+
+{% block sidebar %}
+    {% set sidebar_blocks = ["related_content", "facebook", "rss"] %}
+    {{ parent() }}
+{% endblock %}
+
+{% block main_area %}
+    {% set mainSectionCssClasses = ["mf-clear"] %}
+    {{ parent() }}
+{% endblock %}
+
+{% block content %}
+
+    <article class="mf-actu">
+
+        <div class="content-view-full">
+            <div class="class-blog-post float-break">
+
+                <header class="news-header">
+                    <h1 class="mf-title">/// {{ ez_render_field( content, "title" ) }}<span class="mf-sprite-header mf-sprite-news"></span></h1>
+
+                    <div class="attribute-byline">
+                        <p class="author">
+                            {{
+                                'Publié le %date% par %author%'|trans(
+                                {
+                                    "%date%": content.contentInfo.publishedDate|localizeddate( 'short', 'short', app.request.locale ),
+                                    "%author%": ez_content_name( author )
+                                },
+                                "metalfrance"
+                                )
+                            }}
+                        </p>
+
+                        {{ ez_render_field( content, "tags" ) }}
+                    </div>
+                </header>
+
+                <div class="attribute-body float-break">
+                    {{ ez_render_field( content, "body" ) }}
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="mf-adsense-article">
+            {% include "design:adsense_block.tpl" with {"adsenseIdentifier": "article"} %}
+        </div>
+
+    </article>
+
+    {% set contentName = ez_content_name( content ) %}
+    {% include "@MetalFranceSite/parts/share.html.twig" with {"url": url( location ), "title": contentName, "tweet": contentName} %}
+
+    <section class="mf-commentaires">
+        <h3 class="mf-hidden">{{ "Commentaires des internautes"|trans( domain="metalfrance" ) }}</h3>
+
+        {{ ez_comments_render_content( content.contentInfo ) }}
+    </section>
+{% endblock %}

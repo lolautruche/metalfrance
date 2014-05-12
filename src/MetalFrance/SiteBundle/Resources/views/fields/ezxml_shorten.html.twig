@@ -1,0 +1,5 @@
+{% block ezxmltext_field %}
+<p>
+    {{ field.value.xml|xmltext_to_html5|striptags|trim|truncate( parameters.length|default( 200 ) ) }}
+</p>
+{% endblock %}
