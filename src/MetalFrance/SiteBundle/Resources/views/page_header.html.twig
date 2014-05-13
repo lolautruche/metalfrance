@@ -6,19 +6,26 @@
     </div>
     <div class="mf-clear">
         <div class="mf-col-first">
-            <a href="{{ path( 'ez_urlalias', {'locationId': 2} ) }}"><img src="{{ asset( 'bundles/metalfrancesite/images/img_logo_580x150.png' ) }}" width="580" height="150" alt="Metal France - LE METAL A L’ESPRIT LARGE" /></a>
+            <a href="{{ path( ezpublish.rootLocation ) }}">
+                <img src="{{ asset( 'bundles/metalfrancesite/images/img_logo_580x150.png' ) }}"
+                     width="580" height="150"
+                     alt="{{ "Metal France - LE METAL A L’ESPRIT LARGE"|trans( domain="metalfrance" ) }}" />
+            </a>
         </div>
         <div class="mf-col-last">
             {# TODO: Do a sub-request using Hinclude #}
             {% if is_granted( 'IS_AUTHENTICATED_REMEMBERED' ) %}
             <section id="mf-profil">
-                <a href="{{ path( 'ez_legacy', {'module_uri': '/user/edit'} ) }}">Mon profil ({{ app.user.APIUser.contentInfo.name }})</a>
-                <a href="{{ path( 'ez_legacy', {'module_uri': '/user/logout'} ) }}">Déconnexion</a>
+                <a href="{{ path( 'ez_legacy', {'module_uri': '/user/edit'} ) }}">{{ "Mon profil"|trans( domain="metalfrance" ) }} ({{ app.user.APIUser.contentInfo.name }})</a>
+                <a href="{{ path( 'ez_legacy', {'module_uri': '/user/logout'} ) }}">{{ "Déconnexion"|trans( domain="metalfrance" ) }}</a>
             </section>
             {% else %}
             <section id="mf-connexion">
-                <a href="{{ path( 'ez_legacy', {'module_uri': '/user/login'} ) }}"><span>///</span> Connexion <span>\\\</span></a>
-                <a href="{{ janrain_signin_url() }}" class="rpxnow"><img src="{{ asset( 'bundles/metalfrancesite/images/bg_login.png' ) }}" alt="Connexion via un service externe" /></a>
+                <a href="{{ path( 'ez_legacy', {'module_uri': '/user/login'} ) }}"><span>///</span> {{ "Connexion"|trans( domain="metalfrance" ) }} <span>\\\</span></a>
+                <a href="{{ janrain_signin_url() }}" class="rpxnow">
+                    <img src="{{ asset( 'bundles/metalfrancesite/images/bg_login.png' ) }}"
+                         alt="{{ "Connexion via un service externe"|trans( domain="metalfrance" ) }}" />
+                </a>
             </section>
             {% endif %}
 
