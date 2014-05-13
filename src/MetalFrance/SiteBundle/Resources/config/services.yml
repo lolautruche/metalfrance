@@ -17,7 +17,7 @@ services:
 
     metalfrance.repository.layout:
         class: %metalfrance.repository.layout.class%
-        arguments: [@ezpublish.api.repository, %metalfrance.location_settings%]
+        arguments: [@ezpublish.api.service.content, @ezpublish.api.service.location, %metalfrance.location_settings%]
 
     metalfrance.pagerfanta.view:
         class: %metalfrance.pagerfanta.view.class%

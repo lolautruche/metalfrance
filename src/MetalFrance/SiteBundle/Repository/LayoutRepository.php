@@ -2,7 +2,8 @@
 
 namespace MetalFrance\SiteBundle\Repository;
 
-use eZ\Publish\API\Repository\Repository;
+use eZ\Publish\API\Repository\ContentService;
+use eZ\Publish\API\Repository\LocationService;
 use eZ\Publish\API\Repository\Values\Content\Location;
 use eZ\Publish\API\Repository\Values\Content\Query;
 use eZ\Publish\API\Repository\Values\Content\Query\Criterion;
@@ -13,15 +14,21 @@ use eZ\Publish\API\Repository\Values\Content\Query\Criterion;
 class LayoutRepository
 {
     /**
-     * @var \eZ\Publish\API\Repository\Repository
+     * @var \eZ\Publish\API\Repository\ContentService
      */
-    private $repository;
+    private $contentService;
+
+    /**
+     * @var \eZ\Publish\API\Repository\LocationService
+     */
+    private $locationService;
 
     private $locationSettings;
 
-    public function __construct( Repository $repository, array $locationSettings )
+    public function __construct( ContentService $contentService, LocationService $locationService, array $locationSettings )
     {
-        $this->repository = $repository;
+        $this->contentService = $contentService;
+        $this->locationService = $locationService;
         $this->locationSettings = $locationSettings;
     }
 
@@ -32,7 +39,7 @@ class LayoutRepository
      */
     public function getMenu()
     {
-        $locationService = $this->repository->getLocationService();
+        $locationService = $this->locationService;
         $menuLocations = [];
         foreach ( $this->locationSettings as $label => $locationId )
         {
@@ -53,7 +60,7 @@ class LayoutRepository
      */
     public function getFooter()
     {
-        $location = $this->repository->getLocationService()->loadLocation( $this->locationSettings['footer'] );
-        return $this->repository->getContentService()->loadContentByContentInfo( $location->getContentInfo() );
+        $location = $this->locationService->loadLocation( $this->locationSettings['footer'] );
+        return $this->contentService->loadContentByContentInfo( $location->getContentInfo() );
     }
 }
