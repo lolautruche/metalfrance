@@ -8,7 +8,7 @@
                 <a href="{{ path( location ) }}" rel="nofollow">{{ contentName }}</a>
                 <span class="mf-news-date">{{ content.contentInfo.publishedDate|localizeddate( "short", "short", app.request.locale ) }}</span>
             </h3>
-            {{ ez_render_field( content, body, {"template": "@MetalFranceSite/fields/ezxml_shorten.html.twig"} ) }}
+            {{ ez_render_field( content, "body", {"template": "@MetalFranceSite/fields/ezxml_shorten.html.twig"} ) }}
             <footer><a href={{ path( location ) }}>{{"Lire la suite de l'actualité %actu%"|trans( {"%actu%": contentName}, "metalfrance" )}}</a></footer>
         </article>
     </li>
