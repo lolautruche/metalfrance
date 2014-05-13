@@ -14,3 +14,15 @@ ezpublish:
                         template: "MetalFranceSiteBundle:full:blog_post.html.twig"
                         match:
                             Identifier\ContentType: blog_post
+
+                carrousel:
+                    blog_post:
+                        template: "MetalFranceSiteBundle:carrousel:blog_post.html.twig"
+                        match:
+                            Identifier\ContentType: blog_post
+
+                line:
+                    blog_post:
+                        template: "MetalFranceSiteBundle:line:blog_post.html.twig"
+                        match:
+                            Identifier\ContentType: blog_post

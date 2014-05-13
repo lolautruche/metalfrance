@@ -1,0 +1,6 @@
+<h4>
+    <a href="{{ path( location ) }}">{{ content.contentInfo.publishedDate|localizeddate( "short", "none", app.request.locale ) }} - {{ ez_content_name( content ) }}</a> :
+</h4>
+<p>
+    <a rel="nofollow" href="{{ path( location ) }}">{{ ez_render_field( content, "body", {"template": "@MetalFranceSite/fields/ezxml_shorten.html.twig"} ) }}</a>
+</p>
