@@ -20,3 +20,12 @@ parameters:
 
     http_cache.purge_type: local
     http_cache.purge_servers: ["http://metalfrance.dev"]
+
+    metalfrance.location_setttings.reviews: 91
+    metalfrance.location_setttings.agenda: 12701
+    metalfrance.location_setttings.news: 1158
+    metalfrance.location_setttings.liveReports: 1011
+    metalfrance.location_setttings.interviews: 12435
+    metalfrance.location_setttings.photos: 8854
+    metalfrance.location_setttings.contact: 13056
+    metalfrance.location_setttings.footer: 15986

@@ -19,14 +19,14 @@ parameters:
     # Location settings
     # Override those in config_<env>.yml if dev diverges from prod.
     metalfrance.location_settings:
-        reviews: 91
-        agenda: 12701
-        news: 1158
-        liveReports: 1011
-        interviews: 12435
-        photos: 8854
-        contact: 13056
-        footer: 15986
+        reviews: %metalfrance.location_setttings.reviews%
+        agenda: %metalfrance.location_setttings.agenda%
+        news: %metalfrance.location_setttings.news%
+        liveReports: %metalfrance.location_setttings.liveReports%
+        interviews: %metalfrance.location_setttings.interviews%
+        photos: %metalfrance.location_setttings.photos%
+        contact: %metalfrance.location_setttings.contact%
+        footer: %metalfrance.location_setttings.footer%
 
     metalfrance.links:
         forum: "http://forum.metalfrance.net"
