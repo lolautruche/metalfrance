@@ -1,0 +1,8 @@
+parameters:
+    twig.extension.text.class: Twig_Extensions_Extension_Text
+
+services:
+    twig.extension.text:
+        class: %twig.extension.text.class%
+        tags:
+            - { name: twig.extension }
