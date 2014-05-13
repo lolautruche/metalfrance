@@ -54,15 +54,7 @@ class LayoutController extends Controller
         $response->headers->set( 'X-Location-Id', $newsLocationId );
 
         // Fetching blog posts
-        // TODO: Refactor in a service
-        $query = new Query();
-        $query->criterion = new Criterion\LogicalAnd(
-            [
-                new Criterion\ParentLocationId( $newsLocationId ),
-                new Criterion\ContentTypeIdentifier( 'blog_post' )
-            ]
-        );
-        $query->sortClauses = [new Query\SortClause\DatePublished( Query::SORT_DESC )];
+        $query = $this->get( 'metalfrance.repository.news' )->getBlogPostsListQuery( $newsLocationId );
         $query->limit = 7;
         $res = $this->getRepository()->getSearchService()->findContent( $query );
 

@@ -25,27 +25,13 @@ class BlogController extends Controller
      */
     public function listBlogPostsAction( $locationId, $viewType, $layout = false, array $params = [], Request $request )
     {
-        $repository = $this->getRepository();
-        $location = $repository->getLocationService()->loadLocation( $locationId );
         $configResolver = $this->getConfigResolver();
-        $languages = $configResolver->getParameter( 'languages' );
-
-        $query = new Query();
-        $query->criterion = new Criterion\LogicalAnd(
-            [
-                new Criterion\Visibility( Criterion\Visibility::VISIBLE ),
-                new Criterion\Subtree( $location->pathString ),
-                new Criterion\ContentTypeIdentifier( ['blog_post'] ),
-                new Criterion\LanguageCode( $languages ),
-            ]
-        );
-        $query->sortClauses = array(
-            new SortClause\Field( 'blog_post', 'publication_date', Query::SORT_DESC, $languages[0] )
-        );
 
         // Initialize pagination.
         $pager = new Pagerfanta(
-            new ContentSearchAdapter( $query, $this->getRepository()->getSearchService() )
+            new ContentSearchAdapter(
+                $this->get( 'metalfrance.repository.news' )->getBlogPostsListQuery( $locationId ),
+                $this->getRepository()->getSearchService() )
         );
         $pager->setMaxPerPage( $configResolver->getParameter( 'news.list_limit', 'metalfrance' ) );
         $pager->setCurrentPage( $request->query->get( 'page', 1 ) );
