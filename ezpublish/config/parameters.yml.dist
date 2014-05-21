@@ -2,7 +2,6 @@ parameters:
     secret: ThisTokenIsNotSoSecretChangeIt
     locale: fr_FR
 
-    ezpublish_legacy.default.view_default_layout: MetalFranceSiteBundle::pagelayout.html.twig
     imagemagick_path: /opt/local/bin/convert
 
     # Database

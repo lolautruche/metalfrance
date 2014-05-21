@@ -75,3 +75,7 @@ ez_comments:
             default_provider: disqus
             disqus:
                 shortname: metalfrance
+
+parameters:
+    ezpublish_legacy.metalfrance.view_default_layout: "MetalFranceSiteBundle::pagelayout.html.twig"
+    ezpublish_legacy.metalfrance.module_default_layout: "MetalFranceSiteBundle::pagelayout_legacy.html.twig"
