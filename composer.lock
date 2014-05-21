@@ -1345,12 +1345,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/lolautruche/EmbedTagBundle.git",
-                "reference": "365a863249c4d7eac37a9cbfbf2b999aeb5c520f"
+                "reference": "bdb15e93c404c2f2e1a9170139a86c57eb8cc2ac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lolautruche/EmbedTagBundle/zipball/365a863249c4d7eac37a9cbfbf2b999aeb5c520f",
-                "reference": "365a863249c4d7eac37a9cbfbf2b999aeb5c520f",
+                "url": "https://api.github.com/repos/lolautruche/EmbedTagBundle/zipball/bdb15e93c404c2f2e1a9170139a86c57eb8cc2ac",
+                "reference": "bdb15e93c404c2f2e1a9170139a86c57eb8cc2ac",
                 "shasum": ""
             },
             "require": {
@@ -1374,7 +1374,7 @@
                 }
             ],
             "description": "Collection of custom tags for eZ Publish, to embed external content like from YouTube, DailyMotion or Vimeo",
-            "time": "2014-05-21 08:07:27"
+            "time": "2014-05-21 11:14:21"
         },
         {
             "name": "lolautruche/embedtag-ls",
