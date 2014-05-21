@@ -1,14 +1,60 @@
 default:
+    context:
+        parameters:
+            rest_url: 'http://localhost'
     extensions:
         Behat\MinkExtension\Extension:
-            base_url: 'http://ezpublish.local'
+            base_url: 'http://localhost'
             goutte: ~
             sahi: ~
-
+            selenium2:
+                capabilities: { "browser": "firefox", "version": "17"}
+            # This should be updated to selenium2 as soon as travis is running with selenium
             javascript_session: sahi
+#            javascript_session: selenium2
             browser_name: firefox
 
         Behat\Symfony2Extension\Extension:
             kernel:
+                bootstrap: ezpublish/autoload.php
                 path: ezpublish/EzPublishKernel.php
                 class: EzPublishKernel
+                env: behat
+                debug: true
+            mink_driver: true
+    paths:
+        features: vendor/ezsystems/
+
+installdemocontent:
+    context:
+        class: eZ\Bundle\EzPublishLegacyBundle\Features\Context\FeatureContext
+    paths:
+        bootstrap: vendor/ezsystems/ezpublish-kernel/eZ/Bundle/EzPublishLegacyBundle/Features/Context/FeatureContext
+    filters:
+        tags: '@democontent_install'
+
+installdemoclean:
+    context:
+        class: eZ\Bundle\EzPublishLegacyBundle\Features\Context\FeatureContext
+    paths:
+        bootstrap: vendor/ezsystems/ezpublish-kernel/eZ/Bundle/EzPublishLegacyBundle/Features/Context/FeatureContext
+    filters:
+        tags: '@democlean_install'
+
+democontent:
+    context:
+        class: EzSystems\DemoBundle\Features\Context\ContentContext
+    paths:
+        features: vendor/ezsystems/demobundle/EzSystems/DemoBundle/Features
+        bootstrap: vendor/ezsystems/demobundle/EzSystems/DemoBundle/Features/Context
+    filters:
+        tags: '@democontent'
+
+restapi:
+    context:
+        class: eZ\Bundle\EzPublishRestBundle\Features\Context\FeatureContext
+    paths:
+        features: vendor/ezsystems/behatbundle/EzSystems/BehatBundle/Features
+        bootstrap: vendor/ezsystems/ezpublish-kernel/eZ/Bundle/EzPublishRestBundle/Features/Context
+    filters:
+        tags: '@adminFeature'
