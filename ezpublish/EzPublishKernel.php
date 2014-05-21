@@ -63,6 +63,7 @@ class EzPublishKernel extends Kernel
             new WhiteOctoberPagerfantaBundle(),
             new NelmioCorsBundle(),
             new \Netgen\TagsBundle\NetgenTagsBundle(),
+            new Lolart\Bundle\EmbedTagBundle\LolartEmbedTagBundle(),
             new \MetalFrance\SiteBundle\MetalFranceSiteBundle()
         );
 

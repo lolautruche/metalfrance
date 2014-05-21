@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "f01edfb5f9dc388d642d1526866bed2e",
+    "hash": "020747b0385ea166ca298af1802a0d1f",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -672,12 +672,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ezsystems/CommentsBundle.git",
-                "reference": "de9f757bb5328c522a2a85b91a56bab3da87e184"
+                "reference": "698a710b30b41bd71cc348fad264aea8839c4fae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ezsystems/CommentsBundle/zipball/de9f757bb5328c522a2a85b91a56bab3da87e184",
-                "reference": "de9f757bb5328c522a2a85b91a56bab3da87e184",
+                "url": "https://api.github.com/repos/ezsystems/CommentsBundle/zipball/698a710b30b41bd71cc348fad264aea8839c4fae",
+                "reference": "698a710b30b41bd71cc348fad264aea8839c4fae",
                 "shasum": ""
             },
             "require": {
@@ -706,7 +706,7 @@
                 }
             ],
             "description": "Commenting system for eZ Publish",
-            "time": "2014-03-07 21:42:45"
+            "time": "2014-05-12 16:56:04"
         },
         {
             "name": "ezsystems/demobundle",
@@ -715,12 +715,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ezsystems/DemoBundle.git",
-                "reference": "e1bab6b56f5630b5f341a6df5b0e08ae837c193a"
+                "reference": "9d6c247cacf9c6790486b5816a48a64fcfa9a093"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ezsystems/DemoBundle/zipball/e1bab6b56f5630b5f341a6df5b0e08ae837c193a",
-                "reference": "e1bab6b56f5630b5f341a6df5b0e08ae837c193a",
+                "url": "https://api.github.com/repos/ezsystems/DemoBundle/zipball/9d6c247cacf9c6790486b5816a48a64fcfa9a093",
+                "reference": "9d6c247cacf9c6790486b5816a48a64fcfa9a093",
                 "shasum": ""
             },
             "require": {
@@ -745,7 +745,7 @@
                 }
             ],
             "description": "Demo bundle for eZ Publish Platform",
-            "time": "2014-05-12 08:40:55"
+            "time": "2014-05-15 19:14:42"
         },
         {
             "name": "ezsystems/ezpublish-kernel",
@@ -753,12 +753,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ezsystems/ezpublish-kernel.git",
-                "reference": "6e42ce0bbdd922c7d741795b1ed9f10d7505382a"
+                "reference": "3ce5e591c69ec9c722570cf1dfbb9c05ac11b699"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ezsystems/ezpublish-kernel/zipball/6e42ce0bbdd922c7d741795b1ed9f10d7505382a",
-                "reference": "6e42ce0bbdd922c7d741795b1ed9f10d7505382a",
+                "url": "https://api.github.com/repos/ezsystems/ezpublish-kernel/zipball/3ce5e591c69ec9c722570cf1dfbb9c05ac11b699",
+                "reference": "3ce5e591c69ec9c722570cf1dfbb9c05ac11b699",
                 "shasum": ""
             },
             "require": {
@@ -783,25 +783,9 @@
                 "symfony-cmf/routing": "1.1.*",
                 "symfony/symfony": "~2.3",
                 "tedivm/stash-bundle": "0.3.*",
-                "zetacomponents/archive": "dev-master#d0caff8",
-                "zetacomponents/authentication": "dev-master#c422670",
-                "zetacomponents/authentication-database-tiein": "dev-master#56d1e0a",
-                "zetacomponents/cache": "dev-master#34fa794",
-                "zetacomponents/configuration": "dev-master#10ae09f",
-                "zetacomponents/console-tools": "dev-master#90156ab",
-                "zetacomponents/database": "dev-master#0e8ddef",
-                "zetacomponents/debug": "dev-master#0d8cc8f",
-                "zetacomponents/event-log": "dev-master#eee54a1",
-                "zetacomponents/feed": "dev-master#e0190e9",
-                "zetacomponents/image-conversion": "dev-master#36f34c8",
-                "zetacomponents/mail": "dev-master#71b05a4",
-                "zetacomponents/mvc-authentication-tiein": "dev-master#9bae3a7",
-                "zetacomponents/mvc-tools": "dev-master#6f2c1eb",
-                "zetacomponents/persistent-object": "dev-master#a4c8b95",
-                "zetacomponents/php-generator": "dev-master#b51935e",
-                "zetacomponents/signal-slot": "dev-master#74deb41",
-                "zetacomponents/system-information": "dev-master#6743362",
-                "zetacomponents/webdav": "1.1.*"
+                "zetacomponents/base": "dev-master#642f63a",
+                "zetacomponents/mail": "1.8.*@beta",
+                "zetacomponents/php-generator": "dev-master#b51935e"
             },
             "conflict": {
                 "zendframework/zend-stdlib": ">=2.3"
@@ -823,9 +807,6 @@
             },
             "type": "library",
             "extra": {
-                "branch-alias": {
-                    "dev-master": "5.3.x-dev"
-                },
                 "ezpublish-legacy-dir": "vendor/ezsystems/ezpublish-legacy"
             },
             "autoload": {
@@ -839,7 +820,7 @@
             ],
             "description": "eZ Publish API and kernel. This is the heart of eZ Publish 5.",
             "homepage": "http://share.ez.no",
-            "time": "2014-05-12 15:06:03"
+            "time": "2014-05-21 07:46:30"
         },
         {
             "name": "ezsystems/ezpublish-legacy",
@@ -847,12 +828,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ezsystems/ezpublish-legacy.git",
-                "reference": "7b15917dc90c10abb2bd78f5f59b8ee8e1579044"
+                "reference": "7b4b60c5ce70db65b4278e71365cb4c01418364a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ezsystems/ezpublish-legacy/zipball/7b15917dc90c10abb2bd78f5f59b8ee8e1579044",
-                "reference": "7b15917dc90c10abb2bd78f5f59b8ee8e1579044",
+                "url": "https://api.github.com/repos/ezsystems/ezpublish-legacy/zipball/7b4b60c5ce70db65b4278e71365cb4c01418364a",
+                "reference": "7b4b60c5ce70db65b4278e71365cb4c01418364a",
                 "shasum": ""
             },
             "require": {
@@ -868,24 +849,25 @@
                 "ext-spl": "*",
                 "ezsystems/ezpublish-legacy-installer": "*",
                 "php": ">=5.3.3",
-                "zetacomponents/archive": "@dev",
-                "zetacomponents/authentication": "@dev",
-                "zetacomponents/authentication-database-tiein": "@dev",
-                "zetacomponents/cache": "@dev",
-                "zetacomponents/configuration": "@dev",
-                "zetacomponents/console-tools": "@dev",
-                "zetacomponents/database": "@dev",
-                "zetacomponents/debug": "@dev",
-                "zetacomponents/event-log": "@dev",
-                "zetacomponents/feed": "@dev",
-                "zetacomponents/image-conversion": "@dev",
-                "zetacomponents/mail": "@dev",
-                "zetacomponents/mvc-authentication-tiein": "@dev",
-                "zetacomponents/mvc-tools": "@dev",
-                "zetacomponents/persistent-object": "@dev",
-                "zetacomponents/php-generator": "@dev",
-                "zetacomponents/signal-slot": "@dev",
-                "zetacomponents/system-information": "@dev"
+                "zetacomponents/archive": "dev-master#d0caff8",
+                "zetacomponents/authentication": "dev-master#c422670",
+                "zetacomponents/authentication-database-tiein": "dev-master#56d1e0a",
+                "zetacomponents/cache": "dev-master#34fa794",
+                "zetacomponents/configuration": "dev-master#10ae09f",
+                "zetacomponents/console-tools": "dev-master#90156ab",
+                "zetacomponents/database": "dev-master#0e8ddef",
+                "zetacomponents/debug": "dev-master#0d8cc8f",
+                "zetacomponents/event-log": "dev-master#eee54a1",
+                "zetacomponents/feed": "dev-master#e0190e9",
+                "zetacomponents/image-conversion": "dev-master#36f34c8",
+                "zetacomponents/mail": "1.8.*@beta",
+                "zetacomponents/mvc-authentication-tiein": "dev-master#9bae3a7",
+                "zetacomponents/mvc-tools": "dev-master#6f2c1eb",
+                "zetacomponents/persistent-object": "dev-master#a4c8b95",
+                "zetacomponents/php-generator": "dev-master#b51935e",
+                "zetacomponents/signal-slot": "dev-master#74deb41",
+                "zetacomponents/system-information": "dev-master#6743362",
+                "zetacomponents/webdav": "1.1.*"
             },
             "require-dev": {
                 "phpunit/phpunit": "3.7.*"
@@ -898,18 +880,13 @@
                 "php-64bit": "For support of more than 30 languages, a 64bit php installation on all involved prod/dev machines is required"
             },
             "type": "ezpublish-legacy",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "5.2.x-dev"
-                }
-            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-2.0"
             ],
             "description": "eZ Publish LegacyStack (4.x)",
             "homepage": "http://share.ez.no",
-            "time": "2014-05-12 14:27:11"
+            "time": "2014-05-21 07:56:29"
         },
         {
             "name": "ezsystems/ezpublish-legacy-installer",
@@ -990,18 +967,21 @@
         },
         {
             "name": "ezsystems/ngsymfonytools-bundle",
-            "version": "v1.0.3",
+            "version": "v1.0.4",
             "target-dir": "EzSystems/NgsymfonytoolsBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ezsystems/ngsymfonytools-bundle.git",
-                "reference": "a3b0422fceca7f153d82505a860004dfad105ff3"
+                "reference": "b929f16ca5a95db0c8255789c52e1d9026278076"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ezsystems/ngsymfonytools-bundle/zipball/a3b0422fceca7f153d82505a860004dfad105ff3",
-                "reference": "a3b0422fceca7f153d82505a860004dfad105ff3",
+                "url": "https://api.github.com/repos/ezsystems/ngsymfonytools-bundle/zipball/b929f16ca5a95db0c8255789c52e1d9026278076",
+                "reference": "b929f16ca5a95db0c8255789c52e1d9026278076",
                 "shasum": ""
+            },
+            "require": {
+                "netgen/ngsymfonytools": "~1.0"
             },
             "type": "library",
             "autoload": {
@@ -1020,7 +1000,7 @@
                 }
             ],
             "description": "Bundle of the legacy netgen/ngsymfonytools extension",
-            "time": "2014-02-13 18:43:49"
+            "time": "2014-05-14 14:08:27"
         },
         {
             "name": "hautelook/templated-uri-bundle",
@@ -1360,6 +1340,77 @@
             "time": "2013-05-19 03:41:15"
         },
         {
+            "name": "lolautruche/embedtag-bundle",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lolautruche/EmbedTagBundle.git",
+                "reference": "365a863249c4d7eac37a9cbfbf2b999aeb5c520f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lolautruche/EmbedTagBundle/zipball/365a863249c4d7eac37a9cbfbf2b999aeb5c520f",
+                "reference": "365a863249c4d7eac37a9cbfbf2b999aeb5c520f",
+                "shasum": ""
+            },
+            "require": {
+                "ezsystems/ezpublish-kernel": "*",
+                "lolautruche/embedtag-ls": "~1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Lolart\\Bundle\\EmbedTagBundle\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jérôme Vieilledent",
+                    "email": "lolautruche@gmail.com"
+                }
+            ],
+            "description": "Collection of custom tags for eZ Publish, to embed external content like from YouTube, DailyMotion or Vimeo",
+            "time": "2014-05-21 08:07:27"
+        },
+        {
+            "name": "lolautruche/embedtag-ls",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lolautruche/jvEmbedTag.git",
+                "reference": "828c368cc88381d70d504b73a3b52ab264cfc74e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lolautruche/jvEmbedTag/zipball/828c368cc88381d70d504b73a3b52ab264cfc74e",
+                "reference": "828c368cc88381d70d504b73a3b52ab264cfc74e",
+                "shasum": ""
+            },
+            "require": {
+                "ezsystems/ezpublish-legacy-installer": "*"
+            },
+            "type": "ezpublish-legacy-extension",
+            "extra": {
+                "ezpublish-legacy-extension-name": "jvembedtag"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jérôme Vieilledent",
+                    "email": "lolautruche@gmail.com"
+                }
+            ],
+            "description": "Collection of custom tags for eZ Publish, to embed external content like from YouTube, DailyMotion or Vimeo",
+            "time": "2014-05-21 08:03:51"
+        },
+        {
             "name": "monolog/monolog",
             "version": "1.9.1",
             "source": {
@@ -1483,18 +1534,52 @@
             "time": "2014-02-05 23:25:21"
         },
         {
+            "name": "netgen/ngsymfonytools",
+            "version": "1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/netgen/ngsymfonytools.git",
+                "reference": "83bfd03a9882e9f2ca22c34151622d7e22b41f0e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/netgen/ngsymfonytools/zipball/83bfd03a9882e9f2ca22c34151622d7e22b41f0e",
+                "reference": "83bfd03a9882e9f2ca22c34151622d7e22b41f0e",
+                "shasum": ""
+            },
+            "require": {
+                "ezsystems/ezpublish-legacy-installer": "*"
+            },
+            "type": "ezpublish-legacy-extension",
+            "extra": {
+                "ezpublish-legacy-extension-name": "ngsymfonytools"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Netgen",
+                    "email": "info@netgen.hr"
+                }
+            ],
+            "description": "Netgen Symfony Tools is an eZ Publish 4 extension that provides a way to include Twig templates, as well as running Symfony sub-requests, directly from the eZ Publish legacy templates.",
+            "time": "2014-02-06 13:05:24"
+        },
+        {
             "name": "netgen/tagsbundle",
             "version": "dev-master",
             "target-dir": "Netgen/TagsBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/netgen/TagsBundle.git",
-                "reference": "168ceb36d818d9aba50113a42ac7d8a66dbfc99d"
+                "reference": "122cb348548a8b5f8a81cbd43ab8371b7a116705"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/netgen/TagsBundle/zipball/168ceb36d818d9aba50113a42ac7d8a66dbfc99d",
-                "reference": "168ceb36d818d9aba50113a42ac7d8a66dbfc99d",
+                "url": "https://api.github.com/repos/netgen/TagsBundle/zipball/122cb348548a8b5f8a81cbd43ab8371b7a116705",
+                "reference": "122cb348548a8b5f8a81cbd43ab8371b7a116705",
                 "shasum": ""
             },
             "require": {
@@ -1520,7 +1605,7 @@
                 }
             ],
             "description": "Netgen Tags Bundle is an eZ Publish 5 bundle for taxonomy management and easier classification of content, providing more functionality for tagging content than ezkeyword field type included in eZ Publish kernel.",
-            "time": "2014-05-12 16:06:43"
+            "time": "2014-05-15 12:57:12"
         },
         {
             "name": "ocramius/proxy-manager",
@@ -2666,12 +2751,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/zetacomponents/Archive.git",
-                "reference": "d0caff8e162ecb755efa30f23b7a3f63c114cdf9"
+                "reference": "d0caff8"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/zetacomponents/Archive/zipball/d0caff8e162ecb755efa30f23b7a3f63c114cdf9",
-                "reference": "d0caff8e162ecb755efa30f23b7a3f63c114cdf9",
+                "reference": "d0caff8",
                 "shasum": ""
             },
             "require": {
@@ -2732,12 +2817,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/zetacomponents/Authentication.git",
-                "reference": "c422670d09967491c1c8c98f9334f1a738617bd0"
+                "reference": "c422670"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/zetacomponents/Authentication/zipball/c422670d09967491c1c8c98f9334f1a738617bd0",
-                "reference": "c422670d09967491c1c8c98f9334f1a738617bd0",
+                "reference": "c422670",
                 "shasum": ""
             },
             "require": {
@@ -2798,12 +2883,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/zetacomponents/AuthenticationDatabaseTiein.git",
-                "reference": "56d1e0a754265834df2e1667b5ee2b0c9de93b12"
+                "reference": "56d1e0a"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/zetacomponents/AuthenticationDatabaseTiein/zipball/56d1e0a754265834df2e1667b5ee2b0c9de93b12",
-                "reference": "56d1e0a754265834df2e1667b5ee2b0c9de93b12",
+                "reference": "56d1e0a",
                 "shasum": ""
             },
             "require": {
@@ -2860,17 +2945,20 @@
         },
         {
             "name": "zetacomponents/base",
-            "version": "1.8",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zetacomponents/Base.git",
-                "reference": "52ca69c1de55f3fa4f595779e5bc831da7ee176c"
+                "reference": "642f63a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zetacomponents/Base/zipball/52ca69c1de55f3fa4f595779e5bc831da7ee176c",
-                "reference": "52ca69c1de55f3fa4f595779e5bc831da7ee176c",
+                "url": "https://api.github.com/repos/zetacomponents/Base/zipball/642f63a8a72c32996f1aaf8a317fdf746bc32ce7",
+                "reference": "642f63a",
                 "shasum": ""
+            },
+            "require-dev": {
+                "zetacomponents/unit-test": "*"
             },
             "type": "library",
             "autoload": {
@@ -2880,7 +2968,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "apache2"
+                "Apache-2.0"
             ],
             "authors": [
                 {
@@ -2916,7 +3004,7 @@
             ],
             "description": "The Base package provides the basic infrastructure that all packages rely on. Therefore every component relies on this package.",
             "homepage": "https://github.com/zetacomponents",
-            "time": "2009-12-21 12:14:16"
+            "time": "2012-05-21 11:21:36"
         },
         {
             "name": "zetacomponents/cache",
@@ -2924,12 +3012,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/zetacomponents/Cache.git",
-                "reference": "34fa794d0b5aeef67fee609c52c5d24fa4604bbd"
+                "reference": "34fa794"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/zetacomponents/Cache/zipball/34fa794d0b5aeef67fee609c52c5d24fa4604bbd",
-                "reference": "34fa794d0b5aeef67fee609c52c5d24fa4604bbd",
+                "reference": "34fa794",
                 "shasum": ""
             },
             "require": {
@@ -2993,12 +3081,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/zetacomponents/Configuration.git",
-                "reference": "10ae09f42768d4657b2d1a66226ee63cbd8754b2"
+                "reference": "10ae09f"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/zetacomponents/Configuration/zipball/10ae09f42768d4657b2d1a66226ee63cbd8754b2",
-                "reference": "10ae09f42768d4657b2d1a66226ee63cbd8754b2",
+                "reference": "10ae09f",
                 "shasum": ""
             },
             "require": {
@@ -3059,12 +3147,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/zetacomponents/ConsoleTools.git",
-                "reference": "90156abef01e4215fda8b9740f77c322f126fb02"
+                "reference": "90156ab"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/zetacomponents/ConsoleTools/zipball/90156abef01e4215fda8b9740f77c322f126fb02",
-                "reference": "90156abef01e4215fda8b9740f77c322f126fb02",
+                "reference": "90156ab",
                 "shasum": ""
             },
             "require": {
@@ -3125,12 +3213,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/zetacomponents/Database.git",
-                "reference": "0e8ddef8ce616bc18365efa2eef2161de3d7f74f"
+                "reference": "0e8ddef"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/zetacomponents/Database/zipball/0e8ddef8ce616bc18365efa2eef2161de3d7f74f",
-                "reference": "0e8ddef8ce616bc18365efa2eef2161de3d7f74f",
+                "reference": "0e8ddef",
                 "shasum": ""
             },
             "require": {
@@ -3200,12 +3288,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/zetacomponents/Debug.git",
-                "reference": "0d8cc8fae2765c22f3f1930e4cf738304fbadbaf"
+                "reference": "0d8cc8f"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/zetacomponents/Debug/zipball/0d8cc8fae2765c22f3f1930e4cf738304fbadbaf",
-                "reference": "0d8cc8fae2765c22f3f1930e4cf738304fbadbaf",
+                "reference": "0d8cc8f",
                 "shasum": ""
             },
             "require": {
@@ -3266,12 +3354,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/zetacomponents/EventLog.git",
-                "reference": "eee54a1c1d7fab3180cf653d8c0152e148650b7b"
+                "reference": "eee54a1"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/zetacomponents/EventLog/zipball/eee54a1c1d7fab3180cf653d8c0152e148650b7b",
-                "reference": "eee54a1c1d7fab3180cf653d8c0152e148650b7b",
+                "reference": "eee54a1",
                 "shasum": ""
             },
             "require": {
@@ -3332,12 +3420,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/zetacomponents/Feed.git",
-                "reference": "e0190e90caf6f49771410b485fc43ff09a62b725"
+                "reference": "e0190e9"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/zetacomponents/Feed/zipball/e0190e90caf6f49771410b485fc43ff09a62b725",
-                "reference": "e0190e90caf6f49771410b485fc43ff09a62b725",
+                "reference": "e0190e9",
                 "shasum": ""
             },
             "require": {
@@ -3458,12 +3546,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/zetacomponents/ImageConversion.git",
-                "reference": "36f34c8987ed4f2300cda683d75258cff1f5fa7f"
+                "reference": "36f34c8"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/zetacomponents/ImageConversion/zipball/36f34c8987ed4f2300cda683d75258cff1f5fa7f",
-                "reference": "36f34c8987ed4f2300cda683d75258cff1f5fa7f",
+                "reference": "36f34c8",
                 "shasum": ""
             },
             "require": {
@@ -3521,16 +3609,16 @@
         },
         {
             "name": "zetacomponents/mail",
-            "version": "dev-master",
+            "version": "1.8beta1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zetacomponents/Mail.git",
-                "reference": "c86480681e5a9b72d276e8954a5feca782d4fd7b"
+                "reference": "c87fe25cb16576c2e55f77f01d66cb03529faf71"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zetacomponents/Mail/zipball/c86480681e5a9b72d276e8954a5feca782d4fd7b",
-                "reference": "c86480681e5a9b72d276e8954a5feca782d4fd7b",
+                "url": "https://api.github.com/repos/zetacomponents/Mail/zipball/c87fe25cb16576c2e55f77f01d66cb03529faf71",
+                "reference": "c87fe25cb16576c2e55f77f01d66cb03529faf71",
                 "shasum": ""
             },
             "require": {
@@ -3592,7 +3680,7 @@
             ],
             "description": "The component allows you construct and/or parse Mail messages conforming to  the mail standard. It has support for attachments, multipart messages and HTML  mail. It also interfaces with SMTP to send mail or IMAP, POP3 or mbox to  retrieve e-mail.",
             "homepage": "https://github.com/zetacomponents",
-            "time": "2013-11-26 16:03:45"
+            "time": "2014-05-16 12:07:32"
         },
         {
             "name": "zetacomponents/mvc-authentication-tiein",
@@ -3600,12 +3688,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/zetacomponents/MvcAuthenticationTiein.git",
-                "reference": "9bae3a7313e2ef7f53ef1f394276acc3fde0f80e"
+                "reference": "9bae3a7"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/zetacomponents/MvcAuthenticationTiein/zipball/9bae3a7313e2ef7f53ef1f394276acc3fde0f80e",
-                "reference": "9bae3a7313e2ef7f53ef1f394276acc3fde0f80e",
+                "reference": "9bae3a7",
                 "shasum": ""
             },
             "type": "library",
@@ -3645,12 +3733,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/zetacomponents/MvcTools.git",
-                "reference": "6f2c1eb079faee98f37643d212cec0aa925313b2"
+                "reference": "6f2c1eb"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/zetacomponents/MvcTools/zipball/6f2c1eb079faee98f37643d212cec0aa925313b2",
-                "reference": "6f2c1eb079faee98f37643d212cec0aa925313b2",
+                "reference": "6f2c1eb",
                 "shasum": ""
             },
             "require": {
@@ -3699,12 +3787,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/zetacomponents/PersistentObject.git",
-                "reference": "a4c8b95157919d71db0b380ea7c6375be117eca2"
+                "reference": "a4c8b95"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/zetacomponents/PersistentObject/zipball/a4c8b95157919d71db0b380ea7c6375be117eca2",
-                "reference": "a4c8b95157919d71db0b380ea7c6375be117eca2",
+                "reference": "a4c8b95",
                 "shasum": ""
             },
             "require": {
@@ -3768,12 +3856,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/zetacomponents/PhpGenerator.git",
-                "reference": "b51935ec5b763e5bad2182d810e1b752fcc83903"
+                "reference": "b51935e"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/zetacomponents/PhpGenerator/zipball/b51935ec5b763e5bad2182d810e1b752fcc83903",
-                "reference": "b51935ec5b763e5bad2182d810e1b752fcc83903",
+                "reference": "b51935e",
                 "shasum": ""
             },
             "require": {
@@ -3834,12 +3922,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/zetacomponents/SignalSlot.git",
-                "reference": "74deb412339a9e9af5937a5d8726f8246b6a9ccc"
+                "reference": "74deb41"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/zetacomponents/SignalSlot/zipball/74deb412339a9e9af5937a5d8726f8246b6a9ccc",
-                "reference": "74deb412339a9e9af5937a5d8726f8246b6a9ccc",
+                "reference": "74deb41",
                 "shasum": ""
             },
             "require": {
@@ -3900,12 +3988,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/zetacomponents/SystemInformation.git",
-                "reference": "674336286f189d222a275bec32be9123d9faf477"
+                "reference": "6743362"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/zetacomponents/SystemInformation/zipball/674336286f189d222a275bec32be9123d9faf477",
-                "reference": "674336286f189d222a275bec32be9123d9faf477",
+                "reference": "6743362",
                 "shasum": ""
             },
             "require": {
@@ -4297,26 +4385,27 @@
         },
         {
             "name": "behat/mink-extension",
-            "version": "v1.3.1",
+            "version": "v1.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Behat/MinkExtension.git",
-                "reference": "0642b680b613fdd6cb774debacf65a0d0d1f08e8"
+                "reference": "b885b9407cba50a954f72c69ed1b2f8d3bc694f8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Behat/MinkExtension/zipball/0642b680b613fdd6cb774debacf65a0d0d1f08e8",
-                "reference": "0642b680b613fdd6cb774debacf65a0d0d1f08e8",
+                "url": "https://api.github.com/repos/Behat/MinkExtension/zipball/b885b9407cba50a954f72c69ed1b2f8d3bc694f8",
+                "reference": "b885b9407cba50a954f72c69ed1b2f8d3bc694f8",
                 "shasum": ""
             },
             "require": {
                 "behat/behat": "~2.5.0",
-                "behat/mink": ">=1.4.3,<1.6-dev",
+                "behat/mink": "~1.5",
                 "php": ">=5.3.2",
                 "symfony/config": "~2.2"
             },
             "require-dev": {
-                "behat/mink-goutte-driver": "~1.0"
+                "behat/mink-goutte-driver": "~1.0",
+                "fabpot/goutte": "~1.0"
             },
             "type": "behat-extension",
             "autoload": {
@@ -4343,7 +4432,7 @@
                 "test",
                 "web"
             ],
-            "time": "2014-04-27 11:55:27"
+            "time": "2014-05-15 19:27:39"
         },
         {
             "name": "behat/mink-goutte-driver",
@@ -5246,6 +5335,7 @@
         "zetacomponents/archive": 20,
         "zetacomponents/authentication": 20,
         "zetacomponents/authentication-database-tiein": 20,
+        "zetacomponents/base": 20,
         "zetacomponents/cache": 20,
         "zetacomponents/configuration": 20,
         "zetacomponents/console-tools": 20,
@@ -5254,7 +5344,7 @@
         "zetacomponents/event-log": 20,
         "zetacomponents/feed": 20,
         "zetacomponents/image-conversion": 20,
-        "zetacomponents/mail": 20,
+        "zetacomponents/mail": 10,
         "zetacomponents/mvc-tools": 20,
         "zetacomponents/mvc-authentication-tiein": 20,
         "zetacomponents/persistent-object": 20,
@@ -5262,12 +5352,11 @@
         "zetacomponents/signal-slot": 20,
         "zetacomponents/system-information": 20,
         "netgen/tagsbundle": 20,
+        "lolautruche/embedtag-bundle": 20,
         "behat/sahi-client": 20
     },
     "platform": {
         "php": ">=5.3.3"
     },
-    "platform-dev": [
-
-    ]
+    "platform-dev": []
 }
