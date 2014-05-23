@@ -1,13 +1,11 @@
-{% block css %}
-    {% stylesheets
-        'bundles/metalfrancesite/css/prettyPhoto.css'
-        'bundles/metalfrancesite/css/styles.css'
-        filter='cssrewrite' %}
-    <link rel="stylesheet" href="{{ asset_url }}" />
-    {% endstylesheets %}
+{% stylesheets
+    'bundles/metalfrancesite/css/prettyPhoto.css'
+    'bundles/metalfrancesite/css/styles.css'
+    filter='cssrewrite' %}
+<link rel="stylesheet" href="{{ asset_url }}" />
+{% endstylesheets %}
 
-    <!--[if lt IE 9]>
-    <link href="{{ asset( 'bundles/metalfrancesite/css/style_ie.css' ) }}" rel="stylesheet" type="text/css" />
-    <script type="text/javascript" src="{{ asset( 'bundles/metalfrancesite/js/html5.min.js' ) }}"></script>
-    <![endif]-->
-{% endblock %}
+<!--[if lt IE 9]>
+<link href="{{ asset( 'bundles/metalfrancesite/css/style_ie.css' ) }}" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="{{ asset( 'bundles/metalfrancesite/js/html5.min.js' ) }}"></script>
+<![endif]-->

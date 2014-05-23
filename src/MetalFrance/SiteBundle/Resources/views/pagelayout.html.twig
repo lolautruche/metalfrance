@@ -4,7 +4,7 @@
 
     {% block meta %}{% include "@MetalFranceSite/page_head.html.twig" %}{% endblock %}
 
-    {% include "@MetalFranceSite/page_head_style.html.twig" %}
+    {% block css %}{% include "@MetalFranceSite/page_head_style.html.twig" %}{% endblock %}
 
     {% block js %}{% include "@MetalFranceSite/page_head_script.html.twig" %}{% endblock %}
 
@@ -13,7 +13,7 @@
     <script type="text/javascript">document.body.className = 'mf-js';</script>
 
     <!-- Header area: START -->
-    {% include "@MetalFranceSite/page_header.html.twig" %}
+    {% block header %}{% include "@MetalFranceSite/page_header.html.twig" %}{% endblock %}
     <!-- Header area: END -->
 
     <!-- NAV -->

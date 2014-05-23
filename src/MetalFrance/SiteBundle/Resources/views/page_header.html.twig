@@ -1,4 +1,3 @@
-{% block header %}
 <header id="mf-header" role="banner">
     {# Ads #}
     <div class="mf-pub-728x90" id="mf-pub-leaderboard">
@@ -17,11 +16,11 @@
             {% if is_granted( 'IS_AUTHENTICATED_REMEMBERED' ) %}
             <section id="mf-profil">
                 <a href="{{ path( 'ez_legacy', {'module_uri': '/user/edit'} ) }}">{{ "Mon profil"|trans( domain="metalfrance" ) }} ({{ app.user.APIUser.contentInfo.name }})</a>
-                <a href="{{ path( 'ez_legacy', {'module_uri': '/user/logout'} ) }}">{{ "Déconnexion"|trans( domain="metalfrance" ) }}</a>
+                <a href="{{ path( "logout" ) }}">{{ "Déconnexion"|trans( domain="metalfrance" ) }}</a>
             </section>
             {% else %}
             <section id="mf-connexion">
-                <a href="{{ path( 'ez_legacy', {'module_uri': '/user/login'} ) }}"><span>///</span> {{ "Connexion"|trans( domain="metalfrance" ) }} <span>\\\</span></a>
+                <a href="{{ path( "login" ) }}"><span>///</span> {{ "Connexion"|trans( domain="metalfrance" ) }} <span>\\\</span></a>
                 <a href="{{ janrain_signin_url() }}" class="rpxnow">
                     <img src="{{ asset( 'bundles/metalfrancesite/images/bg_login.png' ) }}"
                          alt="{{ "Connexion via un service externe"|trans( domain="metalfrance" ) }}" />
@@ -34,4 +33,3 @@
         </div>
     </div>
 </header>
-{% endblock %}
