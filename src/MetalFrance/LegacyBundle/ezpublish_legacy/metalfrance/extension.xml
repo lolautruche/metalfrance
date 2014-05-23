@@ -2,9 +2,10 @@
 <software>
     <metadata>
         <name>Metal France</name>
-        <version>3.1.1</version>
-        <copyright>Copyright (C) 2011 Jérôme Vieilledent for Metal France</copyright>
-        <license>GNU General Public License v2.0</license>
+        <version>3.5.0</version>
+        <copyright>Copyright (C) 2011-2014 Jérôme Vieilledent for Metal France</copyright>
+        <license>MIT</license>
+        <info_url>https://github.com/lolautruche/metalfrance</info_url>
     </metadata>
 
     <dependencies>
