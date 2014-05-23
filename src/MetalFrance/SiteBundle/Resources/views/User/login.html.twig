@@ -1,0 +1,62 @@
+{% extends "@MetalFranceSite/pagelayout.html.twig" %}
+
+{% block content %}
+    {% block login_content %}
+        <div class="border-box">
+            <div class="border-tl"><div class="border-tr"><div class="border-tc"></div></div></div>
+            <div class="border-ml"><div class="border-mr"><div class="border-mc float-break">
+
+                        <div class="attribute-header">
+                            <a id="loginForm"></a>
+                            <h2 class="mf-title mf-noicon">{{ "Connexion à Metal France"|trans( domain="metalfrance" ) }}</h1>
+                        </div>
+
+                        <div class="user-login mf-body">
+
+                            <form method="post" action="{{ path( "login_check" ) }}" name="loginform">
+
+                                <div class="attribute-header mf-top">
+                                    {#<h3 class="long">{{ "Connectez-vous depuis votre réseau social préféré"|trans( domain="metalfrance" ) }}</h3>#}
+                                </div>
+                                {% include "design:janrain/embeddedscript.tpl" %}
+
+                                {% if error %}
+                                <div class="warning">
+                                    <h3>{{ "Could not login"|trans( domain="metalfrance" ) }}</h3>
+                                    <ul>
+                                        <li>{{ "A valid username and password is required to login."|trans( domain="metalfrance" ) }}</li>
+                                    </ul>
+                                </div>
+                                {% endif %}
+
+                                <div class="attribute-header mf-top">
+                                    <h3>{{ "Utiliser un compte classique (nécessite une inscription)"|trans( domain="metalfrance" ) }}</h3>
+                                </div>
+
+                                <div class="block">
+                                    <label for="id1">{{ "Pseudo ou adresse mail :"|trans( domain="metalfrance" ) }}</label><div class="labelbreak"></div>
+                                    <input class="halfbox mf-input" type="text" size="10" name="_username" id="id1" value="{{ last_username }}" tabindex="1" />
+                                </div>
+
+                                <div class="block">
+                                    <label for="id2">{{ "Mot de passe:"|trans( domain="metalfrance" ) }}</label><div class="labelbreak"></div>
+                                    <input class="halfbox mf-input" type="password" size="10" name="_password" id="id2" value="" tabindex="1" />
+                                </div>
+
+                                <div class="buttonblock">
+                                    <input class="defaultbutton mf-button" type="submit" name="LoginButton" value="{{ "Connexion"|trans( domain="metalfrance" ) }}" tabindex="1" />
+                                </div>
+
+                                <p><a href="{{ path( "ez_legacy", {"module_uri": "/user/forgotpassword"} ) }}">{{ "Mot de passe oublié ?"|trans( domain="metalfrance" ) }}</a></p>
+
+                                <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
+
+                            </form>
+
+                        </div>
+
+                    </div></div></div>
+            <div class="border-bl"><div class="border-br"><div class="border-bc"></div></div></div>
+        </div>
+    {% endblock %}
+{% endblock %}
