@@ -1,0 +1,10 @@
+{% if app.request.attributes.has( "locationId" ) %}
+    {{
+        render_esi(
+            controller(
+                "MetalFranceSiteBundle:Sidebar:relatedContent",
+                {"locationId": app.request.attributes.get( "locationId" )}
+            )
+        )
+    }}
+{% endif %}
