@@ -1,22 +1,19 @@
-{% block js %}
-    {% javascripts
-        "@MetalFranceSiteBundle/Resources/public/js/jquery-1.8.3.min.js"
-        "@MetalFranceSiteBundle/Resources/public/js/jquery-ui-1.5.3.min.js"
-        "@MetalFranceSiteBundle/Resources/public/js/jquery.transform-0.9.3.min.js"
-        "@MetalFranceSiteBundle/Resources/public/js/jquery.waterwheelCarousel.js"
-        "@MetalFranceSiteBundle/Resources/public/js/jquery.jcarousel.min.js"
-        "@MetalFranceSiteBundle/Resources/public/js/jquery.prettyPhoto.js"
-        "@MetalFranceSiteBundle/Resources/public/js/mf.js"
-        "@MetalFranceSiteBundle/Resources/public/js/mf-coverflow.js"
-        "@MetalFranceSiteBundle/Resources/public/js/analytics.js"
-        "@MetalFranceSiteBundle/Resources/public/js/hinclude.js"
-    %}
-    <script type="text/javascript" src="{{ asset_url }}"></script>
-    {% endjavascripts %}
+{% javascripts
+    "@MetalFranceSiteBundle/Resources/public/js/jquery-1.8.3.min.js"
+    "@MetalFranceSiteBundle/Resources/public/js/jquery-ui-1.5.3.min.js"
+    "@MetalFranceSiteBundle/Resources/public/js/jquery.transform-0.9.3.min.js"
+    "@MetalFranceSiteBundle/Resources/public/js/jquery.waterwheelCarousel.js"
+    "@MetalFranceSiteBundle/Resources/public/js/jquery.jcarousel.min.js"
+    "@MetalFranceSiteBundle/Resources/public/js/jquery.prettyPhoto.js"
+    "@MetalFranceSiteBundle/Resources/public/js/mf.js"
+    "@MetalFranceSiteBundle/Resources/public/js/mf-coverflow.js"
+    "@MetalFranceSiteBundle/Resources/public/js/analytics.js"
+    "@MetalFranceSiteBundle/Resources/public/js/hinclude.js"
+%}
+<script type="text/javascript" src="{{ asset_url }}"></script>
+{% endjavascripts %}
 
-    {# TODO: Add analytics and advertisement scripts #}
-    {% include "@MetalFranceSite/parts/advertisement.html.twig" %}
+{# TODO: Add analytics and advertisement scripts #}
+{% include "@MetalFranceSite/parts/advertisement.html.twig" %}
 
-    {% set category = category|default( null ) %}
-    {{ render( controller( 'MetalFranceSiteBundle:Layout:analytics', {'category': category} ) ) }}
-{% endblock %}
+{{ render( controller( "MetalFranceSiteBundle:Layout:analytics", {"category": category|default( null ), "locationId": app.request.attributes.get( "locationId" )} ) ) }}

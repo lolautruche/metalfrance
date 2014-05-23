@@ -3,9 +3,10 @@
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', '{{ google_account }}']);
     _gaq.push(['_setDomainName', '{{ domain }}']);
-    {# Category uses slot #1 at page level (3) #}
-    {% if category %}_gaq.push(['_setCustomVar', 1, 'Categorie', "{{ category }}", 3]);{% endif %}
-
+{# Category uses slot #1 at page level (3) #}
+{% if category %}
+    _gaq.push(['_setCustomVar', 1, 'Categorie', "{{ category }}", 3]);
+{% endif %}
     _gaq.push(['_setCustomVar', 2, 'UserType', "{{ userType }}", 1]);
     _gaq.push(['_trackPageview']);
     _gaq.push(['_trackPageLoadTime']);

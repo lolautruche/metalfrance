@@ -753,12 +753,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ezsystems/ezpublish-kernel.git",
-                "reference": "3ce5e591c69ec9c722570cf1dfbb9c05ac11b699"
+                "reference": "dcbe5fa54cc5ba7b6ab38871de10a43310093cd5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ezsystems/ezpublish-kernel/zipball/3ce5e591c69ec9c722570cf1dfbb9c05ac11b699",
-                "reference": "3ce5e591c69ec9c722570cf1dfbb9c05ac11b699",
+                "url": "https://api.github.com/repos/ezsystems/ezpublish-kernel/zipball/dcbe5fa54cc5ba7b6ab38871de10a43310093cd5",
+                "reference": "dcbe5fa54cc5ba7b6ab38871de10a43310093cd5",
                 "shasum": ""
             },
             "require": {
@@ -820,7 +820,7 @@
             ],
             "description": "eZ Publish API and kernel. This is the heart of eZ Publish 5.",
             "homepage": "http://share.ez.no",
-            "time": "2014-05-21 07:46:30"
+            "time": "2014-05-21 12:57:04"
         },
         {
             "name": "ezsystems/ezpublish-legacy",

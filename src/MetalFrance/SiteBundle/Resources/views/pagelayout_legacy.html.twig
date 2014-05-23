@@ -1,4 +1,13 @@
+{# Pagelayout for legacy modules #}
 {% extends "@MetalFranceSite/pagelayout.html.twig" %}
+
+{# Retrieving legacy persistent variable for further usage #}
+{% set persistent_variable = ezpublish.legacy.get( "persistent_variable" ) %}
+
+{% block js %}
+    {% set category = persistent_variable['categorie_analytics']|default( null ) %}
+    {{ parent() }}
+{% endblock %}
 
 {% block content %}
     {{ module_result.content|raw }}

@@ -6,7 +6,7 @@
 
     {% include "@MetalFranceSite/page_head_style.html.twig" %}
 
-    {% include "@MetalFranceSite/page_head_script.html.twig" %}
+    {% block js %}{% include "@MetalFranceSite/page_head_script.html.twig" %}{% endblock %}
 
 </head>
 <body>

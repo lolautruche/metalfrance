@@ -17,18 +17,18 @@ class LayoutController extends Controller
      * Renders analytics tag
      *
      * @param string|null $category
+     * @param mixed|null $locationId
      *
      * @return Response
      */
-    public function analyticsAction( $category = null )
+    public function analyticsAction( $category = null, $locationId = null )
     {
-        $locationId = $this->getRequest()->attributes->get( 'locationId' );
         if ( !$category && $locationId )
         {
             $category = $this->get( 'metalfrance.analytics' )->getCategoryByLocationId( $locationId );
         }
 
-        $userType = $this->get( 'security.context' )->getToken()->isAuthenticated() ? 'ezpublish' : 'Anonymous';
+        $userType = $this->get( 'security.context' )->isGranted( 'IS_AUTHENTICATED_REMEMBERED' ) ? 'ezpublish' : 'Anonymous';
 
         return $this->render(
             'MetalFranceSiteBundle:Layout:analytics.html.twig',

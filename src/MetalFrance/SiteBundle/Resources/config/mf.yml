@@ -11,8 +11,8 @@ parameters:
         mf_interview: "Interviews"
         mf_livereport: "LiveReports"
         mf_page_livereport: "LiveReports"
-        mf_blog: "News"
-        mf_blog_post: "News"
+        blog: "News"
+        blog_post: "News"
         mf_concert_francebillet: "Concerts"
         frontpage: "Home"
 
