@@ -1,0 +1,7 @@
+parameters:
+    # Default layout for content view legacy fallback (i.e. no template yet configured in Platform stack)
+    ezpublish_legacy.metalfrance.view_default_layout: "MetalFranceSiteBundle::pagelayout.html.twig"
+    # Default layout for legacy modules (e.g. content/search)
+    ezpublish_legacy.metalfrance.module_default_layout: "MetalFranceLegacyBundle::pagelayout_legacy.html.twig"
+
+services:
