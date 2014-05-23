@@ -1,3 +1,0 @@
-metal_france_legacy_homepage:
-    pattern:  /hello/{name}
-    defaults: { _controller: MetalFranceLegacyBundle:Default:index }
