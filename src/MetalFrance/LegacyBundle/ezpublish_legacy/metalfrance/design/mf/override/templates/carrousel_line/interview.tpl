@@ -1,0 +1,1 @@
+                <li class="ui-tabs-nav-item ui-tabs-selected" id="{$navid}"><a href="#{$id}"><span>{'Interview'|i18n( 'extension/metalfrance' )}</span>{$node.data_map.artiste.content|wash|shortenw( 55 )}</a></li>

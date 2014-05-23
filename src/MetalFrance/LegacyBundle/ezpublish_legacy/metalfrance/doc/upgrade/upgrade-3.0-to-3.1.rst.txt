@@ -1,0 +1,11 @@
+======================================
+ MISE A JOUR METALFRANCE 3.0 VERS 3.1
+======================================
+
+Mise à jour eZ Publish vers Community 2011.6
+============================================
+1. Jouer le script SQL extension/metalfrance/updat/4.2011-to-2001.5.sql
+2. Mettre à jour le fichier **extension/ezfind/java/etc/jetty.xml** : ``<Set name="port"><SystemProperty name="jetty.port" default="8984"/></Set>``
+3. Mettre à jour **extension/ezfind/java/solr/conf/schema.xml** pour appliquer les modifications de **eZ Tags**
+4. Mettre à jour le script init.d de Solr pour passer à Solr 3.1
+5. Lancer une réindexation complète (avec *--clean*)

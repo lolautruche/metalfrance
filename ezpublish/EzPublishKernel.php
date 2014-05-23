@@ -62,9 +62,10 @@ class EzPublishKernel extends Kernel
             new EzSystemsNgsymfonytoolsBundle(),
             new WhiteOctoberPagerfantaBundle(),
             new NelmioCorsBundle(),
-            new \Netgen\TagsBundle\NetgenTagsBundle(),
+            new Netgen\TagsBundle\NetgenTagsBundle(),
             new Lolart\Bundle\EmbedTagBundle\LolartEmbedTagBundle(),
-            new \MetalFrance\SiteBundle\MetalFranceSiteBundle()
+            new MetalFrance\SiteBundle\MetalFranceSiteBundle(),
+            new MetalFrance\LegacyBundle\MetalFranceLegacyBundle(),
         );
 
         switch ( $this->getEnvironment() )
