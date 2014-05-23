@@ -8,7 +8,7 @@
     {% include "@MetalFranceSite/parts/sidebar/advertisement.html.twig" %}
 
     {% for block_label in sidebar_blocks %}
-        {% set block_template = "@MetalFranceSite/parts/sidebar/" ~ block_label ~ ".html.twig" %}
+        {% set block_template = "MetalFranceSiteBundle:parts/sidebar:" ~ block_label ~ ".html.twig" %}
         {% include block_template %}
     {% endfor %}
 </div>
