@@ -38,5 +38,6 @@ parameters:
 
     # Lists settings
     metalfrance.default.news.list_limit: 15
+    metalfrance.default.gallery.list_limit: 12
 
     metalfrance.default.gmaps_key: ~

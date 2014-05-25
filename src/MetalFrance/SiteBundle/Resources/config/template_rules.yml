@@ -15,6 +15,12 @@ ezpublish:
                         match:
                             Identifier\ContentType: blog_post
 
+                    gallery_list:
+                        controller: "MetalFranceSiteBundle:Gallery:listGalleries"
+                        template: "MetalFranceSiteBundle:full:gallery_list.html.twig"
+                        match:
+                            Id\Location: %metalfrance.location_setttings.photos%
+
                 carrousel:
                     blog_post:
                         template: "MetalFranceSiteBundle:carrousel:blog_post.html.twig"
@@ -26,3 +32,9 @@ ezpublish:
                         template: "MetalFranceSiteBundle:line:blog_post.html.twig"
                         match:
                             Identifier\ContentType: blog_post
+
+                    gallery:
+                        controller: "MetalFranceSiteBundle:Gallery:showGallery"
+                        template: "MetalFranceSiteBundle:line:gallery.html.twig"
+                        match:
+                            Identifier\ContentType: mf_gallerie

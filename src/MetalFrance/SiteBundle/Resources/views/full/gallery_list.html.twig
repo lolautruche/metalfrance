@@ -1,0 +1,22 @@
+{% extends "@MetalFranceSite/pagelayout.html.twig" %}
+
+{% block js %}
+    {% set category = "Photos" %}
+    {{ parent() }}
+{% endblock %}
+
+{% block content %}
+    <h1 class="mf-title">/// {{ ez_content_name( content ) }}<span class="mf-sprite-header mf-sprite-photo"></span></h1>
+
+    <section class="mf-gallery-list">
+        <ul class="mf-list mf-photos mf-clear">
+        {% for gallery in galleries %}
+            {{ render_esi( controller( "ez_content:viewLocation", {"locationId": gallery.contentInfo.mainLocationId, "viewType": "line"} ) ) }}
+        {% endfor %}
+        </ul>
+    </section>
+
+    {% if galleries.haveToPaginate() %}
+        {{ pagerfanta( galleries, "metalfrance_translated", {"routeName": location} ) }}
+    {% endif %}
+{% endblock %}

@@ -6,3 +6,9 @@
     {% endfor %}
     </p>
 {% endblock %}
+
+{# Override of built-in ezimage_field block, that give the opportunity to specify an alt text as parameter #}
+{% block ezimage_field %}
+    {% set alias = ez_image_alias( field, versionInfo, parameters.alias|default( 'original' ) ) %}
+    <img src="{{ asset( alias.uri ) }}" width="{{ alias.width }}" height="{{ alias.height }}" alt="{{ parameters.alternativeText|default( field.value.alternativeText ) }}" />
+{% endblock %}

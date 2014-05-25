@@ -1,0 +1,39 @@
+{% extends viewbaseLayout %}
+
+
+{% block content %}
+    {% set title = ez_field_value( content, "titre" ).text %}
+    <li>
+        <div class="mf-polaroid">
+            <div class="mf-polaroid-image">
+                {{
+                    ez_render_field(
+                        first_photo,
+                        "image",
+                        {
+                            "parameters": {
+                                "alias": "polaroid",
+                                "alternativeText": title
+                            }
+                        }
+                    )
+                }}
+            </div>
+            <span><a href="{{ path( location ) }}" class="mf-polaroid-link">{{ title }}</a></span>
+            <div class="content">
+                <h3>{{
+                        "Photos live Métal de %titre% à %lieu%"|trans(
+                            {
+                                "%titre%": title,
+                                "%lieu%": ez_field_value( content, "lieu" ).text
+                            },
+                            "metalfrance"
+                        )
+                    }}</h3>
+                {% if not ez_is_field_empty( content, "description" ) %}
+                    {{ ez_render_field( content, "description", {"template": "@MetalFranceSite/fields/ezxml_shorten.html.twig"} ) }}
+                {% endif %}
+            </div>
+        </div>
+    </li>
+{% endblock %}

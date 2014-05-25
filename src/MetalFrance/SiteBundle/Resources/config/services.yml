@@ -3,6 +3,7 @@ parameters:
     metalfrance.twig.legacy_extension.class: MetalFrance\SiteBundle\Twig\MetalFranceLegacyExtension
     metalfrance.repository.layout.class: MetalFrance\SiteBundle\Repository\LayoutRepository
     metalfrance.repository.news.class: MetalFrance\SiteBundle\Repository\NewsRepository
+    metalfrance.repository.gallery.class: MetalFrance\SiteBundle\Repository\GalleryRepository
     metalfrance.pagerfanta.view.class: MetalFrance\SiteBundle\Pagerfanta\View\MetalFranceView
 
 services:
@@ -21,8 +22,12 @@ services:
         arguments: [@ezpublish.api.service.content, @ezpublish.api.service.location, %metalfrance.location_settings%]
 
     metalfrance.repository.news:
-      class: %metalfrance.repository.news.class%
-      arguments: [%metalfrance.location_settings%]
+        class: %metalfrance.repository.news.class%
+        arguments: [%metalfrance.location_settings%]
+
+    metalfrance.repository.gallery:
+        class: %metalfrance.repository.gallery.class%
+        arguments: [%metalfrance.location_settings%, @ezpublish.api.service.search]
 
     metalfrance.pagerfanta.view:
         class: %metalfrance.pagerfanta.view.class%
