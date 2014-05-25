@@ -1,0 +1,13 @@
+parameters:
+    metalfrance_legacy.configuration_mapper.class: MetalFrance\LegacyBundle\EventListener\ConfigurationMapper
+
+services:
+    metalfrance_legacy.configuration_mapper:
+        class: %metalfrance_legacy.configuration_mapper.class%
+        arguments:
+            - @ezpublish.config.resolver
+            - %metalfrance.mail.delivery_address%
+            - %solr.url%
+            - %kernel.debug%
+        tags:
+            - { name: kernel.event_subscriber }

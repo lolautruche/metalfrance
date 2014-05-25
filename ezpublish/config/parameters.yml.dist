@@ -16,6 +16,7 @@ parameters:
     mailer_host:       127.0.0.1
     mailer_user:       ~
     mailer_password:   ~
+    mailer.debug_address: lolautruche@gmail.com
 
     http_cache.purge_type: local
     http_cache.purge_servers: ["http://metalfrance.dev"]
@@ -28,3 +29,15 @@ parameters:
     metalfrance.location_setttings.photos: 8854
     metalfrance.location_setttings.contact: 13056
     metalfrance.location_setttings.footer: 15986
+
+    metalfrance.mail.delivery_address: contact@metalfrance.net
+
+    # Gmaps keys
+    metalfrance.mf_public.gmaps_key: "ABQIAAAANBydUOBEUtL9tIU7j892jhQqZmWbp74gM-2xd2I_qIg1QRMcvBR5lyL_KYLrVSpffAd-SiqTSQX88g"
+    metalfrance.mf_gestion.gmaps_key: "ABQIAAAANBydUOBEUtL9tIU7j892jhQPMtn-hxjrw802yzYHAMz6W3d6sBTNkR--3_wlbSByFLDj1OLIDZTxXw"
+
+    # Session settings
+    session_domain: .metalfrance.dev
+
+    # Solr
+    solr.url: http://localhost:8983/solr

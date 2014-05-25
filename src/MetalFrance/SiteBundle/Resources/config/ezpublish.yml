@@ -37,6 +37,10 @@ ezpublish:
             user:
                 login_template: "MetalFranceSiteBundle:User:login.html.twig"
 
+            session:
+                cookie_domain: %session_domain%
+                cookie_httponly: true
+
         mf_public:
             content:
                 view_cache: true

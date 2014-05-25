@@ -24,3 +24,6 @@ monolog:
 
 assetic:
     use_controller: true
+
+swiftmailer:
+    delivery_address: %mailer.debug_address%
