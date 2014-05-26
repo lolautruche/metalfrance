@@ -57,6 +57,41 @@ class GalleryRepository
      */
     public function getFirstGalleryItem( $galleryLocationId )
     {
+        $query = $this->generateGalleryItemsQuery( $galleryLocationId );
+        $query->limit = 1;
+        $result = $this->searchService->findContent( $query );
+
+        return $result->searchHits[0]->valueObject;
+    }
+
+    /**
+     * Returns image items for a gallery, as Content objects.
+     *
+     * @param mixed $galleryLocationId
+     *
+     * @return \eZ\Publish\API\Repository\Values\Content\Content[]
+     */
+    public function getGalleryItems( $galleryLocationId )
+    {
+        $result = $this->searchService->findContent( $this->generateGalleryItemsQuery( $galleryLocationId ) );
+        $contentObjects = [];
+        foreach ( $result->searchHits as $hit )
+        {
+            $contentObjects[] = $hit->valueObject;
+        }
+
+        return $contentObjects;
+    }
+
+    /**
+     * Generates the query for gallery items.
+     *
+     * @param mixed $galleryLocationId
+     *
+     * @return Query
+     */
+    private function generateGalleryItemsQuery( $galleryLocationId )
+    {
         $query = new Query();
         $query->criterion = new Criterion\LogicalAnd(
             [
@@ -66,9 +101,7 @@ class GalleryRepository
             ]
         );
         $query->sortClauses = [ new Query\SortClause\DatePublished( Query::SORT_DESC ) ];
-        $query->limit = 1;
 
-        $result = $this->searchService->findContent( $query );
-        return $result->searchHits[0]->valueObject;
+        return $query;
     }
 }

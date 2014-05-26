@@ -21,6 +21,12 @@ ezpublish:
                         match:
                             Id\Location: %metalfrance.location_setttings.photos%
 
+                    gallery:
+                        controller: "MetalFranceSiteBundle:Gallery:showGallery"
+                        template: "MetalFranceSiteBundle:full:gallery.html.twig"
+                        match:
+                            Identifier\ContentType: mf_gallerie
+
                 carrousel:
                     blog_post:
                         template: "MetalFranceSiteBundle:carrousel:blog_post.html.twig"

@@ -7,6 +7,11 @@ use eZ\Publish\Core\Pagination\Pagerfanta\ContentSearchAdapter;
 use Pagerfanta\Pagerfanta;
 use Symfony\Component\HttpFoundation\Request;
 
+/**
+ * Gallery related controller
+ *
+ * @author Jérôme Vieilledent <lolautruche@gmail.com>
+ */
 class GalleryController extends Controller
 {
     public function listGalleriesAction( $locationId, $viewType, Request $request, $layout = false, array $params = [] )
@@ -30,15 +35,30 @@ class GalleryController extends Controller
         );
     }
 
+    /**
+     * Action to display a gallery, regardless its viewType.
+     * Used for both line and full view types.
+     *
+     * @param mixed $locationId
+     * @param string $viewType
+     * @param bool $layout
+     * @param array $params
+     *
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
     public function showGalleryAction( $locationId, $viewType, $layout = false, array $params = [] )
     {
-        $firstGalleryItem = $this->get( 'metalfrance.repository.gallery' )->getFirstGalleryItem( $locationId );
+        $galleryRepository = $this->get( 'metalfrance.repository.gallery' );
 
         return $this->get( 'ez_content' )->viewLocation(
             $locationId,
             $viewType,
             $layout,
-            [ 'first_photo' => $firstGalleryItem ]
+            [
+                'first_photo' => $galleryRepository->getFirstGalleryItem( $locationId ),
+                // Only retrieve gallery items for full view.
+                'gallery_items' => $viewType === 'full' ? $galleryRepository->getGalleryItems( $locationId ) : []
+            ] + $params
         );
     }
 }
