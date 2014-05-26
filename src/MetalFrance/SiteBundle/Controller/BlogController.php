@@ -31,7 +31,8 @@ class BlogController extends Controller
         $pager = new Pagerfanta(
             new ContentSearchAdapter(
                 $this->get( 'metalfrance.repository.news' )->getBlogPostsListQuery( $locationId ),
-                $this->getRepository()->getSearchService() )
+                $this->getRepository()->getSearchService()
+            )
         );
         $pager->setMaxPerPage( $configResolver->getParameter( 'news.list_limit', 'metalfrance' ) );
         $pager->setCurrentPage( $request->query->get( 'page', 1 ) );
