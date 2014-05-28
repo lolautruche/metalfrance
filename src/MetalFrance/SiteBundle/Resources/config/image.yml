@@ -56,7 +56,7 @@ ezpublish:
                 imagelarge:
                     reference: null
                     filters:
-                        - { name: geometry/scaledownonly, params: [448, 622] }
+                        - { name: geometry/scaledownonly, params: [800, 800] }
                 large:
                     reference: null
                     filters:
