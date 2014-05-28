@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "d12055686377ace1aa00423b10742dd8",
+    "hash": "4ac48ce27bad7ccd868ffe0453f3422e",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -756,12 +756,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ezsystems/ezpublish-kernel.git",
-                "reference": "8e6d09f143ab2e6c7555d0d9a7176488018e85d6"
+                "reference": "e119ede2998f538aa006e58d35d6382dbe4d1d91"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ezsystems/ezpublish-kernel/zipball/8e6d09f143ab2e6c7555d0d9a7176488018e85d6",
-                "reference": "8e6d09f143ab2e6c7555d0d9a7176488018e85d6",
+                "url": "https://api.github.com/repos/ezsystems/ezpublish-kernel/zipball/e119ede2998f538aa006e58d35d6382dbe4d1d91",
+                "reference": "e119ede2998f538aa006e58d35d6382dbe4d1d91",
                 "shasum": ""
             },
             "require": {
@@ -823,7 +823,7 @@
             ],
             "description": "eZ Publish API and kernel. This is the heart of eZ Publish 5.",
             "homepage": "http://share.ez.no",
-            "time": "2014-05-25 18:53:58"
+            "time": "2014-05-28 09:51:04"
         },
         {
             "name": "ezsystems/ezpublish-legacy",
@@ -1572,17 +1572,17 @@
         },
         {
             "name": "netgen/tagsbundle",
-            "version": "dev-master",
+            "version": "1.1",
             "target-dir": "Netgen/TagsBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/netgen/TagsBundle.git",
-                "reference": "cdab594baffa768eb46d71b1c0e6d6e322ed52c8"
+                "reference": "d9efdcdb302760157440ee941d19d35ea96245fe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/netgen/TagsBundle/zipball/cdab594baffa768eb46d71b1c0e6d6e322ed52c8",
-                "reference": "cdab594baffa768eb46d71b1c0e6d6e322ed52c8",
+                "url": "https://api.github.com/repos/netgen/TagsBundle/zipball/d9efdcdb302760157440ee941d19d35ea96245fe",
+                "reference": "d9efdcdb302760157440ee941d19d35ea96245fe",
                 "shasum": ""
             },
             "require": {
@@ -1608,7 +1608,7 @@
                 }
             ],
             "description": "Netgen Tags Bundle is an eZ Publish 5 bundle for taxonomy management and easier classification of content, providing more functionality for tagging content than ezkeyword field type included in eZ Publish kernel.",
-            "time": "2014-05-23 13:51:30"
+            "time": "2014-05-27 17:24:19"
         },
         {
             "name": "ocramius/proxy-manager",
@@ -5508,7 +5508,6 @@
         "zetacomponents/php-generator": 20,
         "zetacomponents/signal-slot": 20,
         "zetacomponents/system-information": 20,
-        "netgen/tagsbundle": 20,
         "lolautruche/embedtag-bundle": 20,
         "behat/sahi-client": 20,
         "ezsystems/behatbundle": 20
