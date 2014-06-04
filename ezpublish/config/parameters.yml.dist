@@ -41,3 +41,7 @@ parameters:
 
     # Solr
     solr.url: http://localhost:8983/solr
+
+    # Facebook
+    metalfrance.facebook.app_id: "675467275859704"
+    metalfrance.facebook.page_url: "https://www.facebook.com/MetalFrance"

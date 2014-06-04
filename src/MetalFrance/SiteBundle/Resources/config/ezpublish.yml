@@ -70,8 +70,10 @@ twig:
             description: "Actus Métal, gothique, Black Metal, Death Metal. Chroniques d'album, live reports, interviews, photos"
             copyright: "Metal France"
             author: "Metal France"
-            "og:image": "extension/metalfrance/design/mf/images/image-listing_50x50.png"
         dfp_pub_id: %metalfrance.ad.dfp_pub_id%
+        facebook:
+            app_id: %metalfrance.facebook.app_id%
+            page_url: %metalfrance.facebook.page_url%
 
 assetic:
     bundles: [MetalFranceSiteBundle]
@@ -79,6 +81,11 @@ assetic:
 ez_comments:
     system:
         metalfrance:
-            default_provider: disqus
+            default_provider: facebook
             disqus:
                 shortname: metalfrance
+
+            facebook:
+                app_id: %metalfrance.facebook.app_id%
+                width: "100%"
+                include_sdk: false
