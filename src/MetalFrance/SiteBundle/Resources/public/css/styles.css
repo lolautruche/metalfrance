@@ -610,7 +610,7 @@ h2.mf-noicon {
     display: inline;
 }
 
-.mf-pager li a {
+.mf-pager li a, .mf-pager li span {
 	font-size: 10pt;
 	color: black;
     float: left;
