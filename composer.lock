@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "6aeec6e8c6f6a6febc68a6db7daaf15e",
+    "hash": "f32d6ae66c5c8a932339b7864dbce3bd",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -718,12 +718,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ezsystems/DemoBundle.git",
-                "reference": "08ad8f32927071870fef29913e6bcee52d240312"
+                "reference": "6dbcccd05110ee98f731a6193991a98372b579bf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ezsystems/DemoBundle/zipball/08ad8f32927071870fef29913e6bcee52d240312",
-                "reference": "08ad8f32927071870fef29913e6bcee52d240312",
+                "url": "https://api.github.com/repos/ezsystems/DemoBundle/zipball/6dbcccd05110ee98f731a6193991a98372b579bf",
+                "reference": "6dbcccd05110ee98f731a6193991a98372b579bf",
                 "shasum": ""
             },
             "require": {
@@ -748,7 +748,366 @@
                 }
             ],
             "description": "Demo bundle for eZ Publish Platform",
-            "time": "2014-05-22 08:38:52"
+            "time": "2014-06-04 12:36:40"
+        },
+        {
+            "name": "ezsystems/ezautosave-ls",
+            "version": "v5.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ezsystems/ezautosave.git",
+                "reference": "839e0b7b9a0e688440cf15f18dc564b2fde531dd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ezsystems/ezautosave/zipball/839e0b7b9a0e688440cf15f18dc564b2fde531dd",
+                "reference": "839e0b7b9a0e688440cf15f18dc564b2fde531dd",
+                "shasum": ""
+            },
+            "require": {
+                "ezsystems/ezpublish-legacy-installer": "*"
+            },
+            "type": "ezpublish-legacy-extension",
+            "extra": {
+                "ezpublish-legacy-extension-name": "ezautosave"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Quoc-Huy Nguyen Dinh",
+                    "email": "contact@quoc-huy.com"
+                },
+                {
+                    "name": "Damien Pobel",
+                    "email": "damien.pobel@ez.no"
+                }
+            ],
+            "description": "Content editing autosave extension for eZ Publish legacy",
+            "time": "2014-05-16 23:12:15"
+        },
+        {
+            "name": "ezsystems/ezdemo-ls-extension",
+            "version": "v5.3.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ezsystems/ezdemo-ls-extension.git",
+                "reference": "87b947659c6646954d3f128a444ce95e8153063c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ezsystems/ezdemo-ls-extension/zipball/87b947659c6646954d3f128a444ce95e8153063c",
+                "reference": "87b947659c6646954d3f128a444ce95e8153063c",
+                "shasum": ""
+            },
+            "require": {
+                "ezsystems/ezpublish-legacy-installer": "*"
+            },
+            "suggest": {
+                "ezsystems/ezgmaplocation-ls-extension": "~5.3",
+                "ezsystems/ezstarrating-ls-extension": "~5.3",
+                "ezsystems/ezwt-ls-extension": "~5.3"
+            },
+            "type": "ezpublish-legacy-extension",
+            "extra": {
+                "ezpublish-legacy-extension-name": "ezdemo"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "eZ Publish dev-team & eZ Community",
+                    "homepage": "https://github.com/ezsystems/ezdemo-extension"
+                }
+            ],
+            "description": "eZ Publish Legacy Demo Website extension",
+            "time": "2014-05-20 20:05:23"
+        },
+        {
+            "name": "ezsystems/ezfind-ls",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ezsystems/ezfind.git",
+                "reference": "d79ebcd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ezsystems/ezfind/zipball/d79ebcd86bb93c3d170ae3fa559b326c7dd3ad1a",
+                "reference": "d79ebcd",
+                "shasum": ""
+            },
+            "require": {
+                "ezsystems/ezpublish-legacy-installer": "*"
+            },
+            "type": "ezpublish-legacy-extension",
+            "extra": {
+                "ezpublish-legacy-extension-name": "ezfind"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "eZ Publish dev-team & eZ Community",
+                    "homepage": "https://github.com/ezsystems/ezfind/contributors"
+                }
+            ],
+            "description": "eZ Find is a search extension for eZ Publish legacy, providing more functionality and better results than the default search in eZ Publish.",
+            "time": "2014-06-02 12:26:18"
+        },
+        {
+            "name": "ezsystems/ezflow-ls-extension",
+            "version": "v5.3.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ezsystems/ezflow-ls-extension.git",
+                "reference": "289451f08be56a856df1b99300963e0be9a6f5b5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ezsystems/ezflow-ls-extension/zipball/289451f08be56a856df1b99300963e0be9a6f5b5",
+                "reference": "289451f08be56a856df1b99300963e0be9a6f5b5",
+                "shasum": ""
+            },
+            "require": {
+                "ezsystems/ezpublish-legacy-installer": "*"
+            },
+            "suggest": {
+                "ezsystems/ezgmaplocation-ls-extension": "~5.3",
+                "ezsystems/ezstarrating-ls-extension": "~5.3",
+                "ezsystems/ezwt-ls-extension": "~5.3"
+            },
+            "type": "ezpublish-legacy-extension",
+            "extra": {
+                "ezpublish-legacy-extension-name": "ezflow"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "eZ Publish dev-team & eZ Community",
+                    "homepage": "https://github.com/ezsystems/ezflow-extension"
+                }
+            ],
+            "description": "eZ Publish Legacy Flow extension",
+            "time": "2014-05-20 19:56:27"
+        },
+        {
+            "name": "ezsystems/ezgmaplocation-ls-extension",
+            "version": "v5.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ezsystems/ezgmaplocation-ls-extension.git",
+                "reference": "d570e5e614a7d903b5b4703e9aaeaf58fb67dff2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ezsystems/ezgmaplocation-ls-extension/zipball/d570e5e614a7d903b5b4703e9aaeaf58fb67dff2",
+                "reference": "d570e5e614a7d903b5b4703e9aaeaf58fb67dff2",
+                "shasum": ""
+            },
+            "require": {
+                "ezsystems/ezpublish-legacy-installer": "*"
+            },
+            "suggest": {
+                "ezsystems/ezdemo-ls-extension": "~5.3",
+                "ezsystems/ezflow-ls-extension": "~5.3",
+                "ezsystems/ezwebin-ls-extension": "~5.3"
+            },
+            "type": "ezpublish-legacy-extension",
+            "extra": {
+                "ezpublish-legacy-extension-name": "ezgmaplocation"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "eZ Publish dev-team & eZ Community",
+                    "homepage": "https://github.com/ezsystems/ezgmaplocation"
+                }
+            ],
+            "description": "eZ Publish Legacy map location datatype extension",
+            "time": "2014-05-20 19:58:20"
+        },
+        {
+            "name": "ezsystems/ezie-ls",
+            "version": "v5.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ezsystems/ezie.git",
+                "reference": "44baa6e35a94fe32042ff9cda1e472d2e364b887"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ezsystems/ezie/zipball/44baa6e35a94fe32042ff9cda1e472d2e364b887",
+                "reference": "44baa6e35a94fe32042ff9cda1e472d2e364b887",
+                "shasum": ""
+            },
+            "require": {
+                "ezsystems/ezpublish-legacy-installer": "*"
+            },
+            "type": "ezpublish-legacy-extension",
+            "extra": {
+                "ezpublish-legacy-extension-name": "ezie"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "eZ Publish dev-team & eZ Community",
+                    "homepage": "https://github.com/ezsystems/ezodf/contributors"
+                }
+            ],
+            "description": "An image editor for simple and usual image modifications integrated in the editing interface of any eZ Publish Content Object that has at least an image as attribute.",
+            "time": "2014-05-20 20:10:59"
+        },
+        {
+            "name": "ezsystems/ezmbpaex-ls",
+            "version": "v5.3.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ezsystems/ezmbpaex.git",
+                "reference": "18241b895870fa05872a37c160d298ba77af2491"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ezsystems/ezmbpaex/zipball/18241b895870fa05872a37c160d298ba77af2491",
+                "reference": "18241b895870fa05872a37c160d298ba77af2491",
+                "shasum": ""
+            },
+            "require": {
+                "ezsystems/ezpublish-legacy-installer": "*"
+            },
+            "type": "ezpublish-legacy-extension",
+            "extra": {
+                "ezpublish-legacy-extension-name": "ezmbpaex"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "eZ Publish dev-team & eZ Community",
+                    "homepage": "https://github.com/ezsystems/ezmbpaex/contributors"
+                }
+            ],
+            "description": "eZ Publish Legacy Extension that provides functionality for password expiration and validation.",
+            "time": "2014-05-19 14:59:01"
+        },
+        {
+            "name": "ezsystems/ezmultiupload-ls",
+            "version": "v5.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ezsystems/ezmultiupload.git",
+                "reference": "20aa864e26dbc7e5741cf6b29715902a6f1be86a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ezsystems/ezmultiupload/zipball/20aa864e26dbc7e5741cf6b29715902a6f1be86a",
+                "reference": "20aa864e26dbc7e5741cf6b29715902a6f1be86a",
+                "shasum": ""
+            },
+            "require": {
+                "ezsystems/ezpublish-legacy-installer": "*"
+            },
+            "type": "ezpublish-legacy-extension",
+            "extra": {
+                "ezpublish-legacy-extension-name": "ezmultiupload"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "eZ Publish dev-team & eZ Community",
+                    "homepage": "https://github.com/ezsystems/ezmultiupload/contributors"
+                }
+            ],
+            "description": "Multi-upload extension for eZ Publish legacy",
+            "time": "2014-05-16 22:51:20"
+        },
+        {
+            "name": "ezsystems/ezodf-ls",
+            "version": "v5.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ezsystems/ezodf.git",
+                "reference": "05b48c81240e32b9905b28c1e5048eb1a2291375"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ezsystems/ezodf/zipball/05b48c81240e32b9905b28c1e5048eb1a2291375",
+                "reference": "05b48c81240e32b9905b28c1e5048eb1a2291375",
+                "shasum": ""
+            },
+            "require": {
+                "ezsystems/ezpublish-legacy-installer": "*"
+            },
+            "type": "ezpublish-legacy-extension",
+            "extra": {
+                "ezpublish-legacy-extension-name": "ezodf"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "eZ Publish dev-team & eZ Community",
+                    "homepage": "https://github.com/ezsystems/ezodf/contributors"
+                }
+            ],
+            "description": "This extension enables import and export of OpenOffice.org Writer documents within eZ Publish legacy",
+            "time": "2014-05-20 20:09:47"
+        },
+        {
+            "name": "ezsystems/ezprestapiprovider-ls",
+            "version": "v5.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ezsystems/ezprestapiprovider.git",
+                "reference": "84938212a66b4e0674451f1120c250052059c7aa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ezsystems/ezprestapiprovider/zipball/84938212a66b4e0674451f1120c250052059c7aa",
+                "reference": "84938212a66b4e0674451f1120c250052059c7aa",
+                "shasum": ""
+            },
+            "require": {
+                "ezsystems/ezpublish-legacy-installer": "*"
+            },
+            "type": "ezpublish-legacy-extension",
+            "extra": {
+                "ezpublish-legacy-extension-name": "ezprestapiprovider"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "eZ Publish dev-team & eZ Community",
+                    "homepage": "https://github.com/ezsystems/ezprestapiprovider/contributors"
+                }
+            ],
+            "description": "eZ Publish REST API v1 content provider",
+            "time": "2014-05-16 23:35:35"
         },
         {
             "name": "ezsystems/ezpublish-kernel",
@@ -756,12 +1115,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ezsystems/ezpublish-kernel.git",
-                "reference": "3fd568fd2eaca4023a2398f590a92b8929dd3857"
+                "reference": "9964d22353466e9c6a794f94b8edea5cbde2c91b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ezsystems/ezpublish-kernel/zipball/3fd568fd2eaca4023a2398f590a92b8929dd3857",
-                "reference": "3fd568fd2eaca4023a2398f590a92b8929dd3857",
+                "url": "https://api.github.com/repos/ezsystems/ezpublish-kernel/zipball/9964d22353466e9c6a794f94b8edea5cbde2c91b",
+                "reference": "9964d22353466e9c6a794f94b8edea5cbde2c91b",
                 "shasum": ""
             },
             "require": {
@@ -823,7 +1182,7 @@
             ],
             "description": "eZ Publish API and kernel. This is the heart of eZ Publish 5.",
             "homepage": "http://share.ez.no",
-            "time": "2014-05-29 08:48:43"
+            "time": "2014-06-05 09:27:04"
         },
         {
             "name": "ezsystems/ezpublish-legacy",
@@ -831,12 +1190,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ezsystems/ezpublish-legacy.git",
-                "reference": "170f94be6c240699ef0e7ac6d5ef223249790534"
+                "reference": "cfb233b74f8f7bdc44fc2fa8eadc3d6e15da0b7e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ezsystems/ezpublish-legacy/zipball/170f94be6c240699ef0e7ac6d5ef223249790534",
-                "reference": "170f94be6c240699ef0e7ac6d5ef223249790534",
+                "url": "https://api.github.com/repos/ezsystems/ezpublish-legacy/zipball/cfb233b74f8f7bdc44fc2fa8eadc3d6e15da0b7e",
+                "reference": "cfb233b74f8f7bdc44fc2fa8eadc3d6e15da0b7e",
                 "shasum": ""
             },
             "require": {
@@ -889,7 +1248,7 @@
             ],
             "description": "eZ Publish LegacyStack (4.x)",
             "homepage": "http://share.ez.no",
-            "time": "2014-05-30 09:03:49"
+            "time": "2014-05-30 12:35:59"
         },
         {
             "name": "ezsystems/ezpublish-legacy-installer",
@@ -935,6 +1294,113 @@
             "time": "2013-12-02 14:48:52"
         },
         {
+            "name": "ezsystems/ezscriptmonitor-ls",
+            "version": "v5.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ezsystems/ezscriptmonitor.git",
+                "reference": "bd4e7dbc41db032f96ae325536639921d3827af1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ezsystems/ezscriptmonitor/zipball/bd4e7dbc41db032f96ae325536639921d3827af1",
+                "reference": "bd4e7dbc41db032f96ae325536639921d3827af1",
+                "shasum": ""
+            },
+            "require": {
+                "ezsystems/ezpublish-legacy-installer": "*"
+            },
+            "type": "ezpublish-legacy-extension",
+            "extra": {
+                "ezpublish-legacy-extension-name": "ezscriptmonitor"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "eZ Publish dev-team & eZ Community",
+                    "homepage": "https://github.com/ezsystems/ezscriptmonitor/contributors"
+                }
+            ],
+            "description": "An image editor for simple and usual image modifications integrated in the editing interface of any eZ Publish Content Object that has at least an image as attribute.",
+            "time": "2014-05-20 20:01:10"
+        },
+        {
+            "name": "ezsystems/ezsi-ls",
+            "version": "v5.3.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ezsystems/ezsi.git",
+                "reference": "ee1c1ec398ffaa2a15efecbffbeebcfd0a586687"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ezsystems/ezsi/zipball/ee1c1ec398ffaa2a15efecbffbeebcfd0a586687",
+                "reference": "ee1c1ec398ffaa2a15efecbffbeebcfd0a586687",
+                "shasum": ""
+            },
+            "require": {
+                "ezsystems/ezpublish-legacy-installer": "*"
+            },
+            "type": "ezpublish-legacy-extension",
+            "extra": {
+                "ezpublish-legacy-extension-name": "ezsi"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "eZ Publish dev-team & eZ Community",
+                    "homepage": "https://github.com/ezsystems/ezsi/contributors"
+                }
+            ],
+            "description": "eZ Publish Legacy Extension for server/edge side include functionality usable as template blocks",
+            "time": "2014-05-20 20:01:57"
+        },
+        {
+            "name": "ezsystems/ezstarrating-ls-extension",
+            "version": "v5.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ezsystems/ezstarrating-ls-extension.git",
+                "reference": "c19811ad0dc35ce327942a282706f865be7d1d11"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ezsystems/ezstarrating-ls-extension/zipball/c19811ad0dc35ce327942a282706f865be7d1d11",
+                "reference": "c19811ad0dc35ce327942a282706f865be7d1d11",
+                "shasum": ""
+            },
+            "require": {
+                "ezsystems/ezpublish-legacy-installer": "*"
+            },
+            "suggest": {
+                "ezsystems/ezdemo-ls-extension": "~5.3",
+                "ezsystems/ezflow-ls-extension": "~5.3",
+                "ezsystems/ezwebin-ls-extension": "~5.3"
+            },
+            "type": "ezpublish-legacy-extension",
+            "extra": {
+                "ezpublish-legacy-extension-name": "ezstarrating"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "eZ Publish dev-team & eZ Community",
+                    "homepage": "https://github.com/ezsystems/ezstarrating-extension"
+                }
+            ],
+            "description": "eZ Publish Legacy starrating extension",
+            "time": "2014-05-20 19:59:30"
+        },
+        {
             "name": "ezsystems/eztags-ls",
             "version": "1.3",
             "source": {
@@ -967,6 +1433,40 @@
             ],
             "description": "eZ Tags is an extension for eZ Publish, providing more functionality for tagging content objects than ezkeyword datatype included in eZ Publish kernel.",
             "time": "2014-05-12 14:23:46"
+        },
+        {
+            "name": "ezsystems/ezwt-ls-extension",
+            "version": "v5.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ezsystems/ezwt-ls-extension.git",
+                "reference": "53dfd24135473b8751da6112f309bfbc82483f6d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ezsystems/ezwt-ls-extension/zipball/53dfd24135473b8751da6112f309bfbc82483f6d",
+                "reference": "53dfd24135473b8751da6112f309bfbc82483f6d",
+                "shasum": ""
+            },
+            "require": {
+                "ezsystems/ezpublish-legacy-installer": "*"
+            },
+            "type": "ezpublish-legacy-extension",
+            "extra": {
+                "ezpublish-legacy-extension-name": "ezwt"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "eZ Publish dev-team & eZ Community",
+                    "homepage": "https://github.com/ezsystems/ezwt"
+                }
+            ],
+            "description": "eZ Publish Legacy website toolbar extension",
+            "time": "2014-05-20 19:55:29"
         },
         {
             "name": "ezsystems/ngsymfonytools-bundle",
@@ -1415,16 +1915,16 @@
         },
         {
             "name": "monolog/monolog",
-            "version": "1.9.1",
+            "version": "1.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "65026b610f8c19e61d7242f600530677b0466aac"
+                "reference": "25b16e801979098cb2f120e697bfce454b18bf23"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/65026b610f8c19e61d7242f600530677b0466aac",
-                "reference": "65026b610f8c19e61d7242f600530677b0466aac",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/25b16e801979098cb2f120e697bfce454b18bf23",
+                "reference": "25b16e801979098cb2f120e697bfce454b18bf23",
                 "shasum": ""
             },
             "require": {
@@ -1452,7 +1952,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.9.x-dev"
+                    "dev-master": "1.10.x-dev"
                 }
             },
             "autoload": {
@@ -1479,7 +1979,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2014-04-24 13:29:03"
+            "time": "2014-06-04 16:30:04"
         },
         {
             "name": "nelmio/cors-bundle",
@@ -1676,31 +2176,36 @@
         },
         {
             "name": "pagerfanta/pagerfanta",
-            "version": "v1.0.1",
+            "version": "v1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/whiteoctober/Pagerfanta.git",
-                "reference": "9568187b789a39a3933c71e4e28b60fc2c26b70d"
+                "reference": "ac1edfdf81c91a0f1471769071011ebf9b055421"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/whiteoctober/Pagerfanta/zipball/9568187b789a39a3933c71e4e28b60fc2c26b70d",
-                "reference": "9568187b789a39a3933c71e4e28b60fc2c26b70d",
+                "url": "https://api.github.com/repos/whiteoctober/Pagerfanta/zipball/ac1edfdf81c91a0f1471769071011ebf9b055421",
+                "reference": "ac1edfdf81c91a0f1471769071011ebf9b055421",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.0"
             },
             "require-dev": {
-                "doctrine/mongodb-odm": "*",
-                "doctrine/orm": "2.*",
-                "mandango/mandango": "*",
+                "doctrine/mongodb-odm": "1.0.*@dev",
+                "doctrine/orm": "2.3.*",
+                "doctrine/phpcr-odm": "1.*",
+                "jackalope/jackalope-doctrine-dbal": "1.*",
+                "jmikola/geojson": "1.0.*",
+                "mandango/mandango": "1.0.*@dev",
+                "phpunit/phpunit": "3.7.*",
                 "propel/propel1": "~1.6",
-                "solarium/solarium": "dev-develop"
+                "solarium/solarium": "3.1.*"
             },
             "suggest": {
                 "doctrine/mongodb-odm": "To use the DoctrineODMMongoDBAdapter.",
                 "doctrine/orm": "To use the DoctrineORMAdapter.",
+                "doctrine/phpcr-odm": "To use the DoctrineODMPhpcrAdapter. >= 1.1.0",
                 "mandango/mandango": "To use the MandangoAdapter.",
                 "propel/propel1": "To use the PropelAdapter",
                 "solarium/solarium": "To use the SolariumAdapter."
@@ -1734,7 +2239,7 @@
                 "paginator",
                 "paging"
             ],
-            "time": "2013-09-23 08:06:55"
+            "time": "2014-06-02 09:21:14"
         },
         {
             "name": "psr/log",
@@ -2121,21 +2626,21 @@
         },
         {
             "name": "symfony/monolog-bundle",
-            "version": "v2.5.1",
+            "version": "v2.6.0",
             "target-dir": "Symfony/Bundle/MonologBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/MonologBundle.git",
-                "reference": "71ad844ac29401f86619f9d643393265451e858b"
+                "reference": "e1d4aa99c7440b11e9dfbfef7ed63084401dbc6a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/MonologBundle/zipball/71ad844ac29401f86619f9d643393265451e858b",
-                "reference": "71ad844ac29401f86619f9d643393265451e858b",
+                "url": "https://api.github.com/repos/symfony/MonologBundle/zipball/e1d4aa99c7440b11e9dfbfef7ed63084401dbc6a",
+                "reference": "e1d4aa99c7440b11e9dfbfef7ed63084401dbc6a",
                 "shasum": ""
             },
             "require": {
-                "monolog/monolog": "~1.6",
+                "monolog/monolog": "~1.8",
                 "php": ">=5.3.2",
                 "symfony/config": "~2.3",
                 "symfony/dependency-injection": "~2.3",
@@ -2149,7 +2654,7 @@
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.5.x-dev"
+                    "dev-master": "2.6.x-dev"
                 }
             },
             "autoload": {
@@ -2179,7 +2684,7 @@
                 "log",
                 "logging"
             ],
-            "time": "2014-02-19 14:49:26"
+            "time": "2014-06-04 16:49:13"
         },
         {
             "name": "symfony/swiftmailer-bundle",
@@ -2240,16 +2745,16 @@
         },
         {
             "name": "symfony/symfony",
-            "version": "v2.4.5",
+            "version": "v2.4.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "885b6d17447fcc3cd9c42622321e5af4283dbde1"
+                "reference": "ebf1be8a9217eb5911102a522eb2bd500923297d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/885b6d17447fcc3cd9c42622321e5af4283dbde1",
-                "reference": "885b6d17447fcc3cd9c42622321e5af4283dbde1",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/ebf1be8a9217eb5911102a522eb2bd500923297d",
+                "reference": "ebf1be8a9217eb5911102a522eb2bd500923297d",
                 "shasum": ""
             },
             "require": {
@@ -2351,7 +2856,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2014-05-22 21:04:05"
+            "time": "2014-05-31 18:42:13"
         },
         {
             "name": "tedivm/stash",
@@ -4127,6 +4632,7 @@
         "ezsystems/ezpublish-legacy": 20,
         "ezsystems/demobundle": 20,
         "ezsystems/comments-bundle": 20,
+        "ezsystems/ezfind-ls": 20,
         "zetacomponents/archive": 20,
         "zetacomponents/authentication": 20,
         "zetacomponents/authentication-database-tiein": 20,
