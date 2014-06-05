@@ -1,0 +1,21 @@
+{% set persistent_variable = ezpublish.legacy.get( "persistent_variable" )|default( {} ) %}
+{% set amazon_item = persistent_variable["amazon_item"]|default( null ) %}
+{% set review_title = persistent_variable["review_title"]|default( "" ) %}
+{% if amazon_item %}
+<section id="mf-amazon-player" class="mf-section">
+    <h3><a href={{ amazon_item.attribute( "url" ) }} class="mf-amazon-big" target="_blank">{{ "Télécharger légalement"|trans( domain="metalfrance" ) }}</a></h3>
+
+    <script type='text/javascript'>
+        var amzn_wdgt={widget:'MP3Clips'};
+        amzn_wdgt.tag='{{ amazon_tag }}';
+        amzn_wdgt.widgetType='ASINList';
+        amzn_wdgt.ASIN='{{ amazon_item.attribute( "id" ) }}';
+        amzn_wdgt.title='{{ "Écouter %album%"|trans( {"%album%": review_title|raw()}, "metalfrance" ) }}';
+        amzn_wdgt.width='250';
+        amzn_wdgt.height='250';
+        amzn_wdgt.shuffleTracks='False';
+        amzn_wdgt.marketPlace='FR';
+    </script>
+    <script type='text/javascript' src="http://wms.assoc-amazon.fr/20070822/FR/js/swfobject_1_5.js"></script>
+</section>
+{% endif %}
