@@ -111,12 +111,6 @@
   
 {include uri="design:parts/share.tpl" url=$node.url_alias title=$node.name tweet=concat( 'Chronique #metal ', $node.name )}
 
-  <section class="mf-notes-internautes">
-    <h3>{'Notes des internautes'|i18n( 'extension/metalfrance/review' )} ({'cliquez pour noter'|i18n( 'extension/metalfrance/review' )}) :</h3>
-    
-    {attribute_view_gui attribute=$node.data_map.note_internautes}
-  </section>
-
   <section class="mf-commentaires">
     <h3 class="mf-hidden">{'Commentaires des internautes'|i18n( 'extension/metalfrance' )}</h3>
 
