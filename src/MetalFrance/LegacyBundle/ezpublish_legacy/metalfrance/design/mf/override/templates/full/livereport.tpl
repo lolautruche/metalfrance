@@ -58,8 +58,13 @@
 
     <section class="mf-commentaires">
         <h3 class="mf-hidden">{'Commentaires des internautes'|i18n( 'extension/metalfrance' )}</h3>
-        
-        {attribute_view_gui attribute=$node.data_map.comments}
+
+        {symfony_render(
+            symfony_controller(
+                'ez_comments.controller.comments_renderer:renderForContentAction',
+                hash( 'contentId', $node.contentobject_id )
+            )
+        )}
     </section>
 
 </article>
