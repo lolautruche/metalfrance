@@ -74,6 +74,7 @@ twig:
         facebook:
             app_id: %metalfrance.facebook.app_id%
             page_url: %metalfrance.facebook.page_url%
+        amazon_tag: %amazon.associate.tag%
 
 assetic:
     bundles: [MetalFranceSiteBundle]

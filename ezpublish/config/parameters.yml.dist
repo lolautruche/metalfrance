@@ -45,3 +45,10 @@ parameters:
     # Facebook
     metalfrance.facebook.app_id: "675467275859704"
     metalfrance.facebook.page_url: "https://www.facebook.com/MetalFrance"
+
+    # Amazon
+    amazon.aws.access_key: MyAccessKey
+    amazon.aws.secret_key: MySecretKey
+    amazon.aws.host: http://ecs.amazonaws.fr
+    amazon.associate.tag: metafran-21
+    amazon.associate.enabled: true
