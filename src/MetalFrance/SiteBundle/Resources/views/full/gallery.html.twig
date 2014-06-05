@@ -59,9 +59,10 @@
             {% endfor %}
             </ul>
 
-            <div class="mf-adsense-article">
-                {% include "design:adsense_block.tpl" with {"adsenseIdentifier": "article"} %}
-            </div>
+            {# Deactivate adsense for now #}
+            {#<div class="mf-adsense-article">#}
+                {#{% include "design:adsense_block.tpl" with {"adsenseIdentifier": "article"} %}#}
+            {#</div>#}
 
             {% set contentName = ez_content_name( content ) %}
             {% include "@MetalFranceSite/parts/share.html.twig" with {"url": url( location ), "title": contentName, "tweet": contentName} %}

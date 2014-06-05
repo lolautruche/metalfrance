@@ -106,7 +106,7 @@
     
     {attribute_view_gui attribute=$node.data_map.contenu}
     
-    <div class="mf-adsense-article">{include uri="design:adsense_block.tpl" adsenseIdentifier="article"}</div>
+    {*<div class="mf-adsense-article">{include uri="design:adsense_block.tpl" adsenseIdentifier="article"}</div>*}
   </article>
   
 {include uri="design:parts/share.tpl" url=$node.url_alias title=$node.name tweet=concat( 'Chronique #metal ', $node.name )}

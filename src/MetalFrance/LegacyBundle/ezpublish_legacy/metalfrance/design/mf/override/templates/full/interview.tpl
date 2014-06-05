@@ -57,7 +57,7 @@
         {$body|autolink|wordtoimage}
     </section>
     
-    <div class="mf-adsense-article">{include uri="design:adsense_block.tpl" adsenseIdentifier="article"}</div>
+    {*<div class="mf-adsense-article">{include uri="design:adsense_block.tpl" adsenseIdentifier="article"}</div>*}
     
 {include uri="design:parts/share.tpl" url=$node.url_alias title=$node.name tweet=concat( 'Interview #metal ', $node.name )}
 
