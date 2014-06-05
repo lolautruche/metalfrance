@@ -1,0 +1,29 @@
+{# Override of MetalFranceSiteBundle::pagelayout.html.twig #}
+{# Made possible by MetalFranceLegacyBundle inheriting from MetalFranceSiteBundle #}
+{# This pagelayout adds a few more logic, essentially regarding persistent variables. #}
+{% extends "@MetalFranceSite/pagelayout.html.twig" %}
+
+{# Retrieving legacy persistent variable for further usage #}
+{% set persistent_variable = ezpublish.legacy.get( "persistent_variable" ) %}
+
+{% block meta %}
+    {% set social_image = persistent_variable["og:image"]|default( null ) %}
+    {# Meta tags potentially set in legacy content view templates via persistent variable #}
+    {% if persistent_variable["keywords"] is defined %}
+        {% set meta_tags = meta_tags|merge( {"keywords": persistent_variable["keywords"]} ) %}
+    {% endif %}
+    {% if persistent_variable["description"] is defined %}
+        {% set meta_tags = meta_tags|merge( {"description": persistent_variable["description"]} ) %}
+    {% endif %}
+    {% if persistent_variable["author"] is defined %}
+        {% set meta_tags = meta_tags|merge( {"author": persistent_variable["author"]} ) %}
+    {% endif %}
+    {{ parent() }}
+{% endblock %}
+
+{% block sidebar %}
+    {% if sidebar_blocks is not defined %}
+        {% set sidebar_blocks = persistent_variable["right_column"]|default( null ) %}
+    {% endif %}
+    {{ parent() }}
+{% endblock %}

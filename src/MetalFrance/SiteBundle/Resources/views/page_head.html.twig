@@ -21,7 +21,7 @@
 {# Facebook app ID, to define comments moderators #}
 <meta property="fb:app_id" content="{{ facebook["app_id"] }}"/>
 {# OpenGraph image #}
-<meta name="og:image" content="{{ app.request.schemeAndHttpHost ~ social_image|default( asset( "bundles/metalfrancesite//images/image-listing_50x50.png" ) ) }}" />
+<meta name="og:image" content="{{ social_image|default( app.request.schemeAndHttpHost ~ asset( "bundles/metalfrancesite//images/image-listing_50x50.png" ) ) }}" />
 
 {#
 {if $canonical_link}
