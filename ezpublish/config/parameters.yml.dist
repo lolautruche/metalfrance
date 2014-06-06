@@ -40,7 +40,7 @@ parameters:
     session_domain: .metalfrance.dev
 
     # Solr
-    solr.url: http://localhost:8983/solr
+    solr.url: http://localhost:8984/solr
 
     # Facebook
     metalfrance.facebook.app_id: "675467275859704"
