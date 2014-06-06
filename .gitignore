@@ -16,6 +16,7 @@
 /ezpublish/bootstrap.php.cache
 /ezpublish/SymfonyRequirements.php
 /ezpublish/check.php
+/ezpublish/java/solr/ezp-default/data/
 /web/index_treemenu.php
 /web/index_rest.php
 /web/index_cluster.php
