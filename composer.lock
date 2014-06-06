@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "f32d6ae66c5c8a932339b7864dbce3bd",
+    "hash": "06e831d2c7e3593bba34264091f308f6",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -43,7 +43,7 @@
             ],
             "authors": [
                 {
-                    "name": "Jonathan Wage",
+                    "name": "Jonathan H. Wage",
                     "email": "jonwage@gmail.com",
                     "homepage": "http://www.jwage.com/",
                     "role": "Creator"
@@ -118,7 +118,7 @@
             ],
             "authors": [
                 {
-                    "name": "Jonathan H. Wage",
+                    "name": "Jonathan Wage",
                     "email": "jonwage@gmail.com",
                     "homepage": "http://www.jwage.com/",
                     "role": "Creator"
@@ -974,40 +974,6 @@
             "time": "2014-05-20 20:10:59"
         },
         {
-            "name": "ezsystems/ezmbpaex-ls",
-            "version": "v5.3.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/ezsystems/ezmbpaex.git",
-                "reference": "18241b895870fa05872a37c160d298ba77af2491"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/ezsystems/ezmbpaex/zipball/18241b895870fa05872a37c160d298ba77af2491",
-                "reference": "18241b895870fa05872a37c160d298ba77af2491",
-                "shasum": ""
-            },
-            "require": {
-                "ezsystems/ezpublish-legacy-installer": "*"
-            },
-            "type": "ezpublish-legacy-extension",
-            "extra": {
-                "ezpublish-legacy-extension-name": "ezmbpaex"
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0"
-            ],
-            "authors": [
-                {
-                    "name": "eZ Publish dev-team & eZ Community",
-                    "homepage": "https://github.com/ezsystems/ezmbpaex/contributors"
-                }
-            ],
-            "description": "eZ Publish Legacy Extension that provides functionality for password expiration and validation.",
-            "time": "2014-05-19 14:59:01"
-        },
-        {
             "name": "ezsystems/ezmultiupload-ls",
             "version": "v5.3.0",
             "source": {
@@ -1190,12 +1156,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ezsystems/ezpublish-legacy.git",
-                "reference": "cfb233b74f8f7bdc44fc2fa8eadc3d6e15da0b7e"
+                "reference": "8bfe3c69bfff76d4b7be61ec5981062610d831ee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ezsystems/ezpublish-legacy/zipball/cfb233b74f8f7bdc44fc2fa8eadc3d6e15da0b7e",
-                "reference": "cfb233b74f8f7bdc44fc2fa8eadc3d6e15da0b7e",
+                "url": "https://api.github.com/repos/ezsystems/ezpublish-legacy/zipball/8bfe3c69bfff76d4b7be61ec5981062610d831ee",
+                "reference": "8bfe3c69bfff76d4b7be61ec5981062610d831ee",
                 "shasum": ""
             },
             "require": {
@@ -1248,7 +1214,7 @@
             ],
             "description": "eZ Publish LegacyStack (4.x)",
             "homepage": "http://share.ez.no",
-            "time": "2014-05-30 12:35:59"
+            "time": "2014-06-05 21:14:38"
         },
         {
             "name": "ezsystems/ezpublish-legacy-installer",
@@ -1328,40 +1294,6 @@
             "time": "2014-05-20 20:01:10"
         },
         {
-            "name": "ezsystems/ezsi-ls",
-            "version": "v5.3.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/ezsystems/ezsi.git",
-                "reference": "ee1c1ec398ffaa2a15efecbffbeebcfd0a586687"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/ezsystems/ezsi/zipball/ee1c1ec398ffaa2a15efecbffbeebcfd0a586687",
-                "reference": "ee1c1ec398ffaa2a15efecbffbeebcfd0a586687",
-                "shasum": ""
-            },
-            "require": {
-                "ezsystems/ezpublish-legacy-installer": "*"
-            },
-            "type": "ezpublish-legacy-extension",
-            "extra": {
-                "ezpublish-legacy-extension-name": "ezsi"
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0"
-            ],
-            "authors": [
-                {
-                    "name": "eZ Publish dev-team & eZ Community",
-                    "homepage": "https://github.com/ezsystems/ezsi/contributors"
-                }
-            ],
-            "description": "eZ Publish Legacy Extension for server/edge side include functionality usable as template blocks",
-            "time": "2014-05-20 20:01:57"
-        },
-        {
             "name": "ezsystems/ezstarrating-ls-extension",
             "version": "v5.3.1",
             "source": {
@@ -1406,12 +1338,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ezsystems/eztags.git",
-                "reference": "20284c2ec5383c4fc2dc95c0dce4d40926d078e4"
+                "reference": "7b8a2f4770204f87942e75c9ddd4f98606bf05e0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ezsystems/eztags/zipball/20284c2ec5383c4fc2dc95c0dce4d40926d078e4",
-                "reference": "20284c2ec5383c4fc2dc95c0dce4d40926d078e4",
+                "url": "https://api.github.com/repos/ezsystems/eztags/zipball/7b8a2f4770204f87942e75c9ddd4f98606bf05e0",
+                "reference": "7b8a2f4770204f87942e75c9ddd4f98606bf05e0",
                 "shasum": ""
             },
             "require": {
@@ -1432,7 +1364,7 @@
                 }
             ],
             "description": "eZ Tags is an extension for eZ Publish, providing more functionality for tagging content objects than ezkeyword datatype included in eZ Publish kernel.",
-            "time": "2014-05-12 14:23:46"
+            "time": "2014-05-15 10:02:18"
         },
         {
             "name": "ezsystems/ezwt-ls-extension",
@@ -1912,6 +1844,71 @@
             ],
             "description": "Collection of custom tags for eZ Publish, to embed external content like from YouTube, DailyMotion or Vimeo",
             "time": "2014-05-30 09:13:14"
+        },
+        {
+            "name": "lolautruche/jvamazonadvertising-ls",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lolautruche/jvamazonadvertising.git",
+                "reference": "1f9c43ba83e332702b10621578c88c5393f78304"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lolautruche/jvamazonadvertising/zipball/1f9c43ba83e332702b10621578c88c5393f78304",
+                "reference": "1f9c43ba83e332702b10621578c88c5393f78304",
+                "shasum": ""
+            },
+            "require": {
+                "ezsystems/ezpublish-legacy-installer": "~2.0"
+            },
+            "type": "ezpublish-legacy-extension",
+            "extra": {
+                "ezpublish-legacy-extension-name": "jvamazonadvertising"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Jerome Vieilledent",
+                    "email": "lolautruche@gmail.com"
+                }
+            ],
+            "description": "JV Amazon Advertising allows you to query Amazon huge product catalog by using Amazon Product Advertising API",
+            "time": "2014-06-06 09:51:38"
+        },
+        {
+            "name": "lolautruche/sqliimport",
+            "version": "v1.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lolautruche/sqliimport.git",
+                "reference": "5489c4e01491677974fbdc8b3f2e62728f3b5578"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lolautruche/sqliimport/zipball/5489c4e01491677974fbdc8b3f2e62728f3b5578",
+                "reference": "5489c4e01491677974fbdc8b3f2e62728f3b5578",
+                "shasum": ""
+            },
+            "require": {
+                "ezsystems/ezpublish-legacy-installer": "*"
+            },
+            "type": "ezpublish-legacy-extension",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Jérôme Vieilledent",
+                    "email": "lolautruche@gmail.com"
+                }
+            ],
+            "description": "eZ Publish legacy extension for importing external content",
+            "time": "2014-06-06 09:03:54"
         },
         {
             "name": "monolog/monolog",
@@ -2863,12 +2860,12 @@
             "version": "v0.11.6",
             "source": {
                 "type": "git",
-                "url": "https://github.com/tedivm/Stash.git",
+                "url": "https://github.com/tedious/Stash.git",
                 "reference": "4a99597aa2fc363b321ff90ab1a781e1cd6b5491"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tedivm/Stash/zipball/4a99597aa2fc363b321ff90ab1a781e1cd6b5491",
+                "url": "https://api.github.com/repos/tedious/Stash/zipball/4a99597aa2fc363b321ff90ab1a781e1cd6b5491",
                 "reference": "4a99597aa2fc363b321ff90ab1a781e1cd6b5491",
                 "shasum": ""
             },
@@ -2916,12 +2913,12 @@
             "target-dir": "Tedivm/StashBundle",
             "source": {
                 "type": "git",
-                "url": "https://github.com/tedivm/TedivmStashBundle.git",
+                "url": "https://github.com/tedious/TedivmStashBundle.git",
                 "reference": "86e95af29fb31ed133d73f0269ebe19d1b322034"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tedivm/TedivmStashBundle/zipball/86e95af29fb31ed133d73f0269ebe19d1b322034",
+                "url": "https://api.github.com/repos/tedious/TedivmStashBundle/zipball/86e95af29fb31ed133d73f0269ebe19d1b322034",
                 "reference": "86e95af29fb31ed133d73f0269ebe19d1b322034",
                 "shasum": ""
             },
