@@ -734,6 +734,9 @@
         unknown fields indexed and/or stored by default -->
    <!--dynamicField name="*" type="ignored" multiValued="true" /-->
 
+     <!-- Field for eZ Tags -->
+     <field name="ezf_df_tags" type="text" indexed="true" stored="true" multiValued="true" termVectors="true"/>
+
  </fields>
 
  <!-- Field to use to determine and enforce document uniqueness.
@@ -789,6 +792,10 @@
    <str name="paramkey">param value</str>
  </similarity>
  -->
+
+    <!-- Copy fields for eZ Tags -->
+    <copyField source="*_lk" dest="ezf_df_tags"/>
+    <copyField source="*_k" dest="ezf_df_tags"/>
 
 
 </schema>
