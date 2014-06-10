@@ -5,8 +5,6 @@ namespace MetalFrance\SiteBundle\Repository;
 use eZ\Publish\API\Repository\ContentService;
 use eZ\Publish\API\Repository\LocationService;
 use eZ\Publish\API\Repository\Values\Content\Location;
-use eZ\Publish\API\Repository\Values\Content\Query;
-use eZ\Publish\API\Repository\Values\Content\Query\Criterion;
 
 /**
  * Repository accessor class for main layout

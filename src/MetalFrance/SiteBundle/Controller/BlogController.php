@@ -3,9 +3,6 @@
 namespace MetalFrance\SiteBundle\Controller;
 
 use eZ\Bundle\EzPublishCoreBundle\Controller;
-use eZ\Publish\API\Repository\Values\Content\Query;
-use eZ\Publish\API\Repository\Values\Content\Query\Criterion;
-use eZ\Publish\API\Repository\Values\Content\Query\SortClause;
 use eZ\Publish\Core\Pagination\Pagerfanta\ContentSearchAdapter;
 use Pagerfanta\Pagerfanta;
 use Symfony\Component\HttpFoundation\Request;

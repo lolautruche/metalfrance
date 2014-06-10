@@ -3,8 +3,6 @@
 namespace MetalFrance\SiteBundle\Controller;
 
 use eZ\Bundle\EzPublishCoreBundle\Controller;
-use eZ\Publish\API\Repository\Values\Content\Query;
-use eZ\Publish\API\Repository\Values\Content\Query\Criterion;
 use Symfony\Component\HttpFoundation\Response;
 use DateTime;
 
