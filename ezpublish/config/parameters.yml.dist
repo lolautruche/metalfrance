@@ -2,7 +2,7 @@ parameters:
     secret: ThisTokenIsNotSoSecretChangeIt
     locale: fr_FR
 
-    imagemagick_path: /opt/local/bin/convert
+    imagemagick_path: /usr/bin/convert
 
     # Database
     database_driver: pdo_mysql
