@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<IniConfig>
+	<envs>
+		<env name="local" comment="Local"/>
+		<env name="preprod" comment="Pré-production"/>
+		<env name="prod" comment="Production"/>
+	</envs>
+	<files>
+		<file path="settings/override/site.ini" comment="Global INI file">
+
+			<line env="local" block="DatabaseSettings" type="string" name="Server" value="localhost" comment=""/>
+			<line env="local" block="DatabaseSettings" type="string" name="User" value="root" comment=""/>
+			<line env="local" block="DatabaseSettings" type="string" name="Password" value="root" comment=""/>
+			<line env="local" block="DatabaseSettings" type="string" name="Database" value="metalfrance_450" comment=""/>
+			<line env="local" block="DatabaseSettings" type="string" name="SQLOutput" value="disabled" comment=""/>
+			<line env="local" block="InformationCollectionSettings" type="string" name="EmailReceiver" value="lolautruche@metalfrance.net" comment=""/>
+            <line env="local" block="TemplateSettings" type="string" name="Debug" value="enabled" comment=""/>
+            <line env="local" block="TemplateSettings" type="string" name="ShowXHTMLCode" value="disabled" comment=""/>
+            <line env="local" block="TemplateSettings" type="string" name="ShowUsedTemplates" value="enabled" comment=""/>
+            <line env="local" block="TemplateSettings" type="string" name="DevelopmentMode" value="enabled" comment=""/>
+            <line env="local" block="DebugSettings" type="string" name="DebugByUser" value="disabled" comment=""/>
+            
+            <line env="prod" block="DatabaseSettings" type="string" name="Server" value="localhost" comment=""/>
+            <line env="prod" block="DatabaseSettings" type="string" name="User" value="metalfrance" comment=""/>
+            <line env="prod" block="DatabaseSettings" type="string" name="Password" value="RMI7tz9E8Y" comment=""/>
+            <line env="prod" block="DatabaseSettings" type="string" name="Database" value="metalfrance" comment=""/>
+            <line env="prod" block="DatabaseSettings" type="string" name="SQLOutput" value="disabled" comment=""/>
+            <line env="prod" block="InformationCollectionSettings" type="string" name="EmailReceiver" value="contact@metalfrance.net" comment=""/>
+            <line env="prod" block="TemplateSettings" type="string" name="Debug" value="disabled" comment=""/>
+            <line env="prod" block="TemplateSettings" type="string" name="ShowXHTMLCode" value="disabled" comment=""/>
+            <line env="prod" block="TemplateSettings" type="string" name="ShowUsedTemplates" value="disabled" comment=""/>
+            <line env="prod" block="TemplateSettings" type="string" name="DevelopmentMode" value="disabled" comment=""/>
+            <line env="prod" block="DebugSettings" type="string" name="DebugByUser" value="enabled" comment=""/>
+
+		</file>
+
+		<file path="extension/metalfrance/settings/siteaccess/mf_public/site.ini.append.php" comment="INI File front-office">
+
+			<line env="local" block="SiteSettings" type="string" name="SiteURL" value="www.metalfrance.dev" comment=""/>
+			<line env="prod" block="SiteSettings" type="string" name="SiteURL" value="www.metalfrance.net" comment=""/>
+			<line env="local" block="SiteSettings" type="string" name="GMapsKey" value="ABQIAAAANBydUOBEUtL9tIU7j892jhQqZmWbp74gM-2xd2I_qIg1QRMcvBR5lyL_KYLrVSpffAd-SiqTSQX88g" comment=""/>
+            <line env="prod" block="SiteSettings" type="string" name="GMapsKey" value="ABQIAAAANBydUOBEUtL9tIU7j892jhSmA5YzDXOjXdzfNZaTOLOJROrveBTFpnpzTJW85sI6pIWbLZNMPIw48g" comment=""/>
+            <line env="local" block="Session" type="string" name="CookieDomain" value=".metalfrance.dev" comment=""/>
+            <line env="prod" block="Session" type="string" name="CookieDomain" value=".metalfrance.net" comment=""/>
+        
+        </file>
+
+		<file path="extension/metalfrance/settings/siteaccess/mf_gestion/site.ini.append.php" comment="INI File back-office">
+
+            <line env="local" block="SiteSettings" type="string" name="GMapsKey" value="ABQIAAAANBydUOBEUtL9tIU7j892jhQPMtn-hxjrw802yzYHAMz6W3d6sBTNkR--3_wlbSByFLDj1OLIDZTxXw" comment=""/>
+            <line env="prod" block="SiteSettings" type="string" name="GMapsKey" value="ABQIAAAANBydUOBEUtL9tIU7j892jhQGmhC73wacYKsJV8BQ9-FNC4KfnhR2Lju9-hkhPhPQZHjC4m3btsf_iw" comment=""/>
+        
+        </file>
+
+        <file path="extension/metalfrance/settings/ezjscore.ini" comment="eZJSCore">
+
+            <line env="local" block="eZJSCore" type="string" name="LoadFromCDN" value="disabled" comment=""/>
+            <line env="prod" block="eZJSCore" type="string" name="LoadFromCDN" value="enabled" comment=""/>
+        
+        </file>
+        
+        <file path="settings/override/metalfrance.ini" comment="INI File Metal France">
+
+            <line env="local" block="ConcertSettings" type="string" name="SearchDebug" value="enabled" comment=""/>
+            <line env="prod" block="ConcertSettings" type="string" name="SearchDebug" value="disabled" comment=""/>
+            
+            <line env="local" block="LinkSettings" type="string" name="Forum" value="http://forum.metalfrance.dev" comment=""/>
+            <line env="prod" block="LinkSettings" type="string" name="Forum" value="http://forum.metalfrance.net" comment=""/>
+            
+            <line env="local" block="GeneralSettings" type="string" name="FeedURL" value="http://www.metalfrance.dev/layout/set/rss/content/view/full/2" comment=""/>
+            <line env="prod" block="GeneralSettings" type="string" name="FeedURL" value="http://feeds.feedburner.com/metalfrance-all" comment=""/>
+        
+        </file>
+        
+        <file path="extension/mf_migration/settings/sqliimport.ini" comment="Migration MF v2">
+
+            <line env="local" block="mfmigrationchroniques-HandlerSettings" type="string" name="ImagesDir" value="/Users/lolautruche/workspace/metalfrance/v2/images/chroniques_cd" comment=""/>
+            <line env="prod" block="mfmigrationchroniques-HandlerSettings" type="string" name="ImagesDir" value="/home/wwwroot/metalfrance/v2/images/chroniques_cd" comment=""/>
+            
+            <line env="local" block="mfmigrationlivereports-HandlerSettings" type="string" name="ImagesDir" value="/Users/lolautruche/workspace/metalfrance/v2/images/livereport" comment=""/>
+            <line env="prod" block="mfmigrationlivereports-HandlerSettings" type="string" name="ImagesDir" value="/home/wwwroot/metalfrance/v2/images/livereport" comment=""/>
+            
+            <line env="local" block="mfmigrationphotos-HandlerSettings" type="string" name="ImagesDir" value="/Users/lolautruche/workspace/metalfrance/v2/images/photos" comment=""/>
+            <line env="prod" block="mfmigrationphotos-HandlerSettings" type="string" name="ImagesDir" value="/home/wwwroot/metalfrance/v2/images/photos" comment=""/>
+            
+            <line env="local" block="mfmigrationinterviews-HandlerSettings" type="string" name="ImagesDir" value="/Users/lolautruche/workspace/metalfrance/v2/images/interview" comment=""/>
+            <line env="prod" block="mfmigrationinterviews-HandlerSettings" type="string" name="ImagesDir" value="/home/wwwroot/metalfrance/v2/images/interview" comment=""/>
+            
+            <line env="local" block="mfmigrationusers-HandlerSettings" type="string" name="Debug" value="enabled" comment=""/>
+            <line env="prod" block="mfmigrationusers-HandlerSettings" type="string" name="Debug" value="disabled" comment=""/>
+        
+        </file>
+        
+        <file path="extension/mf_migration/settings/mfmigration.ini" comment="INI File Migration Metal France">
+
+            <line env="local" block="DatabaseSettings" type="string" name="V2DatabaseDSN" value="mysql://root:root@localhost/metalfrance_v2" comment=""/>
+            <line env="prod" block="DatabaseSettings" type="string" name="V2DatabaseDSN" value="mysql://metalfrance:RMI7tz9E8Y@localhost/metalfrance_v2" comment=""/>
+        
+        </file>
+        
+        <file path="settings/override/xrowsitemap.ini" comment="Google Sitemaps">
+
+            <line env="local" block="Settings" type="string" name="Ping" value="false" comment=""/>
+            <line env="prod" block="Settings" type="string" name="Ping" value="true" comment=""/>
+        
+        </file>
+
+	</files>
+	
+	<ConfigPHPFile>
+		<config env="local">
+			<!-- For boolean values, use 0/1 and attribute isBoolean -->
+			<constant name="EZP_USE_BUNDLED_COMPONENTS" value="0" isBoolean="true"/>
+			<constant name="EZP_INI_FILEMTIME_CHECK" value="1" isBoolean="true" comment="Do not check INI Filemtime in dev environment"/>
+		</config>
+		<config env="prod">
+			<constant name="EZP_USE_BUNDLED_COMPONENTS" value="0" isBoolean="true"/>
+			<constant name="EZP_INI_FILEMTIME_CHECK" value="0" isBoolean="true" comment="Better performance with setting this param to false"/>
+		</config>
+	</ConfigPHPFile>
+</IniConfig>
