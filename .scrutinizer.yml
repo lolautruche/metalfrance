@@ -11,6 +11,7 @@ filter:
         - web/index_*.php
         - ezpublish/java/*
         - src/MetalFrance/LegacyBundle/ezpublish_legacy/*
+        - vendor/*
 
 checks:
     php:
