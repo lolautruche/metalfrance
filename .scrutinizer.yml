@@ -1,7 +1,7 @@
 before_commands:
     # Creating a fake imagemagick convert binary
     - touch bin/convert && chmod +x bin/convert
-    - "sed -i -e 's/imagemagick_path:.*/imagemagick_path: %kernel.root_dir%\/..\/bin\/convert/' ezpublish/config/parameters.yml.dist"
+    - "sed -i -e 's|imagemagick_path:.*|imagemagick_path: %kernel.root_dir%/../bin/convert|' ezpublish/config/parameters.yml.dist"
     - composer install
 
 filter:
