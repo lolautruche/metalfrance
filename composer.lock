@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "06e831d2c7e3593bba34264091f308f6",
+    "hash": "fec962fec99785c411b6ec3ece23a00a",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -553,16 +553,16 @@
         },
         {
             "name": "doctrine/orm",
-            "version": "v2.4.2",
+            "version": "v2.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/doctrine2.git",
-                "reference": "0363a5548d9263f979f9ca149decb9cfc66419ab"
+                "reference": "8a13376d42b5ea467727ffe730aa0e14ca3c5e29"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/0363a5548d9263f979f9ca149decb9cfc66419ab",
-                "reference": "0363a5548d9263f979f9ca149decb9cfc66419ab",
+                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/8a13376d42b5ea467727ffe730aa0e14ca3c5e29",
+                "reference": "8a13376d42b5ea467727ffe730aa0e14ca3c5e29",
                 "shasum": ""
             },
             "require": {
@@ -625,7 +625,7 @@
                 "database",
                 "orm"
             ],
-            "time": "2014-02-08 16:35:09"
+            "time": "2014-06-10 11:49:08"
         },
         {
             "name": "egulias/listeners-debug-command-bundle",
@@ -670,17 +670,17 @@
         },
         {
             "name": "ezsystems/comments-bundle",
-            "version": "dev-master",
+            "version": "v2014.05.0",
             "target-dir": "EzSystems/CommentsBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ezsystems/CommentsBundle.git",
-                "reference": "698a710b30b41bd71cc348fad264aea8839c4fae"
+                "reference": "b633dd2e31228ac28c3b369815346bb0ed678294"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ezsystems/CommentsBundle/zipball/698a710b30b41bd71cc348fad264aea8839c4fae",
-                "reference": "698a710b30b41bd71cc348fad264aea8839c4fae",
+                "url": "https://api.github.com/repos/ezsystems/CommentsBundle/zipball/b633dd2e31228ac28c3b369815346bb0ed678294",
+                "reference": "b633dd2e31228ac28c3b369815346bb0ed678294",
                 "shasum": ""
             },
             "require": {
@@ -709,11 +709,11 @@
                 }
             ],
             "description": "Commenting system for eZ Publish",
-            "time": "2014-05-12 16:56:04"
+            "time": "2014-06-11 11:43:15"
         },
         {
             "name": "ezsystems/demobundle",
-            "version": "dev-master",
+            "version": "v2014.05.0",
             "target-dir": "EzSystems/DemoBundle",
             "source": {
                 "type": "git",
@@ -829,16 +829,16 @@
         },
         {
             "name": "ezsystems/ezfind-ls",
-            "version": "dev-master",
+            "version": "v2014.05.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ezsystems/ezfind.git",
-                "reference": "d79ebcd"
+                "reference": "d79ebcd86bb93c3d170ae3fa559b326c7dd3ad1a"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/ezsystems/ezfind/zipball/d79ebcd86bb93c3d170ae3fa559b326c7dd3ad1a",
-                "reference": "d79ebcd",
+                "reference": "d79ebcd86bb93c3d170ae3fa559b326c7dd3ad1a",
                 "shasum": ""
             },
             "require": {
@@ -974,6 +974,40 @@
             "time": "2014-05-20 20:10:59"
         },
         {
+            "name": "ezsystems/ezmbpaex-ls",
+            "version": "v5.3.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ezsystems/ezmbpaex.git",
+                "reference": "18241b895870fa05872a37c160d298ba77af2491"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ezsystems/ezmbpaex/zipball/18241b895870fa05872a37c160d298ba77af2491",
+                "reference": "18241b895870fa05872a37c160d298ba77af2491",
+                "shasum": ""
+            },
+            "require": {
+                "ezsystems/ezpublish-legacy-installer": "*"
+            },
+            "type": "ezpublish-legacy-extension",
+            "extra": {
+                "ezpublish-legacy-extension-name": "ezmbpaex"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "eZ Publish dev-team & eZ Community",
+                    "homepage": "https://github.com/ezsystems/ezmbpaex/contributors"
+                }
+            ],
+            "description": "eZ Publish Legacy Extension that provides functionality for password expiration and validation.",
+            "time": "2014-05-19 14:59:01"
+        },
+        {
             "name": "ezsystems/ezmultiupload-ls",
             "version": "v5.3.0",
             "source": {
@@ -1077,16 +1111,16 @@
         },
         {
             "name": "ezsystems/ezpublish-kernel",
-            "version": "dev-master",
+            "version": "v2014.05.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ezsystems/ezpublish-kernel.git",
-                "reference": "9964d22353466e9c6a794f94b8edea5cbde2c91b"
+                "reference": "8e009d8401beaadce59a07857000c2f86505114a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ezsystems/ezpublish-kernel/zipball/9964d22353466e9c6a794f94b8edea5cbde2c91b",
-                "reference": "9964d22353466e9c6a794f94b8edea5cbde2c91b",
+                "url": "https://api.github.com/repos/ezsystems/ezpublish-kernel/zipball/8e009d8401beaadce59a07857000c2f86505114a",
+                "reference": "8e009d8401beaadce59a07857000c2f86505114a",
                 "shasum": ""
             },
             "require": {
@@ -1148,20 +1182,20 @@
             ],
             "description": "eZ Publish API and kernel. This is the heart of eZ Publish 5.",
             "homepage": "http://share.ez.no",
-            "time": "2014-06-05 09:27:04"
+            "time": "2014-06-11 11:31:40"
         },
         {
             "name": "ezsystems/ezpublish-legacy",
-            "version": "dev-master",
+            "version": "v2014.05.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ezsystems/ezpublish-legacy.git",
-                "reference": "971e7167c4c153f7b2fec38a7d901b6de593867a"
+                "reference": "fc172736a725a9978f525ff66d4d89654ccd89a0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ezsystems/ezpublish-legacy/zipball/971e7167c4c153f7b2fec38a7d901b6de593867a",
-                "reference": "971e7167c4c153f7b2fec38a7d901b6de593867a",
+                "url": "https://api.github.com/repos/ezsystems/ezpublish-legacy/zipball/fc172736a725a9978f525ff66d4d89654ccd89a0",
+                "reference": "fc172736a725a9978f525ff66d4d89654ccd89a0",
                 "shasum": ""
             },
             "require": {
@@ -1175,7 +1209,22 @@
                 "ext-session": "*",
                 "ext-simplexml": "*",
                 "ext-spl": "*",
+                "ezsystems/ezautosave-ls": "~5.3",
+                "ezsystems/ezdemo-ls-extension": "~5.3",
+                "ezsystems/ezfind-ls": "~5.3|>=2014.05",
+                "ezsystems/ezflow-ls-extension": "~5.3",
+                "ezsystems/ezgmaplocation-ls-extension": "~5.3",
+                "ezsystems/ezie-ls": "~5.3",
+                "ezsystems/ezmbpaex-ls": "~5.3",
+                "ezsystems/ezmultiupload-ls": "~5.3",
+                "ezsystems/ezodf-ls": "~5.3",
+                "ezsystems/ezprestapiprovider-ls": "~5.3",
                 "ezsystems/ezpublish-legacy-installer": "*",
+                "ezsystems/ezscriptmonitor-ls": "~5.3",
+                "ezsystems/ezsi-ls": "~5.3",
+                "ezsystems/ezstarrating-ls-extension": "~5.3",
+                "ezsystems/eztags-ls": "~1.3",
+                "ezsystems/ezwt-ls-extension": "~5.3",
                 "php": ">=5.3.3",
                 "zetacomponents/archive": "dev-master#d0caff8",
                 "zetacomponents/authentication": "dev-master#c422670",
@@ -1214,7 +1263,7 @@
             ],
             "description": "eZ Publish LegacyStack (4.x)",
             "homepage": "http://share.ez.no",
-            "time": "2014-06-09 12:37:16"
+            "time": "2014-06-12 14:49:30"
         },
         {
             "name": "ezsystems/ezpublish-legacy-installer",
@@ -1292,6 +1341,40 @@
             ],
             "description": "An image editor for simple and usual image modifications integrated in the editing interface of any eZ Publish Content Object that has at least an image as attribute.",
             "time": "2014-05-20 20:01:10"
+        },
+        {
+            "name": "ezsystems/ezsi-ls",
+            "version": "v5.3.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ezsystems/ezsi.git",
+                "reference": "ee1c1ec398ffaa2a15efecbffbeebcfd0a586687"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ezsystems/ezsi/zipball/ee1c1ec398ffaa2a15efecbffbeebcfd0a586687",
+                "reference": "ee1c1ec398ffaa2a15efecbffbeebcfd0a586687",
+                "shasum": ""
+            },
+            "require": {
+                "ezsystems/ezpublish-legacy-installer": "*"
+            },
+            "type": "ezpublish-legacy-extension",
+            "extra": {
+                "ezpublish-legacy-extension-name": "ezsi"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "eZ Publish dev-team & eZ Community",
+                    "homepage": "https://github.com/ezsystems/ezsi/contributors"
+                }
+            ],
+            "description": "eZ Publish Legacy Extension for server/edge side include functionality usable as template blocks",
+            "time": "2014-05-20 20:01:57"
         },
         {
             "name": "ezsystems/ezstarrating-ls-extension",
@@ -5265,12 +5348,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ezsystems/BehatBundle.git",
-                "reference": "2bb82621f74b65d478d6dff339b7d77a4d26c048"
+                "reference": "54d8e3783092f4521487b47110d8bb333bc86703"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ezsystems/BehatBundle/zipball/2bb82621f74b65d478d6dff339b7d77a4d26c048",
-                "reference": "2bb82621f74b65d478d6dff339b7d77a4d26c048",
+                "url": "https://api.github.com/repos/ezsystems/BehatBundle/zipball/54d8e3783092f4521487b47110d8bb333bc86703",
+                "reference": "54d8e3783092f4521487b47110d8bb333bc86703",
                 "shasum": ""
             },
             "require": {
@@ -5294,7 +5377,7 @@
                 }
             ],
             "description": "Behat bundle for help testing eZ Bundles and projects",
-            "time": "2014-05-15 14:46:32"
+            "time": "2014-06-12 14:00:59"
         },
         {
             "name": "fabpot/goutte",
@@ -5987,11 +6070,6 @@
     ],
     "minimum-stability": "stable",
     "stability-flags": {
-        "ezsystems/ezpublish-kernel": 20,
-        "ezsystems/ezpublish-legacy": 20,
-        "ezsystems/demobundle": 20,
-        "ezsystems/comments-bundle": 20,
-        "ezsystems/ezfind-ls": 20,
         "zetacomponents/archive": 20,
         "zetacomponents/authentication": 20,
         "zetacomponents/authentication-database-tiein": 20,
