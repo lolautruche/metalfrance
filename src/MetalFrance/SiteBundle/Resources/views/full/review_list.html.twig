@@ -1,0 +1,21 @@
+{% extends "@MetalFranceSite/pagelayout.html.twig" %}
+
+{% block js %}
+    {% set category = "Chroniques" %}
+    {{ parent() }}
+{% endblock %}
+
+{% block content %}
+    <h1 class="mf-title">/// {{ ez_content_name( content ) }}<span class="mf-sprite-header mf-sprite-cd"></span></h1>
+
+    <ul class="mf-list mf-chroniques">
+    {% for review in reviews %}
+        {{ render_esi( controller( "ez_content:viewLocation", {"locationId": review.id, "viewType": "line"} ) ) }}
+
+    {% endfor %}
+    </ul>
+
+    {% if reviews.haveToPaginate() %}
+        {{ pagerfanta( reviews, "metalfrance_translated", {"routeName": location} ) }}
+    {% endif %}
+{% endblock %}

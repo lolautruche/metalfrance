@@ -27,6 +27,12 @@ ezpublish:
                         match:
                             Identifier\ContentType: mf_gallerie
 
+                    review_list:
+                        controller: "MetalFranceSiteBundle:Review:listReviews"
+                        template: "MetalFranceSiteBundle:full:review_list.html.twig"
+                        match:
+                            Id\Location: %metalfrance.location_setttings.reviews%
+
                 carrousel:
                     blog_post:
                         template: "MetalFranceSiteBundle:carrousel:blog_post.html.twig"

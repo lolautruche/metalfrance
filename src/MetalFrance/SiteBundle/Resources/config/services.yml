@@ -4,6 +4,7 @@ parameters:
     metalfrance.repository.layout.class: MetalFrance\SiteBundle\Repository\LayoutRepository
     metalfrance.repository.news.class: MetalFrance\SiteBundle\Repository\NewsRepository
     metalfrance.repository.gallery.class: MetalFrance\SiteBundle\Repository\GalleryRepository
+    metalfrance.repository.review.class: MetalFrance\SiteBundle\Repository\ReviewRepository
     metalfrance.pagerfanta.view.class: MetalFrance\SiteBundle\Pagerfanta\View\MetalFranceView
 
 services:
@@ -28,6 +29,10 @@ services:
     metalfrance.repository.gallery:
         class: %metalfrance.repository.gallery.class%
         arguments: [%metalfrance.location_settings%, @ezpublish.api.service.search]
+
+    metalfrance.repository.review:
+        class: %metalfrance.repository.review.class%
+        arguments: [%metalfrance.location_settings%]
 
     metalfrance.pagerfanta.view:
         class: %metalfrance.pagerfanta.view.class%
