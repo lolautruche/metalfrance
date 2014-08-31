@@ -50,3 +50,8 @@ ezpublish:
                         template: "MetalFranceSiteBundle:line:gallery.html.twig"
                         match:
                             Identifier\ContentType: mf_gallerie
+
+                    review:
+                        template: "MetalFranceSiteBundle:line:review.html.twig"
+                        match:
+                            Identifier\ContentType: mf_chronique_cd

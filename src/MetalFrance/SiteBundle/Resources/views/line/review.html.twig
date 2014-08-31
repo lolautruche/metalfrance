@@ -1,0 +1,24 @@
+<li>
+    <article>
+        {% set album = ez_content_name( content ) %}
+        <a href={{ path( location ) }} rel="nofollow">
+            {{
+                ez_render_field(
+                    content,
+                    "pochette",
+                    {
+                        "parameters": {
+                            "alias": "review_list",
+                            "alternativeText": "Pochette de %album%"|trans( {"%album%": album}, "metalfrance" )
+                        }
+                    }
+                )
+            }}
+        </a>
+        <h3><a href="{{ path( location ) }}" rel="nofollow">{{ album }}</a></h3>
+        <p>
+            {{ ez_field_value( content, "introduction" ).text|nl2br }}
+        </p>
+        <footer><a href={{ path( location ) }}>{{ "Lire la suite de la chronique sur %album%"|trans( {"%album%": album}, "metalfrance" ) }}</a></footer>
+    </article>
+</li>
