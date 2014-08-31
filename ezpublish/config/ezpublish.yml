@@ -13,7 +13,7 @@ ezpublish:
 stash:
     caches:
         default:
-            handlers:
+            drivers:
                 - FileSystem
             inMemory: true
             registerDoctrineAdapter: false

@@ -29,9 +29,11 @@ use Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle;
 use Sensio\Bundle\DistributionBundle\SensioDistributionBundle;
 use Tedivm\StashBundle\TedivmStashBundle;
 use WhiteOctober\PagerfantaBundle\WhiteOctoberPagerfantaBundle;
+use WhiteOctober\BreadcrumbsBundle\WhiteOctoberBreadcrumbsBundle;
 use Nelmio\CorsBundle\NelmioCorsBundle;
 use Hautelook\TemplatedUriBundle\HautelookTemplatedUriBundle;
 use Doctrine\Bundle\DoctrineBundle\DoctrineBundle;
+use Knp\Bundle\MenuBundle\KnpMenuBundle;
 
 class EzPublishKernel extends Kernel
 {
@@ -61,7 +63,9 @@ class EzPublishKernel extends Kernel
             new EzSystemsCommentsBundle(),
             new EzSystemsNgsymfonytoolsBundle(),
             new WhiteOctoberPagerfantaBundle(),
+            new WhiteOctoberBreadcrumbsBundle(),
             new NelmioCorsBundle(),
+            new KnpMenuBundle(),
             new Netgen\TagsBundle\NetgenTagsBundle(),
             new Lolart\Bundle\EmbedTagBundle\LolartEmbedTagBundle(),
             new MetalFrance\SiteBundle\MetalFranceSiteBundle(),
