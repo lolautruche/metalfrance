@@ -13,12 +13,18 @@ services:
         tags:
             - {name: ezpublish.fieldType, alias: ezobjectrelationbrowse}
 
+    # Map jvamazonid to ezstring as Fields' content for it is string (Amazon ASIN)
     metalfrance.fieldType.jvamazonid:
-        class: %ezpublish.fieldType.eznull.class%
+        class: %ezpublish.fieldtype.ezstring.class%
         parent: ezpublish.fieldType
         arguments: [ "jvamazonid" ]
         tags:
             - {name: ezpublish.fieldType, alias: jvamazonid}
+
+    metalfrance.fieldType.jvamazonid.converter:
+        class: %ezpublish.fieldtype.ezstring.converter.class%
+        tags:
+            - {name: ezpublish.storageEngine.legacy.converter, alias: jvamazonid, lazy: true, callback: '::create'}
 
     metalfrance.fieldType.recaptcha:
         class: %ezpublish.fieldType.eznull.class%
